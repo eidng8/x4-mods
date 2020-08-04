@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<components>
+  <component name="disguise_shield" class="shieldgenerator">
+    <source geometry="assets\props\SurfaceElements\shield_arg_m_standard_01_mk1_data" />
+    <layers>
+      <layer>
+        <waypoints />
+        <lights />
+      </layer>
+    </layers>
+    <connections>
+      <connection name="container" tags="contents" value="0" />
+      <connection name="position" tags="position" value="1" />
+      <connection name="Connection01"
+                  tags="part nocollision forceoutline detail_xl  ">
+        <offset>
+          <position x="-1.117587E-07" y="1.636576" z="-1.273614" />
+        </offset>
+        <parts>
+          <part name="part_decals">
+            <lods>
+              <lod index="0">
+                <materials>
+                  <material id="1" ref="p1paint.paint_p1_decal_01" />
+                </materials>
+              </lod>
+            </lods>
+            <size>
+              <max x="3.090201" y="0.7081941" z="4.07796" />
+              <center x="1.117587E-07" y="-1.192093E-07" z="-1.192093E-07" />
+            </size>
+          </part>
+        </parts>
+      </connection>
+      <connection name="Connection02"
+                  tags="part platformcollision forceoutline  ">
+        <offset>
+          <position x="0" y="0" z="-3.247594E-02" />
+        </offset>
+        <parts>
+          <part name="part_main" wreck="part_main_wreck">
+            <lods>
+              <lod index="0">
+                <materials>
+                  <material id="1" ref="generic.generic_p1_hulltexture" />
+                  <material id="2" ref="generic.generic_p1_fx" />
+                </materials>
+              </lod>
+              <lod index="1">
+                <materials>
+                  <material id="1" ref="generic.generic_p1_hulltexture" />
+                  <material id="2" ref="generic.generic_p1_fx" />
+                </materials>
+              </lod>
+              <lod index="2">
+                <materials>
+                  <material id="1" ref="generic.generic_p1_hulltexture" />
+                  <material id="2" ref="generic.generic_p1_fx" />
+                </materials>
+              </lod>
+              <lod index="3">
+                <materials>
+                  <material id="1" ref="generic.generic_p1_hulltexture" />
+                </materials>
+              </lod>
+            </lods>
+            <size>
+              <max x="3.948891" y="1.144774" z="7.69219" />
+              <center x="0" y="1.145885" z="3.247594E-02" />
+            </size>
+            <pivot>
+              <offset>
+                <position x="-1.117587E-07" y="1.145886" z="3.247599E-02" />
+              </offset>
+            </pivot>
+          </part>
+        </parts>
+      </connection>
+      <connection name="Connection03"
+                  tags="part animation nocollision detail_xl forceoutline  ">
+        <offset>
+          <position x="-7.88869E-03" y="2.004346" z="-4.965625" />
+        </offset>
+        <animations>
+          <animation name="loop" start="1" end="100" />
+        </animations>
+        <parts>
+          <part name="part_anim">
+            <lods>
+              <lod index="0">
+                <materials>
+                  <material id="1" ref="generic.generic_p1_hulltexture" />
+                  <material id="2" ref="generic.generic_p1_fx" />
+                </materials>
+              </lod>
+            </lods>
+            <size>
+              <max x="1.056914" y="0.1355701" z="1.056914" />
+              <center x="1.490116E-08" y="-0.1355691" z="0" />
+            </size>
+            <size_raw>
+              <max x="1.056914" y="0.13557" z="1.056914" />
+              <center x="7.450581E-08" y="-0.1355691" z="0" />
+            </size_raw>
+          </part>
+        </parts>
+      </connection>
+      <connection name="Con_shieldgen_01"
+                  tags="medium shield component unhittable">
+        <offset />
+      </connection>
+    </connections>
+  </component>
+</components>

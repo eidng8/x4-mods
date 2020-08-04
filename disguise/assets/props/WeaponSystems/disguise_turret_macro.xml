@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<macros>
+  <macro name="disguise_turret_macro" class="turret">
+    <component ref="disguise_turret" />
+    <properties>
+      <identification name="{9595959,10011}"
+                      basename="{9595959,10012}"
+                      shortname="{9595959,10013}"
+                      description="{9595959,10014}"
+                      makerrace="terran"
+                      mk="1" />
+      <bullet class="bullet_disguise_beam_macro" />
+      <rotationspeed max="120" />
+      <reload rate="0.5" time="1" />
+      <hull threshold="0.2" integrated="1" />
+      <secrecy level="1" />
+    </properties>
+  </macro>
+</macros>

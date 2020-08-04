@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<diff>
+  <!-- Disable the plot completely only when this game start is launched -->
+  <add sel="//cue[@name='Phase_SignalLeak']/conditions">
+    <check_value value="player.module != 'x4ep1_gamestart_disguise'" />
+  </add>
+  <!-- Move the plot forward and spawn the PHQ in Argon Prime (only when this game start is launched) -->
+  <add sel="//cue[@name='Start']/cues">
+    <cue name="Disguise_Start_Progress_Plot" module="x4ep1_gamestart_disguise">
+      <delay exact="20s" />
+      <actions>
+        <find_sector name="$HQSector"
+                     macro="macro.cluster_44_sector001_macro" />
+        <set_value name="$HQPosition" exact="position.[0km, 0km, 0km]" />
+        <signal_cue cue="SHORTCUT_Research" />
+        <signal_cue cue="Neutral_Start_Finish_HQ_Setup" />
+      </actions>
+    </cue>
+    <cue name="Neutral_Start_Finish_HQ_Setup" module="x4ep1_gamestart_disguise">
+      <conditions>
+        <event_cue_signalled />
+      </conditions>
+      <delay exact="5s" />
+      <actions>
+        <!-- Set the build storage as owned by the player -->
+        <set_owner object="$HQ.buildstorage"
+                   faction="faction.player"
+                   overridenpc="true" />
+        <!-- Enable the Research Menu -->
+        <set_value name="player.entity.$x4ep1_hq_research_unlocked" />
+      </actions>
+    </cue>
+  </add>
+</diff>

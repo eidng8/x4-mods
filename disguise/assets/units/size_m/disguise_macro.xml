@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<macros>
+  <macro name="disguise_macro" class="ship_m">
+    <component ref="disguise" />
+    <properties>
+      <identification name="{9595959,10001}"
+                      basename="{9595959,10002}"
+                      description="{9595959,10003}"
+                      icon="ship_m_fight_01"
+                      makerrace="terran" />
+      <software>
+        <software ware="software_dockmk2" compatible="1" />
+        <software ware="software_flightassistmk1" default="1" />
+        <software ware="software_scannerlongrangemk1" default="1" />
+        <software ware="software_scannerlongrangemk2" compatible="1" />
+        <software ware="software_scannerobjectmk1" default="1" />
+        <software ware="software_scannerobjectmk2" compatible="1" />
+        <software ware="software_targetmk1" default="1" />
+        <software ware="software_trademk1" compatible="1" />
+      </software>
+      <explosiondamage value="50000" />
+      <storage missile="4000" unit="500" />
+      <hull max="52000000" />
+      <secrecy level="1" />
+      <purpose primary="fight" />
+      <people capacity="150" />
+      <physics mass="1">
+        <inertia pitch="0.5" yaw="0.5" roll="0.5" />
+        <drag forward="1"
+              reverse="1"
+              horizontal="1"
+              vertical="1"
+              pitch="3"
+              yaw="3"
+              roll="3" />
+      </physics>
+      <thruster tags="medium" />
+      <ship type="corvette" />
+      <sound_occlusion inside="0.4" />
+    </properties>
+    <connections>
+      <connection ref="con_cockpit">
+        <macro ref="cockpit_gen_virtual_01_macro" connection="ship" />
+      </connection>
+      <connection ref="con_dock_xs">
+        <macro ref="dock_gen_xs_ship_01_macro"
+               connection="Connection_component" />
+      </connection>
+      <connection ref="con_shipstorage_xs_01">
+        <macro ref="shipstorage_gen_xs_01_macro" connection="object" />
+      </connection>
+      <connection ref="con_storage01">
+        <macro ref="disguise_storage_macro" connection="ShipConnection" />
+      </connection>
+    </connections>
+  </macro>
+</macros>

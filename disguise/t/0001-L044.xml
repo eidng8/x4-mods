@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<diff>
+  <add sel="/language">
+    <page id="9595959" title="Disguise" descr="Ship" voice="yes">
+      <t id="1">eidng8</t>
+      <t id="10001">Disguise</t>
+      <t id="10002">(Disguise){9595959,10001}</t>
+      <t id="10003">(Disguise){9595959,10002}</t>
+      <t id="10004">A multi-purpose ship from another dimension, in disguise.
+      </t>
+      <t id="10007">Disguise Beam</t>
+      <t id="10008">(Disguise Beam){9595959,10007}</t>
+      <t id="10009">(Disguise Beam){9595959,10008}</t>
+      <t id="10010">A superb beam.</t>
+      <t id="10011">Disguise Turret</t>
+      <t id="10012">(Disguise Turret){9595959,10011}</t>
+      <t id="10013">(Disguise Turret){9595959,10012}</t>
+      <t id="10014">A superb turret.</t>
+      <t id="10015">Disguise Shield</t>
+      <t id="10016">(Disguise Shield){9595959,10015}</t>
+      <t id="10017">(Disguise Shield){9595959,10016}</t>
+      <t id="10018">A superb shield.</t>
+      <t id="10020">From Another Dimension</t>
+      <t id="10021">Sent by your government to investigate a peculiar anomaly,
+        you swiftly completed all mission objectives. However, you soon find out
+        a horrible situation when you are about to set out for your home world.
+        No communication can be made to it, let alone traveling back. Stranded
+        and lost, you suddenly feel clueless. Should you stay here or go back?
+        Should you become a tyrant or savior to this dimension? Wisdom shall
+        guide you through this endeavor. Live long and prosper \\\\// \n\n
+      </t>
+      <t id="10022">Sent by your government to investigate a peculiar anomaly,
+        you swiftly completed all mission objectives. However, you soon find out
+        a horrible situation when you are about to set out for your home world.
+        No communication can be made to it, let alone traveling back. Stranded
+        and lost, you suddenly feel clueless. Should you stay here or go back?
+        Should you become a tyrant or savior to this dimension? Wisdom shall
+        guide you through this endeavor. Live long and prosper!
+      </t>
+      <t id="10023">During missions, you have realised that every one in this
+        dimension refers to the anomaly as a "jump gate shutdown" event. But no
+        one has the slightest idea of the true nature and scale of it. Further,
+        no one has ever made any guess about the dimension they live in. Except
+        one curious individual, whom you have instinctly established close
+        relationship.
+      </t>
+    </page>
+  </add>
+</diff>

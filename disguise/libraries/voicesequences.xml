@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<diff>
+  <add sel="/voicesequences">
+    <voicesequence id="dimension_start_selected" page="9595959">
+      <delay time="1.5" />
+      <speak line="10022" />
+    </voicesequence>
+    <voicesequence id="dimension_start_started" page="9595959">
+      <delay time="1.5" />
+      <speak line="10023" />
+    </voicesequence>
+  </add>
+</diff>

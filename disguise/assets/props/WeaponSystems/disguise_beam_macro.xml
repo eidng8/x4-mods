@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: Matthias (192.168.3.144) at 12.12.2019_14-43-41-->
+<macros>
+  <macro name="disguise_beam_macro" class="weapon">
+    <component ref="disguise_beam" />
+    <properties>
+      <identification name="{9595959,10007}"
+                      basename="{9595959,10008}"
+                      shortname="{9595959,10009}"
+                      description="{9595959,10010}"
+                      makerrace="terran"
+                      mk="1" />
+      <bullet class="bullet_disguise_beam_macro" />
+      <heat overheat="10000" cooldelay="0.5" coolrate="6000" reenable="2000" />
+      <rotationspeed max="60" />
+      <rotationacceleration max="30" />
+      <reload />
+      <hull max="1001" hittable="0" />
+      <secrecy level="1" />
+      <effects>
+        <firing start="startshooting_gen_s_beam_01_mk1"
+                stop="stopshooting_gen_s_beam_01_mk1" />
+      </effects>
+    </properties>
+  </macro>
+</macros>

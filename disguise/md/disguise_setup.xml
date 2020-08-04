@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mdscript name="DisguiseSetup"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="../../src/md/md.xsd">
+  <cues>
+    <cue name="Disguise_Start_Initial_Setup" module="x4ep1_gamestart_disguise">
+      <conditions>
+        <event_cue_signalled cue="md.Setup.GameStart" />
+      </conditions>
+      <actions>
+        <!-- Setup Kown Factions -->
+        <set_faction_known faction="faction.alliance" known="true" />
+        <set_faction_known faction="faction.antigone" known="true" />
+        <set_faction_known faction="faction.argon" known="true" />
+        <set_faction_known faction="faction.hatikvah" known="true" />
+        <set_faction_known faction="faction.holyorder" known="true" />
+        <set_faction_known faction="faction.ministry" known="true" />
+        <set_faction_known faction="faction.paranid" known="true" />
+        <set_faction_known faction="faction.scaleplate" known="true" />
+        <set_faction_known faction="faction.xenon" known="true" />
+        <signal_cue cue="Disguise_Start_Setup" />
+        <!-- set part of the map to known -->
+        <set_value name="$InitialMap"
+                   exact="[macro.cluster_44_sector001_macro,
+                           macro.cluster_45_sector001_macro,
+                           macro.cluster_08_sector001_macro,
+                           macro.cluster_29_sector001_macro,
+                           macro.cluster_14_sector001_macro]" />
+        <set_value name="$UncoverTradeStations" exact="true" />
+        <include_actions ref="md.LIB_Generic.UncoverMap_SectorsAndGates" />
+      </actions>
+    </cue>
+    <cue name="Disguise_Start_Setup" module="x4ep1_gamestart_disguise">
+      <conditions>
+        <event_cue_signalled />
+      </conditions>
+      <actions>
+        <!-- Add Pilot to Player Ship -->
+        <find_ship name="$PlayerShip"
+                   owner="faction.player"
+                   space="player.zone"
+                   multiple="false" />
+        <create_control_entity name="$NewPilot"
+                               object="$PlayerShip"
+                               post="controlpost.aipilot">
+          <select race="[race.argon]" tags="tag.aipilot" />
+          <owner exact="faction.player" />
+        </create_control_entity>
+        <set_skill entity="$NewPilot" type="skilltype.piloting" exact="10" />
+        <set_skill entity="$NewPilot" type="skilltype.morale" exact="10" />
+        <set_skill entity="$NewPilot" type="skilltype.engineering" exact="5" />
+
+        <!-- Create a builder -->
+        <generate_loadout macro="macro.ship_arg_xl_builder_01_a_macro"
+                          faction="faction.argon"
+                          result="$loadout" />
+        <create_ship name="$NewShip"
+                     macro="ship_arg_xl_builder_01_a_macro"
+                     zone="player.zone">
+          <owner exact="faction.player" overridenpc="true" />
+          <loadout loadout="$loadout.{1}" />
+          <pilot>
+            <select faction="faction.argon" tags="tag.aipilot" />
+          </pilot>
+          <people>
+            <fillpercent exact="100" />
+            <person role="service" weight="100">
+              <select faction="faction.argon" tags="tag.crew" />
+            </person>
+          </people>
+          <safepos object="player.ship" radius="1km" min="1km" max="7km" />
+        </create_ship>
+
+        <!-- Setup HQ -->
+        <find_station name="$Factory" space="player.zone" owner="faction.player" />
+        <!-- Add manager to stations -->
+        <create_cue_actor cue="Disguise_Start_Setup" name="$Manager">
+          <select race="race.argon" tags="controlpost.manager.tag" />
+          <owner exact="faction.player" />
+          <skills>
+            <skill type="management" exact="10" />
+            <skill type="morale" exact="10" />
+          </skills>
+        </create_cue_actor>
+        <assign_control_entity object="$Factory" actor="$Manager" post="controlpost.manager" transfer="true" />
+        <remove_cue_actor actor="$Manager" cue="this" />
+        <set_object_account object="$Factory" />
+        <!-- Add engineers to stations -->
+        <create_cue_actor name="$Engineer" cue="this">
+          <select tags="controlpost.engineer.tag" />
+          <owner exact="faction.player" />
+        </create_cue_actor>
+        <assign_control_entity object="$Factory" actor="$Engineer" post="controlpost.engineer" transfer="true" />
+        <remove_cue_actor actor="$Engineer" cue="this" />
+        <!-- Add defence to stations -->
+        <create_cue_actor name="$Defence" cue="this">
+          <select tags="tag.defence" />
+          <owner exact="faction.player" />
+        </create_cue_actor>
+        <assign_control_entity object="$Factory" actor="$Defence" post="controlpost.defence" transfer="true" />
+        <remove_cue_actor actor="$Defence" cue="this" />
+      </actions>
+    </cue>
+  </cues>
+</mdscript>

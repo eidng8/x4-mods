@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<macros>
+  <macro name="disguise_shield_macro" class="shieldgenerator">
+    <component ref="disguise_shield" />
+    <properties>
+      <identification name="{9595959,10015}"
+                      basename="{9595959,10016}"
+                      shortname="{9595959,10017}"
+                      description="{9595959,10018}"
+                      makerrace="terran"
+                      mk="1" />
+      <recharge max="5147000" rate="50000" delay="0" />
+      <hull max="500" integrated="1" />
+      <secrecy level="1" />
+    </properties>
+  </macro>
+</macros>

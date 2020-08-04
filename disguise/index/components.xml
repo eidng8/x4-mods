@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<index>
+  <entry name="disguise_beam"
+         value="extensions\disguise\assets\props\weaponsystems\disguise_beam" />
+  <entry name="disguise_turret"
+         value="extensions\disguise\assets\props\weaponsystems\disguise_turret" />
+  <entry name="disguise_shield"
+         value="extensions\disguise\assets\props\surfaceelements\disguise_shield" />
+  <entry name="disguise"
+         value="extensions\disguise\assets\units\size_m\disguise" />
+</index>
