@@ -16,9 +16,9 @@
         <item name="{1021,5}" value="HQ, 1x {20101,11402}" />
         <item name="{1021,10005}" value="{1001,5202}" />
         <item name="{1021,11010}" value="{20203,201}" />
-        <item name="{1001,7400}"
-              value="{20216,1031}\n{20216,1241}\n{20216,1251}\n{20216,1261}\n{20216,1271}\n{20216,1281}\n{20216,1291}" />
         <item name="{1001,1132}" value="{1001,2617}" />
+        <item name="{1001,7400}"
+              value="{20216,1031}, {20216,1241}, {20216,1251}, {20216,1261}, {20216,1271}, {20216,1281}, {20216,1291}" />
       </info>
       <location galaxy="xu_ep2_universe_macro"
                 zone="zone001_cluster_44_sector001_macro">
@@ -71,6 +71,7 @@
               <software ware="software_economymk1" />
             </software>
           </loadout>
+          <people people="disguise_crew" />
         </ship>
         <inventory>
           <ware ware="inv_timewarp" amount="1" />

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<diff>
+  <add sel="/god/stations">
+    <station id="x4ep1_gamestart_disguise_wharf"
+             race="argon"
+             owner="player"
+             type="factory">
+      <quotas>
+        <quota galaxy="1" gamestart="x4ep1_gamestart_disguise" />
+      </quotas>
+      <location class="sector" macro="cluster_44_sector001_macro" />
+      <position x="0" y="0" z="0" yaw="0" pitch="0" roll="0" />
+      <station constructionplan="'x4ep1_gamestart_disguise_wharf'">
+        <select faction="faction.player" tags="[factory]" />
+      </station>
+    </station>
+  </add>
+</diff>

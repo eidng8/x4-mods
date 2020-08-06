@@ -4,14 +4,14 @@
   <add sel="//cue[@name='Phase_SignalLeak']/conditions">
     <check_value value="player.module != 'x4ep1_gamestart_disguise'" />
   </add>
-  <!-- Move the plot forward and spawn the PHQ in Argon Prime (only when this game start is launched) -->
+  <!-- Move the plot forward and spawn the PHQ in Silent Witness XI (only when this game start is launched) -->
   <add sel="//cue[@name='Start']/cues">
     <cue name="Disguise_Start_Progress_Plot" module="x4ep1_gamestart_disguise">
       <delay exact="20s" />
       <actions>
         <find_sector name="$HQSector"
                      macro="macro.cluster_44_sector001_macro" />
-        <set_value name="$HQPosition" exact="position.[0km, 0km, 0km]" />
+        <set_value name="$HQPosition" exact="position.[0km, -128km, 0km]" />
         <signal_cue cue="SHORTCUT_Research" />
         <signal_cue cue="Neutral_Start_Finish_HQ_Setup" />
       </actions>
@@ -28,6 +28,37 @@
                    overridenpc="true" />
         <!-- Enable the Research Menu -->
         <set_value name="player.entity.$x4ep1_hq_research_unlocked" />
+        <!-- Add manager to stations -->
+        <create_cue_actor cue="this" name="$Manager">
+          <select race="race.argon" tags="controlpost.manager.tag" />
+          <owner exact="faction.player" />
+          <skills>
+            <skill type="management" exact="15" />
+            <skill type="morale" exact="15" />
+            <skill type="engineering" exact="15" />
+          </skills>
+        </create_cue_actor>
+        <assign_control_entity object="$HQ"
+                               actor="$Manager"
+                               post="controlpost.manager"
+                               transfer="true" />
+        <remove_cue_actor actor="$Manager" cue="this" />
+        <set_object_account object="$HQ" />
+        <debug_to_file name="'Disguse'" directory="'Disguse'" text="player.age + ' HQ: ' + $HQ.buildplot.max" output="false" append="true" />
+        <!-- Add defence to stations -->
+        <create_cue_actor name="$Defence" cue="this">
+          <select tags="tag.defence" />
+          <owner exact="faction.player" />
+          <skills>
+            <skill type="morale" exact="15" />
+            <skill type="boarding" exact="15" />
+          </skills>
+        </create_cue_actor>
+        <assign_control_entity object="$HQ"
+                               actor="$Defence"
+                               post="controlpost.defence"
+                               transfer="true" />
+        <remove_cue_actor actor="$Defence" cue="this" />
       </actions>
     </cue>
   </add>

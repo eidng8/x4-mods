@@ -27,6 +27,7 @@
                            macro.cluster_29_sector001_macro,
                            macro.cluster_14_sector001_macro]" />
         <set_value name="$UncoverTradeStations" exact="true" />
+        <set_value name="$UncoverShipyardsAndWharfs" exact="true"/>
         <include_actions ref="md.LIB_Generic.UncoverMap_SectorsAndGates" />
       </actions>
     </cue>
@@ -40,15 +41,17 @@
                    owner="faction.player"
                    space="player.zone"
                    multiple="false" />
-        <create_control_entity name="$NewPilot"
+        <create_control_entity name="$NewPOC"
                                object="$PlayerShip"
                                post="controlpost.aipilot">
-          <select race="[race.argon]" tags="tag.aipilot" />
+          <select race="race.argon" tags="tag.aipilot" />
           <owner exact="faction.player" />
         </create_control_entity>
-        <set_skill entity="$NewPilot" type="skilltype.piloting" exact="10" />
-        <set_skill entity="$NewPilot" type="skilltype.morale" exact="10" />
-        <set_skill entity="$NewPilot" type="skilltype.engineering" exact="5" />
+        <set_skill entity="$NewPOC" type="skilltype.piloting" exact="15" />
+        <set_skill entity="$NewPOC" type="skilltype.morale" exact="15" />
+        <set_skill entity="$NewPOC" type="skilltype.engineering" exact="5" />
+        <set_skill entity="$NewPOC" type="skilltype.management" exact="15" />
+        <set_skill entity="$NewPOC" type="skilltype.boarding" exact="15" />
 
         <!-- Create a builder -->
         <generate_loadout macro="macro.ship_arg_xl_builder_01_a_macro"
@@ -60,44 +63,81 @@
           <owner exact="faction.player" overridenpc="true" />
           <loadout loadout="$loadout.{1}" />
           <pilot>
-            <select faction="faction.argon" tags="tag.aipilot" />
+            <select race="race.argon" tags="tag.aipilot" />
+            <skills>
+              <skill type="piloting" exact="15" />
+              <skill type="morale" exact="15" />
+              <skill type="engineering" exact="15" />
+              <skill type="management" exact="15" />
+              <skill type="boarding" exact="15" />
+            </skills>
+            <owner exact="faction.player" />
           </pilot>
           <people>
             <fillpercent exact="100" />
             <person role="service" weight="100">
-              <select faction="faction.argon" tags="tag.crew" />
+              <select race="race.argon"
+                      faction="faction.player"
+                      tags="tag.crew" />
+              <skills>
+                <skill type="piloting" exact="15" />
+                <skill type="morale" exact="15" />
+                <skill type="engineering" exact="15" />
+                <skill type="management" exact="15" />
+                <skill type="boarding" exact="15" />
+              </skills>
+              <owner exact="faction.player" />
             </person>
           </people>
           <safepos object="player.ship" radius="1km" min="1km" max="7km" />
         </create_ship>
 
-        <!-- Setup HQ -->
-        <find_station name="$Factory" space="player.zone" owner="faction.player" />
+        <!-- Setup Wharf -->
+        <find_station name="$Factory"
+                      space="player.sector"
+                      owner="faction.player" />
+        <set_value name="$BuildPlot"
+                   exact="$Factory.buildplot.max"/>
+        <set_build_plot object="$Factory"
+                        paid="true"
+                        x="$BuildPlot.x"
+                        y="$BuildPlot.y"
+                        z="$BuildPlot.z"/>
+        <remove_value name="$BuildPlot"/>
         <!-- Add manager to stations -->
-        <create_cue_actor cue="Disguise_Start_Setup" name="$Manager">
+        <create_cue_actor cue="this" name="$Manager">
           <select race="race.argon" tags="controlpost.manager.tag" />
           <owner exact="faction.player" />
           <skills>
-            <skill type="management" exact="10" />
-            <skill type="morale" exact="10" />
+            <skill type="piloting" exact="15" />
+            <skill type="morale" exact="15" />
+            <skill type="engineering" exact="15" />
+            <skill type="management" exact="15" />
+            <skill type="boarding" exact="15" />
           </skills>
         </create_cue_actor>
-        <assign_control_entity object="$Factory" actor="$Manager" post="controlpost.manager" transfer="true" />
+        <assign_control_entity object="$Factory"
+                               actor="$Manager"
+                               post="controlpost.manager"
+                               transfer="true" />
         <remove_cue_actor actor="$Manager" cue="this" />
         <set_object_account object="$Factory" />
-        <!-- Add engineers to stations -->
-        <create_cue_actor name="$Engineer" cue="this">
-          <select tags="controlpost.engineer.tag" />
-          <owner exact="faction.player" />
-        </create_cue_actor>
-        <assign_control_entity object="$Factory" actor="$Engineer" post="controlpost.engineer" transfer="true" />
-        <remove_cue_actor actor="$Engineer" cue="this" />
         <!-- Add defence to stations -->
         <create_cue_actor name="$Defence" cue="this">
           <select tags="tag.defence" />
           <owner exact="faction.player" />
+          <skills>
+            <skill type="piloting" exact="15" />
+            <skill type="morale" exact="15" />
+            <skill type="engineering" exact="15" />
+            <skill type="management" exact="15" />
+            <skill type="boarding" exact="15" />
+          </skills>
         </create_cue_actor>
-        <assign_control_entity object="$Factory" actor="$Defence" post="controlpost.defence" transfer="true" />
+        <assign_control_entity object="$Factory"
+                               actor="$Defence"
+                               post="controlpost.defence"
+                               transfer="true" />
         <remove_cue_actor actor="$Defence" cue="this" />
       </actions>
     </cue>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diff>
+  <add sel="/plans">
+    <plan id="x4ep1_gamestart_disguise_wharf" name="{1001,9805}">
+      <entry index="1" macro="defence_arg_claim_01_macro">
+        <offset>
+          <position x="0" z="0" />
+        </offset>
+      </entry>
+      <entry index="2"
+             macro="buildmodule_gen_ships_m_dockarea_01_macro"
+             connection="connectionsnap003">
+        <predecessor index="1" connection="connectionsnap002" />
+        <offset>
+          <position x="0" z="1400" />
+        </offset>
+      </entry>
+      <entry index="3"
+             macro="storage_arg_l_solid_01_macro"
+             connection="connectionsnap004">
+        <predecessor index="1" connection="connectionsnap004" />
+        <offset>
+          <position x="-1800" y="2.772" z="0" />
+          <rotation yaw="-90" />
+        </offset>
+      </entry>
+      <entry index="4"
+             macro="dockarea_arg_m_station_02_hightech_macro"
+             connection="connectionsnap004">
+        <predecessor index="1" connection="connectionsnap001" />
+        <offset>
+          <position x="0" z="-1200" />
+        </offset>
+      </entry>
+      <entry index="5"
+             macro="pier_arg_harbor_03_macro"
+             connection="connectionsnap001">
+        <predecessor index="4" connection="connectionsnap003" />
+        <offset>
+          <position x="0" z="-1600" />
+          <rotation yaw="-90" />
+        </offset>
+      </entry>
+    </plan>
+  </add>
+</diff>

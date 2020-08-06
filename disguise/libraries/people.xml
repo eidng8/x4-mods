@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+  <add sel="/peopledefinitions">
+    <people id="disguise_crew">
+      <fillpercent exact="100" />
+      <person role="service" weight="25">
+        <select race="argon"/>
+          <skills>
+            <skill type="piloting" exact="15" />
+            <skill type="morale" exact="15" />
+            <skill type="engineering" exact="15" />
+            <skill type="management" exact="15" />
+            <skill type="boarding" exact="15" />
+          </skills>
+      </person>
+      <person role="service" weight="25">
+        <select race="paranid"/>
+          <skills>
+            <skill type="piloting" exact="15" />
+            <skill type="morale" exact="15" />
+            <skill type="engineering" exact="15" />
+            <skill type="management" exact="15" />
+            <skill type="boarding" exact="15" />
+          </skills>
+      </person>
+      <person role="service" weight="25">
+        <select race="teladi"/>
+          <skills>
+            <skill type="piloting" exact="15" />
+            <skill type="morale" exact="15" />
+            <skill type="engineering" exact="15" />
+            <skill type="management" exact="15" />
+            <skill type="boarding" exact="15" />
+          </skills>
+      </person>
+      <person role="service" weight="25">
+        <select race="split"/>
+          <skills>
+            <skill type="piloting" exact="15" />
+            <skill type="morale" exact="15" />
+            <skill type="engineering" exact="15" />
+            <skill type="management" exact="15" />
+            <skill type="boarding" exact="15" />
+          </skills>
+      </person>
+    </people>
+  </add>
+</diff>
