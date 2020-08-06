@@ -16,7 +16,7 @@
         </offset>
       </entry>
       <entry index="3"
-             macro="storage_arg_l_solid_01_macro"
+             macro="storage_arg_l_container_01_macro"
              connection="connectionsnap004">
         <predecessor index="1" connection="connectionsnap004" />
         <offset>
