@@ -184,10 +184,6 @@
           <ware ware="countermeasure_flares_01" />
           <ware ware="satellite_mk1" />
           <ware ware="satellite_mk2" />
-          <ware ware="disguise" />
-          <ware ware="disguise_beam" />
-          <ware ware="disguise_turret" />
-          <ware ware="disguise_shield" />
         </blueprints>
         <research>
           <ware ware="research_radioreceiver" />

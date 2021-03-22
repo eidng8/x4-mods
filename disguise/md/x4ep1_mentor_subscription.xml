@@ -44,7 +44,7 @@
                                transfer="true" />
         <remove_cue_actor actor="$Manager" cue="this" />
         <set_object_account object="$HQ" />
-        <debug_to_file name="'Disguse'" directory="'Disguse'" text="player.age + ' HQ: ' + $HQ.buildplot.max" output="false" append="true" />
+        <!--debug_to_file name="'Disguse'" directory="'Disguse'" text="player.age + ' HQ: ' + $HQ.buildplot.max" output="false" append="true" /-->
         <!-- Add defence to stations -->
         <create_cue_actor name="$Defence" cue="this">
           <select tags="tag.defence" />
