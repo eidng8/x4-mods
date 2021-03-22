@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mdscript name="ShipModsSetup"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="../../src/md/md.xsd">
+  <cues>
+    <cue name="Ship_Mods_Add_Blueprint">
+      <conditions>
+        <event_cue_signalled cue="md.Setup.Start" />
+      </conditions>
+      <actions>
+        <add_inventory entity="player.entity" ware="ware.modpart_tuningsoftware" exact="100" />
+      </actions>
+    </cue>
+  </cues>
+</mdscript>

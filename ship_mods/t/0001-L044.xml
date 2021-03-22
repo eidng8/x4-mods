@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<diff>
+  <add sel="/language">
+    <page id="9595961" title="Defence fleet" descr="Ship" voice="yes">
+      <t id="10000">{9595961,10001} \({20110,100001} - {20110,1201}\)</t>
+      <t id="10001">Superior Weapon Mod</t>
+      <t id="10002">{9595961,10003} \({20110,100001} - {20110,1201}\)</t>
+      <t id="10003">Superior Engine Mod</t>
+      <t id="10004">{9595961,10005} \({20110,100001} - {20110,1201}\)</t>
+      <t id="10005">Superior Hull Mod</t>
+      <t id="10006">{9595961,10007} \({20110,100001} - {20110,1201}\)</t>
+      <t id="10007">Superior Shield Mod</t>
+      <t id="10008">{9595961,10009} \({20110,100001} - {20110,1201}\)</t>
+      <t id="10009">Superior Ultra-light Hull Mod</t>
+      <t id="10010">{9595961,10011} \({20110,100001} - {20110,1201}\)</t>
+      <t id="10011">Superior Strafe Engine Mod</t>
+    </page>
+  </add>
+</diff>
