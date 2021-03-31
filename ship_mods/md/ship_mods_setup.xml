@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <mdscript name="ShipModsSetup"
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-          xsi:noNamespaceSchemaLocation="../../src/md/md.xsd">
+          xsi:noNamespaceSchemaLocation="../../../md/md.xsd">
   <cues>
     <!--cue name="OnLuaLoaderReady">
 			<conditions>
@@ -16,63 +16,65 @@
         <event_player_built_ship />
       </conditions>
       <actions>
-        <!--debug_to_file text="'a ship has been built.'"
-                       name="'debug'"
-                       directory="'ship_mods'" />
-        <debug_to_file text="'event: %1 ; event.param: %2 ; object: %3 [%4]'.[event, event.param, event.param.knownname, event.param.idcode]"
-                       name="'debug'"
-                       directory="'ship_mods'" />
-        <do_for_each name="$comp" in="event.param.weapons.all.list">
-          <debug_to_file text="'weapon: %1 ; macro: %2 ; grouptag: %3 ; context: %4'.[$comp.knownname, $comp.macro, $comp.grouptag, $comp.context]"
-               name="'debug'"
-               directory="'ship_mods'" />
-        </do_for_each>
-        <do_for_each name="$comp" in="event.param.shieldgenerators.all.list">
-          <debug_to_file text="'shield: %1 ; macro: %2 ; grouptag: %3 ; context: %4'.[$comp.knownname, $comp.macro, $comp.grouptag, $comp.context]"
-               name="'debug'"
-               directory="'ship_mods'" />
-        </do_for_each>
-        <find_object_component name="$comps"
-                               class="class.weapon"
-                               object="event.param"
-                               multiple="true" />
-        <debug_to_file text="'weapons: %1 ; count: %2'.[$comps, $comps.count]"
-                       name="'debug'"
-                       directory="'ship_mods'" />
-        <do_for_each name="$comp" in="$comps">
-          <add_equipment_mods object="event.param">
-            <weapon ware="ware.mod_eidng8_weapon_mk3" macro="$comp.macro" />
-          </add_equipment_mods>
-        </do_for_each>
-        <find_object_component name="$comps"
-                               class="class.shieldgenerator"
-                               object="event.param"
-                               multiple="true" />
-        <debug_to_file text="'shields: %1 ; count: %2'.[$comps, $comps.count]"
-                       name="'debug'"
-                       directory="'ship_mods'" />
-        <do_all exact="$comps.count">
-          <add_equipment_mods object="event.param">
-            <shield ware="ware.mod_eidng8_shield_mk3" />
-          </add_equipment_mods>
-        </do_all-->
+        <do_if value="event.param and event.param.trueowner == faction.player">
+          <!--debug_to_file text="'a ship has been built.'"
+                         name="'debug'"
+                         directory="'ship_mods'" />
+          <debug_to_file text="'event: %1 ; event.param: %2 ; object: %3 [%4]'.[event, event.param, event.param.knownname, event.param.idcode]"
+                         name="'debug'"
+                         directory="'ship_mods'" />
+          <do_for_each name="$comp" in="event.param.weapons.all.list">
+            <debug_to_file text="'weapon: %1 ; macro: %2 ; grouptag: %3 ; context: %4'.[$comp.knownname, $comp.macro, $comp.grouptag, $comp.context]"
+                 name="'debug'"
+                 directory="'ship_mods'" />
+          </do_for_each>
+          <do_for_each name="$comp" in="event.param.shieldgenerators.all.list">
+            <debug_to_file text="'shield: %1 ; macro: %2 ; grouptag: %3 ; context: %4'.[$comp.knownname, $comp.macro, $comp.grouptag, $comp.context]"
+                 name="'debug'"
+                 directory="'ship_mods'" />
+          </do_for_each>
+          <find_object_component name="$comps"
+                                 class="class.weapon"
+                                 object="event.param"
+                                 multiple="true" />
+          <debug_to_file text="'weapons: %1 ; count: %2'.[$comps, $comps.count]"
+                         name="'debug'"
+                         directory="'ship_mods'" />
+          <do_for_each name="$comp" in="$comps">
+            <add_equipment_mods object="event.param">
+              <weapon ware="ware.mod_eidng8_weapon_mk3" macro="$comp.macro" />
+            </add_equipment_mods>
+          </do_for_each>
+          <find_object_component name="$comps"
+                                 class="class.shieldgenerator"
+                                 object="event.param"
+                                 multiple="true" />
+          <debug_to_file text="'shields: %1 ; count: %2'.[$comps, $comps.count]"
+                         name="'debug'"
+                         directory="'ship_mods'" />
+          <do_all exact="$comps.count">
+            <add_equipment_mods object="event.param">
+              <shield ware="ware.mod_eidng8_shield_mk3" />
+            </add_equipment_mods>
+          </do_all-->
 
-        <set_value name="$mods" exact="[]" />
-        <do_all exact="event.param.weapons.all.list.count">
-          <append_to_list name="$mods" exact="ware.mod_eidng8_weapon_mk3" />
-        </do_all>
-        <do_all exact="event.param.shields.all.list.count">
-          <append_to_list name="$mods" exact="ware.mod_eidng8_shield_mk3" />
-        </do_all>
-        <add_equipment_mods object="event.param">
-          <mods list="$mods" />
-        </add_equipment_mods>
-        <!--debug_to_file text="'mods: %1'.[$mods]"
-                       name="'debug'"
-                       directory="'ship_mods'" />
-        <remove_value name="$comp" />
-        <remove_value name="$comps" /-->
-        <remove_value name="$mods" />
+          <set_value name="$mods" exact="[]" />
+          <do_all exact="event.param.weapons.all.list.count">
+            <append_to_list name="$mods" exact="ware.mod_eidng8_weapon_mk3" />
+          </do_all>
+          <do_all exact="event.param.shields.all.list.count">
+            <append_to_list name="$mods" exact="ware.mod_eidng8_shield_mk3" />
+          </do_all>
+          <add_equipment_mods object="event.param">
+            <mods list="$mods" />
+          </add_equipment_mods>
+          <!--debug_to_file text="'mods: %1'.[$mods]"
+                         name="'debug'"
+                         directory="'ship_mods'" />
+          <remove_value name="$comp" />
+          <remove_value name="$comps" /-->
+          <remove_value name="$mods" />
+        </do_if>
       </actions>
     </cue>
     <cue name="Ship_Mods_Add_Blueprint">
@@ -88,6 +90,16 @@
                        text="'=======Ship_Mods_Started.'"
                        name="'debug'"
                        directory="'ship_mods'" /-->
+        <do_if value="ware.research_mod_weapon_mk1.research.unlocked">
+          <add_blueprints wares="[
+                            ware.mod_eidng8_weapon_mk3,
+                            ware.mod_eidng8_engine_mk3,
+                            ware.mod_eidng8_strafe_engine_mk3,
+                            ware.mod_eidng8_hull_mk3,
+                            ware.mod_eidng8_shield_mk3,
+                            ware.mod_eidng8_hull_feather_mk3
+                          ]" />
+        </do_if>
         <add_inventory entity="player.entity"
                        ware="ware.modpart_tuningsoftware"
                        exact="10000" />

@@ -2,10 +2,10 @@
 <content name="Supperior Ship Mods"
          description="Adds a bunch of supernatural mods."
          author="eidng8"
-         version="110"
-         date="2021-03-24"
+         version="112"
+         date="2021-03-29"
          save="0"
-         lastupdate="1616561286"
+         lastupdate="1616987256"
          sync="false"
          id="ws_2432452453">
   <text language="7"
