@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mdscript name="lock_station_stock_setup"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../src/md/md.xsd">
+  <cues>
+    <cue name="Init"
+        instantiate="true"
+        namespace="this"
+        version="1"
+        comment="Creates a sub-menu every time the SN extension is reloaded.">
+      <conditions>
+        <event_cue_signalled cue="md.Simple_Menu_Options.Reloaded" />
+      </conditions>
+      <actions>
+        <do_if value="not @player.entity.$eidng8_LSS">
+          <set_value name="player.entity.$eidng8_LSS"
+              exact="table[
+                      $lock_products = 0,
+                      $lock_resources = 0,
+                      $lock_wares = 0,
+                      $lock_workforce = 0,
+                      $lock_build = 0,
+                      $min_level = 60,
+                      $interval = 10,
+                    ]" />
+        </do_if>
+        <!--show_help
+            custom="'player.entity.$eidng8_LSS: %s'.[player.entity.$eidng8_LSS]"
+            log="true"
+            allowclose="true" /-->
+        <signal_cue_instantly cue="md.Simple_Menu_API.Register_Options_Menu"
+            param="table[
+              $id      = 'eidng8_LSS_menu',
+              $title   = {9595963,10000},
+              $onOpen  = Create_Menu,
+              $columns = 2,
+            ]" />
+        <signal_cue cue="md.lock_station_stock.Start_Locking" />
+        <reset_cue cue="this" />
+      </actions>
+    </cue>
+
+    <cue name="Create_Menu"
+        instantiate="true"
+        namespace="this"
+        comment="Create menu items.">
+      <conditions>
+        <event_cue_signalled />
+      </conditions>
+      <actions>
+        <signal_cue_instantly cue="md.Simple_Menu_API.Add_Row" />
+        <signal_cue_instantly cue="md.Simple_Menu_API.Make_Text"
+            param="table[
+                    $col     = 1,
+                    $colSpan = 2,
+                    $text    = {9595963,10001}
+                  ]" />
+        <signal_cue_instantly cue="md.Simple_Menu_API.Add_Row" />
+        <signal_cue_instantly cue="md.Simple_Menu_API.Make_Text"
+            param="table[
+                    $col = 1,
+                    $text = {9595963,10002}
+                  ]" />
+        <signal_cue_instantly cue="md.Simple_Menu_API.Make_CheckBox"
+            param="table[
+                    $id = 'eidng8_LSS_Checkbox_Lock_Products',
+                    $checked = player.entity.$eidng8_LSS.$lock_products,
+                    $col = 2,
+                    $width = 'Helper.standardButtonHeight',
+                    $height = 'Helper.standardButtonHeight',
+                    $mouseOverText = {9595963,10003},
+                    $onClick = OnChange_Lock_Products
+                  ]" />
+        <signal_cue_instantly cue="md.Simple_Menu_API.Add_Row" />
+        <signal_cue_instantly cue="md.Simple_Menu_API.Make_Text"
+            param="table[
+                    $col = 1,
+                    $text = {9595963,10004}
+                  ]" />
+        <signal_cue_instantly cue="md.Simple_Menu_API.Make_CheckBox"
+            param="table[
+                    $id = 'eidng8_LSS_Checkbox_Lock_Wares',
+                    $checked = player.entity.$eidng8_LSS.$lock_wares,
+                    $col = 2,
+                    $width = 'Helper.standardButtonHeight',
+                    $height = 'Helper.standardButtonHeight',
+                    $mouseOverText = {9595963,10005},
+                    $onClick = OnChange_Lock_Wares
+                  ]" />
+        <signal_cue_instantly cue="md.Simple_Menu_API.Add_Row" />
+        <signal_cue_instantly cue="md.Simple_Menu_API.Make_Text"
+            param="table[
+                    $col = 1,
+                    $text = {9595963,10006}
+                  ]" />
+        <signal_cue_instantly cue="md.Simple_Menu_API.Make_CheckBox"
+            param="table[
+                    $id = 'eidng8_LSS_Checkbox_Lock_Workforce',
+                    $checked = player.entity.$eidng8_LSS.$lock_workforce,
+                    $col = 2,
+                    $width = 'Helper.standardButtonHeight',
+                    $height = 'Helper.standardButtonHeight',
+                    $mouseOverText = {9595963,10007},
+                    $onClick = OnChange_Lock_Workforce
+                  ]" />
+        <signal_cue_instantly cue="md.Simple_Menu_API.Add_Row" />
+        <signal_cue_instantly cue="md.Simple_Menu_API.Make_Text"
+            param="table[
+                    $col = 1,
+                    $text = {9595963,10008}
+                  ]" />
+        <signal_cue_instantly cue="md.Simple_Menu_API.Make_CheckBox"
+            param="table[
+                    $id = 'eidng8_LSS_Checkbox_Lock_Resources',
+                    $checked = player.entity.$eidng8_LSS.$lock_resources,
+                    $col = 2,
+                    $width = 'Helper.standardButtonHeight',
+                    $height = 'Helper.standardButtonHeight',
+                    $mouseOverText = {9595963,10009},
+                    $onClick = OnChange_Lock_Resources
+                  ]" />
+        <signal_cue_instantly cue="md.Simple_Menu_API.Add_Row" />
+        <signal_cue_instantly cue="md.Simple_Menu_API.Make_Text"
+            param="table[
+                    $col=1,
+                    $text={9595963,10010}
+                  ]" />
+        <signal_cue_instantly cue="md.Simple_Menu_API.Make_CheckBox"
+            param="table[
+                    $id = 'eidng8_LSS_Checkbox_Lock_Build',
+                    $checked = player.entity.$eidng8_LSS.$lock_build,
+                    $col = 2,
+                    $width = 'Helper.standardButtonHeight',
+                    $height = 'Helper.standardButtonHeight',
+                    $mouseOverText = {9595963,10011},
+                    $onClick = OnChange_Lock_Build
+                  ]" />
+        <signal_cue_instantly cue="md.Simple_Menu_API.Add_Row" />
+        <signal_cue_instantly cue="md.Simple_Menu_API.Make_Text"
+            param="table[
+                    $col=1,
+                    $text={9595963,10012}
+                  ]" />
+        <signal_cue_instantly cue="md.Simple_Menu_API.Make_Slider"
+            param="table[
+                    $id = 'eidng8_LSS_Slider_Min_Level',
+                    $col = 2,
+                    $min = 10,
+                    $max = 90,
+                    $suffix = '%',
+                    $start = player.entity.$eidng8_LSS.$min_level,
+                    $text = table[$text=''],
+                    $mouseOverText = {9595963,10013},
+                    $onSliderCellConfirm = OnChange_Min_Level
+                  ]" />
+        <signal_cue_instantly cue="md.Simple_Menu_API.Add_Row" />
+        <signal_cue_instantly cue="md.Simple_Menu_API.Make_Text"
+            param="table[
+                    $col=1,
+                    $text={9595963,10014}
+                  ]" />
+        <signal_cue_instantly cue="md.Simple_Menu_API.Make_Slider"
+            param="table[
+                    $id = 'eidng8_LSS_Slider_Interval',
+                    $col = 2,
+                    $min = 1,
+                    $max = 60,
+                    $suffix = 'min',
+                    $start = player.entity.$eidng8_LSS.$interval,
+                    $text = table[$text=''],
+                    $mouseOverText = {9595963,10015},
+                    $onSliderCellConfirm = OnChange_Interval
+                  ]" />
+      </actions>
+    </cue>
+
+    <cue name="OnChange_Lock_Products"
+        instantiate="true"
+        namespace="this">
+      <conditions>
+        <event_cue_signalled />
+      </conditions>
+      <actions>
+        <set_value name="player.entity.$eidng8_LSS.$lock_products"
+            exact="event.param.$checked" />
+        <signal_cue cue="md.lock_station_stock.Start_Locking" />
+      </actions>
+    </cue>
+
+    <cue name="OnChange_Lock_Resources"
+        instantiate="true"
+        namespace="this">
+      <conditions>
+        <event_cue_signalled />
+      </conditions>
+      <actions>
+        <set_value name="player.entity.$eidng8_LSS.$lock_resources"
+            exact="event.param.$checked" />
+        <signal_cue cue="md.lock_station_stock.Start_Locking" />
+      </actions>
+    </cue>
+
+    <cue name="OnChange_Lock_Wares"
+        instantiate="true"
+        namespace="this">
+      <conditions>
+        <event_cue_signalled />
+      </conditions>
+      <actions>
+        <set_value name="player.entity.$eidng8_LSS.$lock_wares"
+            exact="event.param.$checked" />
+        <signal_cue cue="md.lock_station_stock.Start_Locking" />
+      </actions>
+    </cue>
+
+    <cue name="OnChange_Lock_Workforce"
+        instantiate="true"
+        namespace="this">
+      <conditions>
+        <event_cue_signalled />
+      </conditions>
+      <actions>
+        <set_value name="player.entity.$eidng8_LSS.$lock_workforce"
+            exact="event.param.$checked" />
+        <signal_cue cue="md.lock_station_stock.Start_Locking" />
+      </actions>
+    </cue>
+
+    <cue name="OnChange_Lock_Build"
+        instantiate="true"
+        namespace="this">
+      <conditions>
+        <event_cue_signalled />
+      </conditions>
+      <actions>
+        <set_value name="player.entity.$eidng8_LSS.$lock_build"
+            exact="event.param.$checked" />
+        <signal_cue cue="md.lock_station_stock.Start_Locking" />
+      </actions>
+    </cue>
+
+    <cue name="OnChange_Min_Level"
+        instantiate="true"
+        namespace="this">
+      <conditions>
+        <event_cue_signalled />
+      </conditions>
+      <actions>
+        <set_value name="player.entity.$eidng8_LSS.$min_level"
+            exact="event.param.$value" />
+      </actions>
+    </cue>
+
+    <cue name="OnChange_Interval"
+        instantiate="true"
+        namespace="this">
+      <conditions>
+        <event_cue_signalled />
+      </conditions>
+      <actions>
+        <set_value name="player.entity.$eidng8_LSS.$interval"
+            exact="event.param.$value" />
+      </actions>
+    </cue>
+  </cues>
+</mdscript>

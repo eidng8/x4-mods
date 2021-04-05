@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mdscript name="lock_station_stock"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../src/md/md.xsd">
+  <cues>
+    <cue name="Start_Locking"
+        instantiate="true"
+        namespace="this"
+        version="1"
+        comment="Loop to lock cargo stock.">
+      <conditions>
+        <event_cue_signalled />
+      </conditions>
+      <actions>
+        <do_if value="not @global.$eidng8_LSS_locking">
+          <set_value name="global.$eidng8_LSS_locking" exact="true" />
+          <signal_cue cue="Lock_Stock_Loop" />
+        </do_if>
+      </actions>
+    </cue>
+
+    <cue name="Lock_Stock_Loop"
+        instantiate="true"
+        namespace="this"
+        version="1"
+        comment="Loop to lock cargo stock.">
+      <conditions>
+        <event_cue_signalled />
+      </conditions>
+      <actions>
+        <do_if value="player.entity.$eidng8_LSS.$lock_build
+                      and not @global.$eidng8_LSS_locking_build">
+          <set_value name="global.$eidng8_LSS_locking_build" exact="true" />
+          <signal_cue cue="Lock_Builds" />
+        </do_if>
+        <do_if value="(player.entity.$eidng8_LSS.$lock_products
+                      or player.entity.$eidng8_LSS.$lock_resources
+                      or player.entity.$eidng8_LSS.$lock_wares
+                      or player.entity.$eidng8_LSS.$lock_workforce)
+                      and not @global.$eidng8_LSS_locking_stations">
+          <set_value name="global.$eidng8_LSS_locking_stations" exact="true" />
+          <signal_cue cue="Lock_Stations" />
+        </do_if>
+        <do_if value="not player.entity.$eidng8_LSS.$lock_products
+                      and not player.entity.$eidng8_LSS.$lock_resources
+                      and not player.entity.$eidng8_LSS.$lock_wares
+                      and not player.entity.$eidng8_LSS.$lock_workforce
+                      and not player.entity.$eidng8_LSS.$lock_build">
+          <set_value name="global.$eidng8_LSS_locking" exact="false" />
+        </do_if>
+      </actions>
+    </cue>
+
+    <cue name="Lock_Builds" instantiate="true">
+      <conditions>
+        <event_cue_signalled />
+      </conditions>
+      <actions>
+        <find_object name="$builds"
+            class="class.buildstorage"
+            owner="faction.player"
+            space="player.galaxy"
+            multiple="true" />
+        <do_if value="$builds.count">
+          <do_for_each name="$build" in="$builds">
+            <set_value name="$processor"
+                exact="$build.buildmodule.buildprocessor" />
+            <do_if value="$processor.neededsequenceresources.count">
+              <do_for_each name="$ware" valuename="$amount"
+                  in="$processor.neededsequenceresources.table">
+                <remove_cargo object="$build" ware="$ware" />
+                <add_cargo object="$build" ware="$ware" exact="$amount" />
+              </do_for_each>
+            </do_if>
+          </do_for_each>
+        </do_if>
+      </actions>
+      <delay exact="player.entity.$eidng8_LSS.$interval * 60" />
+      <actions>
+        <set_value name="global.$eidng8_LSS_locking_build" exact="false" />
+        <signal_cue cue="Lock_Stock_Loop" />
+      </actions>
+    </cue>
+
+    <cue name="Lock_Stations" instantiate="true">
+      <conditions>
+        <event_cue_signalled />
+      </conditions>
+      <actions>
+        <find_station_by_true_owner name="$stations"
+            faction="faction.player"
+            space="player.galaxy"
+            multiple="true" />
+        <do_for_each name="$station" in="$stations">
+          <!--show_help custom="'station %s'.[$station.knownname]"
+              log="true"
+              allowclose="true" /-->
+          <do_if value="player.entity.$eidng8_LSS.$lock_products">
+            <do_for_each name="$ware"
+                in="$station.products.list"
+                counter="$i">
+              <set_value name="$delta"
+                  exact="player.entity.$eidng8_LSS.$min_level * $station.cargo.{$ware}.target / 100 - $station.cargo.{$ware}.count" />
+              <write_to_logbook category="upkeep"
+                  title="debug"
+                  text="'product %s : %s / %s (%s)\n'.[$ware, $station.cargo.{$ware}.count, $station.cargo.{$ware}.target, $delta]" />
+              <do_if value="$delta gt 0">
+                <add_cargo object="$station"
+                    ware="$station.products.{$i}"
+                    exact="$delta" />
+              </do_if>
+            </do_for_each>
+          </do_if>
+          <do_if value="player.entity.$eidng8_LSS.$lock_resources">
+            <do_for_each name="$ware"
+                in="$station.resources.list"
+                counter="$i">
+              <set_value name="$delta"
+                  exact="player.entity.$eidng8_LSS.$min_level * $station.cargo.{$ware}.target / 100 - $station.cargo.{$ware}.count" />
+              <write_to_logbook category="upkeep"
+                  title="debug"
+                  text="'resource %s : %s / %s (%s)\n'.[$ware, $station.cargo.{$ware}.count, $station.cargo.{$ware}.target, $delta]" />
+              <do_if value="$delta gt 0">
+                <add_cargo object="$station"
+                    ware="$station.resources.{$i}"
+                    exact="$delta" />
+              </do_if>
+            </do_for_each>
+          </do_if>
+          <do_if value="player.entity.$eidng8_LSS.$lock_wares">
+            <do_for_each name="$ware"
+                in="$station.tradewares.list"
+                counter="$i">
+              <set_value name="$delta"
+                  exact="player.entity.$eidng8_LSS.$min_level * $station.cargo.{$ware}.target / 100 - $station.cargo.{$ware}.count" />
+              <write_to_logbook category="upkeep"
+                  title="debug"
+                  text="'resource %s : %s / %s (%s)\n'.[$ware, $station.cargo.{$ware}.count, $station.cargo.{$ware}.target, $delta]" />
+              <do_if value="$delta gt 0">
+                <add_cargo object="$station"
+                    ware="$station.tradewares.{$i}"
+                    exact="$delta" />
+              </do_if>
+            </do_for_each>
+          </do_if>
+          <do_if value="player.entity.$eidng8_LSS.$lock_workforce">
+            <do_for_each name="$race"
+                in="$station.workforce.races"
+                counter="$i">
+              <write_to_logbook category="upkeep"
+                  title="debug"
+                  text="'workforce %s : %s / %s\n'.[$race, $station.workforce.{$race}.amount, $station.workforce.{$race}.capacity]" />
+              <add_workforce object="$station"
+                  race="$station.workforce.races.{$i}"
+                  exact="$station.workforce.{$race}.capacity" />
+            </do_for_each>
+          </do_if>
+        </do_for_each>
+      </actions>
+      <delay exact="player.entity.$eidng8_LSS.$interval * 60" />
+      <actions>
+        <set_value name="global.$eidng8_LSS_locking_stations" exact="false" />
+        <signal_cue cue="Lock_Stock_Loop" />
+      </actions>
+    </cue>
+  </cues>
+</mdscript>
