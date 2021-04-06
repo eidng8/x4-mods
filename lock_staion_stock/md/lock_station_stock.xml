@@ -75,7 +75,7 @@
           </do_for_each>
         </do_if>
       </actions>
-      <delay exact="player.entity.$eidng8_LSS.$interval * 60" />
+      <delay exact="player.entity.$eidng8_LSS.$interval * 1min" />
       <actions>
         <set_value name="global.$eidng8_LSS_locking_build" exact="false" />
         <signal_cue cue="Lock_Stock_Loop" />
@@ -102,7 +102,7 @@
               <set_value name="$delta"
                   exact="player.entity.$eidng8_LSS.$min_level * $station.cargo.{$ware}.target / 100 - $station.cargo.{$ware}.count" />
               <write_to_logbook category="upkeep"
-                  title="debug"
+                  title="'debug'"
                   text="'product %s : %s / %s (%s)\n'.[$ware, $station.cargo.{$ware}.count, $station.cargo.{$ware}.target, $delta]" />
               <do_if value="$delta gt 0">
                 <add_cargo object="$station"
@@ -157,7 +157,7 @@
           </do_if>
         </do_for_each>
       </actions>
-      <delay exact="player.entity.$eidng8_LSS.$interval * 60" />
+      <delay exact="player.entity.$eidng8_LSS.$interval * 1min" />
       <actions>
         <set_value name="global.$eidng8_LSS_locking_stations" exact="false" />
         <signal_cue cue="Lock_Stock_Loop" />
