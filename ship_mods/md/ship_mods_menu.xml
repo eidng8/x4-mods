@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mdscript name="ShipModsMenu"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../src/md/md.xsd">
+  <cues>
+    <cue name="Create_Options_Menu" instantiate="true">
+      <conditions>
+        <event_cue_signalled cue="md.Simple_Menu_Options.Reloaded" />
+      </conditions>
+      <actions>
+        <do_if value="not @player.entity.$eidng8_SM">
+          <set_value name="player.entity.$eidng8_SM"
+              exact="table[
+                      $fit_combat_xl = 0,
+                      $fit_combat_xl_mods = table[
+                          $hull   = ware.mod_eidng8_hull_mk1,
+                          $engine = ware.mod_eidng8_engine_mk1,
+                          $shield = ware.mod_eidng8_shield_mk1,
+                          $weapon = ware.mod_eidng8_weapon_mk1
+                        ],
+                      $fit_combat_l = 0,
+                      $fit_combat_l_mods = table[$hull='', $engine='', $shield='', $weapon=''],
+                      $fit_combat_m = 0,
+                      $fit_combat_m_mods = table[$hull='', $engine='', $shield='', $weapon=''],
+                      $fit_combat_s = 0,
+                      $fit_combat_s_mods = table[$hull='', $engine='', $shield='', $weapon=''],
+                      $fit_trading_l = 0,
+                      $fit_trading_l_mods = table[$hull='', $engine='', $shield='', $weapon=''],
+                      $fit_trading_m = 0,
+                      $fit_trading_m_mods = table[$hull='', $engine='', $shield='', $weapon=''],
+                      $fit_trading_s = 0,
+                      $fit_trading_s_mods = table[$hull='', $engine='', $shield='', $weapon=''],
+                      $fit_mining_l = 0,
+                      $fit_mining_l_mods = table[$hull='', $engine='', $shield='', $weapon=''],
+                      $fit_mining_m = 0,
+                      $fit_mining_m_mods = table[$hull='', $engine='', $shield='', $weapon=''],
+                      $fit_mining_s = 0,
+                      $fit_mining_s_mods = table[$hull='', $engine='', $shield='', $weapon=''],
+                      $fit_constructor = 0,
+                      $fit_constructor_mods = table[$hull='', $engine='', $shield='', $weapon=''],
+                    ]" />
+        </do_if>
+        <signal_cue_instantly cue="md.Simple_Menu_API.Register_Options_Menu"
+            param="table[
+              $id      = 'eidng8_SM_menu',
+              $title   = {9595961,11000},
+              $onOpen  = Create_Menu,
+              $columns = 2,
+            ]" />
+        <reset_cue cue="this" />
+      </actions>
+    </cue>
+
+    <cue name="Create_Menu"
+        instantiate="true"
+        namespace="this"
+        comment="Create menu items.">
+      <conditions>
+        <event_cue_signalled />
+      </conditions>
+      <actions>
+        <!-- Heading line -->
+        <signal_cue_instantly cue="md.Simple_Menu_API.Add_Row" />
+        <signal_cue_instantly cue="md.Simple_Menu_API.Make_Text"
+            param="table[
+                    $col     = 1,
+                    $colSpan = 2,
+                    $text    = {9595961,11001}
+                  ]" />
+        <!-- Apply combat XL -->
+        <signal_cue_instantly cue="md.Simple_Menu_API.Add_Row" />
+        <signal_cue_instantly cue="md.Simple_Menu_API.Make_Text"
+            param="table[
+                    $col = 1,
+                    $text = {9595961,11002}
+                  ]" />
+        <signal_cue_instantly cue="md.Simple_Menu_API.Make_CheckBox"
+            param="table[
+                    $id = 'eidng8_SM_Checkbox_Fit_Combat_XL',
+                    $checked = player.entity.$eidng8_SM.$fit_combat_xl,
+                    $col = 2,
+                    $width = 'Helper.standardButtonHeight',
+                    $height = 'Helper.standardButtonHeight',
+                    $mouseOverText = {9595961,11003},
+                    $onClick = OnChange_Fit_Combat_XL
+                  ]" />
+        <signal_cue_instantly cue="md.Simple_Menu_API.Add_Row" />
+        <signal_cue_instantly cue="md.Simple_Menu_API.Make_Text"
+            param="table[
+                    $col = 1,
+                    $text = {9595961,11004}
+                  ]" />
+        <signal_cue_instantly cue="md.Simple_Menu_API.Make_Dropdown"
+            param="table[
+                    $id = 'eidng8_SM_Checkbox_Fit_Combat_XL_Mods',
+                    $col = 2,
+                    $options = [
+                        table[$text={9595961,10022}, $value=ware.mod_eidng8_hull_mk1]
+                        table[$text={9595961,10024}, $value=ware.mod_eidng8_hull_mk2]
+                        table[$text={9595961,10026}, $value=ware.mod_eidng8_hull_mk3]
+                        table[$text={9595961,10028}, $value=ware.mod_eidng8_hull_feather_mk1]
+                        table[$text={9595961,10030}, $value=ware.mod_eidng8_hull_feather_mk2]
+                        table[$text={9595961,10032}, $value=ware.mod_eidng8_hull_feather_mk3]
+                      ],
+                    $startOption = player.entity.$eidng8_SM.$fit_combat_xl_mods.$hull,
+                    $mouseOverText = {9595961,11005},
+                    $onDropDownConfirmed = OnChange_Fit_Combat_XL_Hull
+                  ]" />
+      </actions>
+    </cue>
+
+    <cue name="OnChange_Fit_Combat_XL"
+        instantiate="true"
+        namespace="this">
+      <conditions>
+        <event_cue_signalled />
+      </conditions>
+      <actions>
+        <set_value name="player.entity.$eidng8_SM.$fit_combat_xl"
+            exact="event.param.$checked" />
+      </actions>
+    </cue>
+
+    <cue name="OnChange_Fit_Combat_XL_Hull"
+        instantiate="true"
+        namespace="this">
+      <conditions>
+        <event_cue_signalled />
+      </conditions>
+      <actions>
+        <set_value name="player.entity.$eidng8_SM.$fit_combat_xl_mods.$hull"
+            exact="event.param.$option.$value" />
+      </actions>
+    </cue>
+  </cues>
+</mdscript>

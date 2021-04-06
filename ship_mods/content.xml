@@ -2,8 +2,8 @@
 <content name="Superior Ship Mods"
     description="Adds a bunch of supernatural mods."
     author="eidng8"
-    version="113"
-    date="2021-04-05"
+    version="120"
+    date="2021-04-06"
     save="0"
     lastupdate="1617633985"
     sync="false"
@@ -52,6 +52,9 @@
       name="Superior Ship Mods"
       description="Adds a bunch of supernatural mods."
       author="eidng8" />
+  <dependency id="ws_2042901274"
+      name="SirNukes Mod Support APIs"
+      optional="false" />
   <dependency id="ws_2397287740"
       name="Equipment Modifications Redone"
       optional="true" />

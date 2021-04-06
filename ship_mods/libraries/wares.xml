@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <diff>
   <add sel="/wares">
-    <ware id="mod_eidng8_weapon_mk3" name="{9595961,10000}" description="{20110,100002}" shortname="{9595961,10001}" transport="inventory" volume="1" tags="crafting equipmentmod">
+    <ware id="mod_eidng8_weapon_mk1"
+        name="{9595961,10000}"
+        description="{20110,100002}"
+        shortname="{9595961,10001}"
+        transport="inventory"
+        volume="1"
+        tags="crafting equipmentmod">
       <price min="1" average="1" max="1" />
       <production time="1" amount="100" method="default" name="{20206,101}">
         <primary>
@@ -12,7 +18,13 @@
         </research>
       </production>
     </ware>
-    <ware id="mod_eidng8_engine_mk3" name="{9595961,10002}" description="{20110,100002}" shortname="{9595961,10003}" transport="inventory" volume="1" tags="crafting equipmentmod">
+    <ware id="mod_eidng8_weapon_mk2"
+        name="{9595961,10002}"
+        description="{20110,100002}"
+        shortname="{9595961,10003}"
+        transport="inventory"
+        volume="1"
+        tags="crafting equipmentmod">
       <price min="1" average="1" max="1" />
       <production time="1" amount="100" method="default" name="{20206,101}">
         <primary>
@@ -23,7 +35,13 @@
         </research>
       </production>
     </ware>
-    <ware id="mod_eidng8_strafe_engine_mk3" name="{9595961,10010}" description="{20110,100002}" shortname="{9595961,10011}" transport="inventory" volume="1" tags="crafting equipmentmod">
+    <ware id="mod_eidng8_weapon_mk3"
+        name="{9595961,10004}"
+        description="{20110,100002}"
+        shortname="{9595961,10005}"
+        transport="inventory"
+        volume="1"
+        tags="crafting equipmentmod">
       <price min="1" average="1" max="1" />
       <production time="1" amount="100" method="default" name="{20206,101}">
         <primary>
@@ -34,7 +52,13 @@
         </research>
       </production>
     </ware>
-    <ware id="mod_eidng8_hull_mk3" name="{9595961,10004}" description="{20110,100002}" shortname="{9595961,10005}" transport="inventory" volume="1" tags="crafting equipmentmod">
+    <ware id="mod_eidng8_weapon_mk4"
+        name="{9595961,10006}"
+        description="{20110,100002}"
+        shortname="{9595961,10007}"
+        transport="inventory"
+        volume="1"
+        tags="crafting equipmentmod">
       <price min="1" average="1" max="1" />
       <production time="1" amount="100" method="default" name="{20206,101}">
         <primary>
@@ -45,7 +69,13 @@
         </research>
       </production>
     </ware>
-    <ware id="mod_eidng8_shield_mk3" name="{9595961,10006}" description="{20110,100002}" shortname="{9595961,10007}" transport="inventory" volume="1" tags="crafting equipmentmod">
+    <ware id="mod_eidng8_weapon_mk5"
+        name="{9595961,10008}"
+        description="{20110,100002}"
+        shortname="{9595961,10009}"
+        transport="inventory"
+        volume="1"
+        tags="crafting equipmentmod">
       <price min="1" average="1" max="1" />
       <production time="1" amount="100" method="default" name="{20206,101}">
         <primary>
@@ -56,7 +86,285 @@
         </research>
       </production>
     </ware>
-    <ware id="mod_eidng8_hull_feather_mk3" name="{9595961,10008}" description="{20110,100002}" shortname="{9595961,10009}" transport="inventory" volume="1" tags="crafting equipmentmod">
+    <ware id="mod_eidng8_engine_mk1"
+        name="{9595961,10010}"
+        description="{20110,100002}"
+        shortname="{9595961,10011}"
+        transport="inventory"
+        volume="1"
+        tags="crafting equipmentmod">
+      <price min="1" average="1" max="1" />
+      <production time="1" amount="100" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="modpart_tuningsoftware" amount="1" />
+        </primary>
+        <research>
+          <ware ware="research_mod_weapon_mk1" />
+        </research>
+      </production>
+    </ware>
+    <ware id="mod_eidng8_engine_mk2"
+        name="{9595961,10012}"
+        description="{20110,100002}"
+        shortname="{9595961,10013}"
+        transport="inventory"
+        volume="1"
+        tags="crafting equipmentmod">
+      <price min="1" average="1" max="1" />
+      <production time="1" amount="100" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="modpart_tuningsoftware" amount="1" />
+        </primary>
+        <research>
+          <ware ware="research_mod_weapon_mk1" />
+        </research>
+      </production>
+    </ware>
+    <ware id="mod_eidng8_engine_mk3"
+        name="{9595961,10014}"
+        description="{20110,100002}"
+        shortname="{9595961,10015}"
+        transport="inventory"
+        volume="1"
+        tags="crafting equipmentmod">
+      <price min="1" average="1" max="1" />
+      <production time="1" amount="100" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="modpart_tuningsoftware" amount="1" />
+        </primary>
+        <research>
+          <ware ware="research_mod_weapon_mk1" />
+        </research>
+      </production>
+    </ware>
+    <ware id="mod_eidng8_engine_mk4"
+        name="{9595961,10016}"
+        description="{20110,100002}"
+        shortname="{9595961,10017}"
+        transport="inventory"
+        volume="1"
+        tags="crafting equipmentmod">
+      <price min="1" average="1" max="1" />
+      <production time="1" amount="100" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="modpart_tuningsoftware" amount="1" />
+        </primary>
+        <research>
+          <ware ware="research_mod_weapon_mk1" />
+        </research>
+      </production>
+    </ware>
+    <ware id="mod_eidng8_engine_mk5"
+        name="{9595961,10018}"
+        description="{20110,100002}"
+        shortname="{9595961,10019}"
+        transport="inventory"
+        volume="1"
+        tags="crafting equipmentmod">
+      <price min="1" average="1" max="1" />
+      <production time="1" amount="100" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="modpart_tuningsoftware" amount="1" />
+        </primary>
+        <research>
+          <ware ware="research_mod_weapon_mk1" />
+        </research>
+      </production>
+    </ware>
+    <ware id="mod_eidng8_strafe_engine_mk3"
+        name="{9595961,10020}"
+        description="{20110,100002}"
+        shortname="{9595961,10021}"
+        transport="inventory"
+        volume="1"
+        tags="crafting equipmentmod">
+      <price min="1" average="1" max="1" />
+      <production time="1" amount="100" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="modpart_tuningsoftware" amount="1" />
+        </primary>
+        <research>
+          <ware ware="research_mod_weapon_mk1" />
+        </research>
+      </production>
+    </ware>
+    <ware id="mod_eidng8_hull_mk1"
+        name="{9595961,10022}"
+        description="{20110,100002}"
+        shortname="{9595961,10023}"
+        transport="inventory"
+        volume="1"
+        tags="crafting equipmentmod">
+      <price min="1" average="1" max="1" />
+      <production time="1" amount="100" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="modpart_tuningsoftware" amount="1" />
+        </primary>
+        <research>
+          <ware ware="research_mod_weapon_mk1" />
+        </research>
+      </production>
+    </ware>
+    <ware id="mod_eidng8_hull_mk2"
+        name="{9595961,10024}"
+        description="{20110,100002}"
+        shortname="{9595961,10025}"
+        transport="inventory"
+        volume="1"
+        tags="crafting equipmentmod">
+      <price min="1" average="1" max="1" />
+      <production time="1" amount="100" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="modpart_tuningsoftware" amount="1" />
+        </primary>
+        <research>
+          <ware ware="research_mod_weapon_mk1" />
+        </research>
+      </production>
+    </ware>
+    <ware id="mod_eidng8_hull_mk3"
+        name="{9595961,10026}"
+        description="{20110,100002}"
+        shortname="{9595961,10027}"
+        transport="inventory"
+        volume="1"
+        tags="crafting equipmentmod">
+      <price min="1" average="1" max="1" />
+      <production time="1" amount="100" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="modpart_tuningsoftware" amount="1" />
+        </primary>
+        <research>
+          <ware ware="research_mod_weapon_mk1" />
+        </research>
+      </production>
+    </ware>
+    <ware id="mod_eidng8_hull_feather_mk1"
+        name="{9595961,10028}"
+        description="{20110,100002}"
+        shortname="{9595961,10029}"
+        transport="inventory"
+        volume="1"
+        tags="crafting equipmentmod">
+      <price min="1" average="1" max="1" />
+      <production time="1" amount="100" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="modpart_tuningsoftware" amount="1" />
+        </primary>
+        <research>
+          <ware ware="research_mod_weapon_mk1" />
+        </research>
+      </production>
+    </ware>
+    <ware id="mod_eidng8_hull_feather_mk2"
+        name="{9595961,10030}"
+        description="{20110,100002}"
+        shortname="{9595961,10031}"
+        transport="inventory"
+        volume="1"
+        tags="crafting equipmentmod">
+      <price min="1" average="1" max="1" />
+      <production time="1" amount="100" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="modpart_tuningsoftware" amount="1" />
+        </primary>
+        <research>
+          <ware ware="research_mod_weapon_mk1" />
+        </research>
+      </production>
+    </ware>
+    <ware id="mod_eidng8_hull_feather_mk3"
+        name="{9595961,10032}"
+        description="{20110,100002}"
+        shortname="{9595961,10033}"
+        transport="inventory"
+        volume="1"
+        tags="crafting equipmentmod">
+      <price min="1" average="1" max="1" />
+      <production time="1" amount="100" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="modpart_tuningsoftware" amount="1" />
+        </primary>
+        <research>
+          <ware ware="research_mod_weapon_mk1" />
+        </research>
+      </production>
+    </ware>
+    <ware id="mod_eidng8_shield_mk1"
+        name="{9595961,10034}"
+        description="{20110,100002}"
+        shortname="{9595961,10035}"
+        transport="inventory"
+        volume="1"
+        tags="crafting equipmentmod">
+      <price min="1" average="1" max="1" />
+      <production time="1" amount="100" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="modpart_tuningsoftware" amount="1" />
+        </primary>
+        <research>
+          <ware ware="research_mod_weapon_mk1" />
+        </research>
+      </production>
+    </ware>
+    <ware id="mod_eidng8_shield_mk2"
+        name="{9595961,10036}"
+        description="{20110,100002}"
+        shortname="{9595961,10037}"
+        transport="inventory"
+        volume="1"
+        tags="crafting equipmentmod">
+      <price min="1" average="1" max="1" />
+      <production time="1" amount="100" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="modpart_tuningsoftware" amount="1" />
+        </primary>
+        <research>
+          <ware ware="research_mod_weapon_mk1" />
+        </research>
+      </production>
+    </ware>
+    <ware id="mod_eidng8_shield_mk3"
+        name="{9595961,10038}"
+        description="{20110,100002}"
+        shortname="{9595961,10039}"
+        transport="inventory"
+        volume="1"
+        tags="crafting equipmentmod">
+      <price min="1" average="1" max="1" />
+      <production time="1" amount="100" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="modpart_tuningsoftware" amount="1" />
+        </primary>
+        <research>
+          <ware ware="research_mod_weapon_mk1" />
+        </research>
+      </production>
+    </ware>
+    <ware id="mod_eidng8_shield_mk4"
+        name="{9595961,10040}"
+        description="{20110,100002}"
+        shortname="{9595961,10041}"
+        transport="inventory"
+        volume="1"
+        tags="crafting equipmentmod">
+      <price min="1" average="1" max="1" />
+      <production time="1" amount="100" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="modpart_tuningsoftware" amount="1" />
+        </primary>
+        <research>
+          <ware ware="research_mod_weapon_mk1" />
+        </research>
+      </production>
+    </ware>
+    <ware id="mod_eidng8_shield_mk5"
+        name="{9595961,10042}"
+        description="{20110,100002}"
+        shortname="{9595961,10043}"
+        transport="inventory"
+        volume="1"
+        tags="crafting equipmentmod">
       <price min="1" average="1" max="1" />
       <production time="1" amount="100" method="default" name="{20206,101}">
         <primary>

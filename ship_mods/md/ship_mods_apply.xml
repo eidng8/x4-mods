@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mdscript name="ShipModsApply"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../src/md/md.xsd">
+  <cues>
+    <cue name="Ship_Mods_On_Built" instantiate="true">
+      <conditions>
+        <event_player_built_ship />
+      </conditions>
+      <actions>
+        <do_if value="event.param and event.param.trueowner == faction.player">
+          <set_value name="$mods" exact="[]" />
+          <do_all exact="event.param.weapons.all.list.count">
+            <append_to_list name="$mods" exact="ware.mod_eidng8_weapon_mk3" />
+          </do_all>
+          <do_all exact="event.param.shields.all.list.count">
+            <append_to_list name="$mods" exact="ware.mod_eidng8_shield_mk3" />
+          </do_all>
+          <add_equipment_mods object="event.param">
+            <mods list="$mods" />
+          </add_equipment_mods>
+          <remove_value name="$mods" />
+        </do_if>
+      </actions>
+    </cue>
+  </cues>
+</mdscript>

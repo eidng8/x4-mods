@@ -1,39 +1,154 @@
 <?xml version="1.0" encoding="utf-8"?>
 <diff>
   <add sel="/equipmentmods/weapon">
-    <damage ware="mod_eidng8_weapon_mk3" quality="3" min="100.062" max="100.348">
+    <damage ware="mod_eidng8_weapon_mk1" quality="3" min="2.062" max="2.348">
       <bonus chance="1.0" min="10" max="10">
-        <cooling min="100.056" max="100.358" weight="1"/>
-        <reload min="10.682" max="20" weight="2"/>
-        <speed min="10.05" max="10.1" weight="3"/>
-        <beamlength min="10.05" max="10.1" weight="4"/>
-        <lifetime min="10.05" max="10.2" weight="5"/>
-        <chargetime min="0.0008" max="0.00095" weight="6"/>
-        <mining min="50.25" max="60" weight="7"/>
-        <rotationspeed min="10.1" max="10.3" weight="8"/>
-        <sticktime min="10.1" max="10.3" weight="9"/>
+        <cooling min="1.056" max="1.358" weight="1" />
+        <cooling min="1.056" max="1.358" weight="1" />
+        <reload min="1.682" max="1.9" weight="2" />
+        <speed min="1.05" max="1.1" weight="3" />
+        <beamlength min="1.05" max="1.1" weight="4" />
+        <lifetime min="1.05" max="1.2" weight="5" />
+        <mining min="1.25" max="2" weight="7" />
+        <rotationspeed min="1.1" max="1.3" weight="8" />
+        <sticktime min="1.1" max="1.3" weight="9" />
+        <surfaceelement min="1.2" max="1.35" weight="10" />
+      </bonus>
+    </damage>
+    <damage ware="mod_eidng8_weapon_mk2" quality="3" min="5.062" max="5.348">
+      <bonus chance="1.0" min="10" max="10">
+        <cooling min="2.056" max="2.358" weight="1" />
+        <reload min="2.682" max="2.9" weight="2" />
+        <speed min="2.05" max="2.1" weight="3" />
+        <beamlength min="2.05" max="2.1" weight="4" />
+        <lifetime min="2.05" max="2.2" weight="5" />
+        <mining min="5.25" max="6" weight="7" />
+        <rotationspeed min="2.1" max="2.3" weight="8" />
+        <sticktime min="2.1" max="2.3" weight="9" />
+        <surfaceelement min="2.2" max="2.35" weight="10" />
+      </bonus>
+    </damage>
+    <damage ware="mod_eidng8_weapon_mk3" quality="3" min="10.062" max="10.348">
+      <bonus chance="1.0" min="10" max="10">
+        <cooling min="2.056" max="2.358" weight="1" />
+        <reload min="2.682" max="2.9" weight="2" />
+        <speed min="2.05" max="2.1" weight="3" />
+        <beamlength min="2.05" max="2.1" weight="4" />
+        <lifetime min="2.05" max="2.2" weight="5" />
+        <mining min="5.25" max="6" weight="7" />
+        <rotationspeed min="2.1" max="2.3" weight="8" />
+        <sticktime min="2.1" max="2.3" weight="9" />
+        <surfaceelement min="2.2" max="2.35" weight="10" />
+      </bonus>
+    </damage>
+    <damage ware="mod_eidng8_weapon_mk4" quality="3" min="50.062" max="50.348">
+      <bonus chance="1.0" min="10" max="10">
+        <cooling min="2.056" max="2.358" weight="1" />
+        <reload min="2.682" max="2.9" weight="2" />
+        <speed min="2.05" max="2.1" weight="3" />
+        <beamlength min="2.05" max="2.1" weight="4" />
+        <lifetime min="2.05" max="2.2" weight="5" />
+        <mining min="5.25" max="6" weight="7" />
+        <rotationspeed min="2.1" max="2.3" weight="8" />
+        <sticktime min="2.1" max="2.3" weight="9" />
+        <surfaceelement min="2.2" max="2.35" weight="10" />
+      </bonus>
+    </damage>
+    <damage ware="mod_eidng8_weapon_mk5"
+        quality="3"
+        min="100.062"
+        max="100.348">
+      <bonus chance="1.0" min="10" max="10">
+        <cooling min="100.056" max="100.358" weight="1" />
+        <reload min="10.682" max="20" weight="2" />
+        <speed min="10.05" max="10.1" weight="3" />
+        <beamlength min="10.05" max="10.1" weight="4" />
+        <lifetime min="10.05" max="10.2" weight="5" />
+        <chargetime min="0.0008" max="0.00095" weight="6" />
+        <mining min="50.25" max="60" weight="7" />
+        <rotationspeed min="10.1" max="10.3" weight="8" />
+        <sticktime min="10.1" max="10.3" weight="9" />
         <surfaceelement min="10.2" max="10.35" weight="10"/>
       </bonus>
     </damage>
   </add>
   <add sel="/equipmentmods/engine">
-    <forwardthrust ware="mod_eidng8_engine_mk3" quality="3" min="10.1" max="10.3">
+    <forwardthrust ware="mod_eidng8_engine_mk1" quality="3" min="1.1" max="1.3">
       <bonus chance="1.0" max="9">
-        <!-- NOTE that thrust is acceleration, which is SQUARED -->
-        <boostthrust min="1.5" max="1.5"/>
-        <travelthrust min="1.5" max="1.5"/>
-        <rotationthrust min="1.5" max="1.5"/>
-        <strafethrust min="10" max="10"/>
-        <boostduration min="10.05" max="10.2"/>
-        <travelstartthrust min="10.05" max="10.2"/>
-        <travelattacktime min="0.0008" max="0.00095"/>
-        <travelchargetime min="0.0008" max="0.00095"/>
+        <!-- NOTE that thrust is acceleration, not simple multiplication. -->
+        <boostthrust min="0.1" max="0.2" />
+        <travelthrust min="0.1" max="0.2" />
+        <rotationthrust min="0.1" max="0.2" />
+        <strafethrust min="0.1" max="0.2" />
+        <travelstartthrust min="1.05" max="1.2" />
+        <boostduration min="1.05" max="1.2" />
+        <travelattacktime min="0.8" max="0.9" />
+        <travelchargetime min="0.8" max="0.9" />
+        <travelreleasetime min="1.8" max="1.95" />
+      </bonus>
+    </forwardthrust>
+    <forwardthrust ware="mod_eidng8_engine_mk2" quality="3" min="2.1" max="2.3">
+      <bonus chance="1.0" max="9">
+        <!-- NOTE that thrust is acceleration, not simple multiplication. -->
+        <boostthrust min="0.2" max="0.3" />
+        <travelthrust min="0.2" max="0.3" />
+        <rotationthrust min="0.2" max="0.3" />
+        <strafethrust min="0.2" max="0.3" />
+        <travelstartthrust min="2.05" max="2.2" />
+        <boostduration min="2.05" max="2.2" />
+        <travelattacktime min="0.7" max="0.8" />
+        <travelchargetime min="0.7" max="0.8" />
+        <travelreleasetime min="2.8" max="2.95" />
+      </bonus>
+    </forwardthrust>
+    <forwardthrust ware="mod_eidng8_engine_mk3" quality="3" min="3.1" max="3.3">
+      <bonus chance="1.0" max="9">
+        <!-- NOTE that thrust is acceleration, not simple multiplication. -->
+        <boostthrust min="0.3" max="0.4" />
+        <travelthrust min="0.3" max="0.4" />
+        <rotationthrust min="0.3" max="0.4" />
+        <strafethrust min="0.3" max="0.4" />
+        <travelstartthrust min="3.05" max="3.2" />
+        <boostduration min="3.05" max="3.2" />
+        <travelattacktime min="0.6" max="0.7" />
+        <travelchargetime min="0.6" max="0.7" />
+        <travelreleasetime min="3.8" max="3.95" />
+      </bonus>
+    </forwardthrust>
+    <forwardthrust ware="mod_eidng8_engine_mk4" quality="3" min="5.1" max="5.3">
+      <bonus chance="1.0" max="9">
+        <!-- NOTE that thrust is acceleration, not simple multiplication. -->
+        <boostthrust min="1" max="1.1" />
+        <travelthrust min="1" max="1.1" />
+        <rotationthrust min="1" max="1.1" />
+        <strafethrust min="5" max="5.1" />
+        <travelstartthrust min="5.05" max="5.2" />
+        <boostduration min="5.05" max="5.2" />
+        <travelattacktime min="0.5" max="0.6" />
+        <travelchargetime min="0.5" max="0.6" />
+        <travelreleasetime min="5.8" max="5.95" />
+      </bonus>
+    </forwardthrust>
+    <forwardthrust ware="mod_eidng8_engine_mk5"
+        quality="3"
+        min="10.1"
+        max="10.3">
+      <bonus chance="1.0" max="9">
+        <!-- NOTE that thrust is acceleration, not simple multiplication. -->
+        <boostthrust min="1.5" max="1.5" />
+        <travelthrust min="1.5" max="1.5" />
+        <rotationthrust min="1.5" max="1.5" />
+        <strafethrust min="10" max="10" />
+        <boostduration min="10.05" max="10.2" />
+        <travelstartthrust min="10.05" max="10.2" />
+        <travelattacktime min="0.0008" max="0.00095" />
+        <travelchargetime min="0.0008" max="0.00095" />
         <travelreleasetime min="10.8" max="10.95"/>
       </bonus>
     </forwardthrust>
     <strafethrust ware="mod_eidng8_strafe_engine_mk3" quality="3" min="10.1" max="10.3">
       <bonus chance="1.0" max="9">
-        <!-- NOTE that thrust is acceleration, which is SQUARED -->
+        <!-- NOTE that thrust is acceleration, not simple multiplication. -->
         <boostduration min="10.05" max="10.2"/>
         <travelstartthrust min="10.05" max="10.2"/>
         <travelattacktime min="0.0008" max="0.00095"/>
@@ -43,32 +158,89 @@
     </strafethrust>
   </add>
   <add sel="/equipmentmods/ship">
+    <maxhull ware="mod_eidng8_hull_mk1" quality="3" min="10.769" max="10.909">
+    </maxhull>
+    <maxhull ware="mod_eidng8_hull_mk2" quality="3" min="50.769" max="50.909">
+    </maxhull>
     <maxhull ware="mod_eidng8_hull_mk3" quality="3" min="100.769" max="100.909">
       <bonus chance="1.0" max="7">
-        <radarrange min="20.0" max="20.2"/>
-        <countermeasurecapacity min="10" max="10"/>
-        <deployablecapacity min="100" max="100"/>
-        <missilecapacity min="1000" max="1000"/>
-        <unitcapacity min="100" max="100"/>
+        <radarrange min="20.0" max="20.2" />
+        <countermeasurecapacity min="10" max="10" />
+        <deployablecapacity min="100" max="100" />
+        <missilecapacity min="1000" max="1000" />
+        <unitcapacity min="100" max="100" />
       </bonus>
     </maxhull>
-    <maxhull ware="mod_eidng8_hull_feather_mk3" quality="3" min="100.769" max="100.909">
+    <maxhull ware="mod_eidng8_hull_feather_mk1"
+        quality="3"
+        min="10.769"
+        max="10.909">
       <bonus chance="1.0" max="7">
-        <drag min="0.30" max="0.30"/>
-        <mass min="0.30" max="0.30"/>
-        <radarrange min="20.0" max="20.2"/>
-        <countermeasurecapacity min="10" max="10"/>
-        <deployablecapacity min="100" max="100"/>
-        <missilecapacity min="1000" max="1000"/>
-        <unitcapacity min="100" max="100"/>
+        <drag min="0.80" max="0.90" />
+        <mass min="0.80" max="0.90" />
+        <countermeasurecapacity min="10" max="10" />
+        <deployablecapacity min="100" max="100" />
+        <missilecapacity min="1000" max="1000" />
+        <unitcapacity min="100" max="100" />
+      </bonus>
+    </maxhull>
+    <maxhull ware="mod_eidng8_hull_feather_mk2"
+        quality="3"
+        min="50.769"
+        max="50.909">
+      <bonus chance="1.0" max="7">
+        <drag min="0.60" max="0.70" />
+        <mass min="0.60" max="0.70" />
+        <countermeasurecapacity min="10" max="10" />
+        <deployablecapacity min="100" max="100" />
+        <missilecapacity min="1000" max="1000" />
+        <unitcapacity min="100" max="100" />
+      </bonus>
+    </maxhull>
+    <maxhull ware="mod_eidng8_hull_feather_mk3"
+        quality="3"
+        min="100.769"
+        max="100.909">
+      <bonus chance="1.0" max="7">
+        <drag min="0.30" max="0.30" />
+        <mass min="0.30" max="0.30" />
+        <radarrange min="20.0" max="20.2" />
+        <countermeasurecapacity min="10" max="10" />
+        <deployablecapacity min="100" max="100" />
+        <missilecapacity min="1000" max="1000" />
+        <unitcapacity min="100" max="100" />
       </bonus>
     </maxhull>
   </add>
   <add sel="/equipmentmods/shield">
-    <capacity ware="mod_eidng8_shield_mk3" quality="3" min="100.1" max="100.3">
+    <capacity ware="mod_eidng8_shield_mk1" quality="3" min="1.1" max="1.3">
       <bonus chance="1.0" max="2">
-        <rechargerate min="100.1" max="100.3"/>
-        <rechargedelay min="0.007" max="0.009"/>
+        <rechargerate min="1.1" max="1.3" />
+        <rechargedelay min="0.8" max="0.9" />
+      </bonus>
+    </capacity>
+    <capacity ware="mod_eidng8_shield_mk2" quality="3" min="5.1" max="5.3">
+      <bonus chance="1.0" max="2">
+        <rechargerate min="5.1" max="5.3" />
+        <rechargedelay min="0.6" max="0.7" />
+      </bonus>
+    </capacity>
+    <capacity ware="mod_eidng8_shield_mk3" quality="3" min="10.1" max="10.3">
+      <bonus chance="1.0" max="2">
+        <rechargerate min="10.1" max="10.3" />
+        <rechargedelay min="0.4" max="0.5" />
+      </bonus>
+    </capacity>
+    <capacity ware="mod_eidng8_shield_mk4" quality="3" min="50.1" max="50.3">
+      <bonus chance="1.0" max="2">
+        <rechargerate min="50.1" max="50.3" />
+        <rechargedelay min="0.2" max="0.3" />
+      </bonus>
+    </capacity>
+    <capacity ware="mod_eidng8_shield_mk5" quality="3" min="100.1" max="100.3">
+      <bonus chance="1.0" max="2">
+        <rechargerate min="100.1" max="100.3" />
+        <rechargedelay min="0.007" max="0.009" />
       </bonus>
     </capacity>
   </add>
