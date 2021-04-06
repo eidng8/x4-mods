@@ -2,10 +2,10 @@
 <content name="Lock Station Stock"
     description="Locks all player stations to have a minimum level of stock."
     author="eidng8"
-    version="101"
+    version="102"
     date="2021-04-06"
     save="0"
-    lastupdate="1617674693"
+    lastupdate="1617675390"
     sync="false"
     id="ws_2447527960">
   <text language="7"
