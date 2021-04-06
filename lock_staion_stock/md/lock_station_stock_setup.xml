@@ -48,6 +48,7 @@
         <event_cue_signalled />
       </conditions>
       <actions>
+        <!-- Heading line -->
         <signal_cue_instantly cue="md.Simple_Menu_API.Add_Row" />
         <signal_cue_instantly cue="md.Simple_Menu_API.Make_Text"
             param="table[
@@ -55,6 +56,7 @@
                     $colSpan = 2,
                     $text    = {9595963,10001}
                   ]" />
+        <!-- Lock products -->
         <signal_cue_instantly cue="md.Simple_Menu_API.Add_Row" />
         <signal_cue_instantly cue="md.Simple_Menu_API.Make_Text"
             param="table[
@@ -71,6 +73,7 @@
                     $mouseOverText = {9595963,10003},
                     $onClick = OnChange_Lock_Products
                   ]" />
+        <!-- Lock trade wares -->
         <signal_cue_instantly cue="md.Simple_Menu_API.Add_Row" />
         <signal_cue_instantly cue="md.Simple_Menu_API.Make_Text"
             param="table[
@@ -87,6 +90,7 @@
                     $mouseOverText = {9595963,10005},
                     $onClick = OnChange_Lock_Wares
                   ]" />
+        <!-- Lock workforce -->
         <signal_cue_instantly cue="md.Simple_Menu_API.Add_Row" />
         <signal_cue_instantly cue="md.Simple_Menu_API.Make_Text"
             param="table[
@@ -103,6 +107,7 @@
                     $mouseOverText = {9595963,10007},
                     $onClick = OnChange_Lock_Workforce
                   ]" />
+        <!-- Lock resources -->
         <signal_cue_instantly cue="md.Simple_Menu_API.Add_Row" />
         <signal_cue_instantly cue="md.Simple_Menu_API.Make_Text"
             param="table[
@@ -119,6 +124,7 @@
                     $mouseOverText = {9595963,10009},
                     $onClick = OnChange_Lock_Resources
                   ]" />
+        <!-- Lock build storage -->
         <signal_cue_instantly cue="md.Simple_Menu_API.Add_Row" />
         <signal_cue_instantly cue="md.Simple_Menu_API.Make_Text"
             param="table[
@@ -136,6 +142,7 @@
                     $onClick = OnChange_Lock_Build
                   ]" />
         <signal_cue_instantly cue="md.Simple_Menu_API.Add_Row" />
+        <!-- Minimum storage level -->
         <signal_cue_instantly cue="md.Simple_Menu_API.Make_Text"
             param="table[
                     $col=1,
@@ -154,6 +161,7 @@
                     $onSliderCellConfirm = OnChange_Min_Level
                   ]" />
         <signal_cue_instantly cue="md.Simple_Menu_API.Add_Row" />
+        <!-- Checking interval -->
         <signal_cue_instantly cue="md.Simple_Menu_API.Make_Text"
             param="table[
                     $col=1,
