@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<mdscript name="ShipModsSetup"
+<mdscript name="ship_mods_setup"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="../../src/md/md.xsd">
   <cues>
-    <cue name="Ship_Mods_Add_Blueprint">
+    <cue name="Ship_Mods_Add_Blueprint" version="1">
       <conditions>
-        <event_cue_signalled cue="md.Setup.Start" />
+        <event_cue_signalled />
       </conditions>
       <actions>
         <do_if value="ware.research_mod_weapon_mk1.research.unlocked">
@@ -33,6 +33,363 @@
                             ware.mod_eidng8_shield_mk4,
                             ware.mod_eidng8_shield_mk5
                           ]" />
+        </do_if>
+        <add_inventory entity="player.entity"
+            ware="ware.modpart_tuningsoftware"
+            exact="10000" />
+      </actions>
+    </cue>
+
+    <cue name="Ship_Mods_Setup_Globals" version="1">
+      <conditions>
+        <event_cue_signalled />
+      </conditions>
+      <actions>
+        <set_value name="global.$eidng8_SM" exact="table[]" />
+        <set_value name="global.$eidng8_SM.$mods"
+            exact="table[
+              $hull = [
+                table[$text={9595961,10022}, $ware=ware.mod_eidng8_hull_mk1],
+                table[$text={9595961,10024}, $ware=ware.mod_eidng8_hull_mk2],
+                table[$text={9595961,10026}, $ware=ware.mod_eidng8_hull_mk3],
+                table[$text={9595961,10028}, $ware=ware.mod_eidng8_hull_feather_mk1],
+                table[$text={9595961,10030}, $ware=ware.mod_eidng8_hull_feather_mk2],
+                table[$text={9595961,10032}, $ware=ware.mod_eidng8_hull_feather_mk3],
+                table[$text={20110,120610011}, $ware=ware.mod_ship_countermeasurecapacity_01_mk1],
+                table[$text={20110,120710011}, $ware=ware.mod_ship_deployablecapacity_01_mk1],
+                table[$text={20110,120110011}, $ware=ware.mod_ship_drag_01_mk1],
+                table[$text={20110,120120011}, $ware=ware.mod_ship_drag_01_mk2],
+                table[$text={20110,120010011}, $ware=ware.mod_ship_mass_01_mk1],
+                table[$text={20110,120020011}, $ware=ware.mod_ship_mass_01_mk2],
+                table[$text={20110,120030011}, $ware=ware.mod_ship_mass_01_mk3],
+                table[$text={20110,120210011}, $ware=ware.mod_ship_maxhull_01_mk1],
+                table[$text={20110,120410011}, $ware=ware.mod_ship_missilecapacity_01_mk1],
+                table[$text={20110,120910011}, $ware=ware.mod_ship_radarrange_01_mk1],
+                table[$text={20110,120310011}, $ware=ware.mod_ship_unitcapacity_01_mk1],
+              ],
+              $shield = [
+                table[$text={9595961,10034}, $ware=ware.mod_eidng8_shield_mk1],
+                table[$text={9595961,10036}, $ware=ware.mod_eidng8_shield_mk2],
+                table[$text={9595961,10038}, $ware=ware.mod_eidng8_shield_mk3],
+                table[$text={9595961,10040}, $ware=ware.mod_eidng8_shield_mk4],
+                table[$text={9595961,10042}, $ware=ware.mod_eidng8_shield_mk5],
+                table[$text={20110,130010011}, $ware=ware.mod_shield_capacity_01_mk1],
+                table[$text={20110,130020011}, $ware=ware.mod_shield_capacity_01_mk2],
+                table[$text={20110,130030011}, $ware=ware.mod_shield_capacity_01_mk3],
+                table[$text={20110,130030021}, $ware=ware.mod_shield_capacity_02_mk3],
+                table[$text={20110,130110011}, $ware=ware.mod_shield_rechargedelay_01_mk1],
+                table[$text={20110,130210011}, $ware=ware.mod_shield_rechargerate_01_mk1],
+                table[$text={20110,130220011}, $ware=ware.mod_shield_rechargerate_01_mk2],
+                table[$text={20110,130230011}, $ware=ware.mod_shield_rechargerate_01_mk3],
+              ],
+              $engine = [
+                table[$text={9595961,10010}, $ware=ware.mod_eidng8_engine_mk1],
+                table[$text={9595961,10012}, $ware=ware.mod_eidng8_engine_mk2],
+                table[$text={9595961,10014}, $ware=ware.mod_eidng8_engine_mk3],
+                table[$text={9595961,10016}, $ware=ware.mod_eidng8_engine_mk4],
+                table[$text={9595961,10018}, $ware=ware.mod_eidng8_engine_mk5],
+                table[$text={9595961,10020}, $ware=ware.mod_eidng8_strafe_engine_mk3],
+                table[$text={20110,110410011}, $ware=ware.mod_engine_boostduration_01_mk1],
+                table[$text={20110,110310011}, $ware=ware.mod_engine_boostthrust_01_mk1],
+                table[$text={20110,110320011}, $ware=ware.mod_engine_boostthrust_01_mk2],
+                table[$text={20110,110330011}, $ware=ware.mod_engine_boostthrust_01_mk3],
+                table[$text={20110,110310021}, $ware=ware.mod_engine_boostthrust_02_mk1],
+                table[$text={20110,110320021}, $ware=ware.mod_engine_boostthrust_02_mk2],
+                table[$text={20110,110010011}, $ware=ware.mod_engine_forwardthrust_01_mk1],
+                table[$text={20110,110020011}, $ware=ware.mod_engine_forwardthrust_01_mk2],
+                table[$text={20110,110030011}, $ware=ware.mod_engine_forwardthrust_01_mk3],
+                table[$text={20110,110010021}, $ware=ware.mod_engine_forwardthrust_02_mk1],
+                table[$text={20110,110020021}, $ware=ware.mod_engine_forwardthrust_02_mk2],
+                table[$text={20110,110210011}, $ware=ware.mod_engine_rotationthrust_01_mk1],
+                table[$text={20110,110230011}, $ware=ware.mod_engine_rotationthrust_01_mk3],
+                table[$text={20110,110210021}, $ware=ware.mod_engine_rotationthrust_02_mk1],
+                table[$text={20110,110110011}, $ware=ware.mod_engine_strafethrust_01_mk1],
+                table[$text={20110,110110021}, $ware=ware.mod_engine_strafethrust_02_mk1],
+                table[$text={20110,111210011}, $ware=ware.mod_engine_travelattacktime_01_mk1],
+                table[$text={20110,111410011}, $ware=ware.mod_engine_travelchargetime_01_mk1],
+                table[$text={20110,111310011}, $ware=ware.mod_engine_travelreleasetime_01_mk1],
+                table[$text={20110,111110011}, $ware=ware.mod_engine_travelstartthrust_01_mk1],
+                table[$text={20110,111010011}, $ware=ware.mod_engine_travelthrust_01_mk1],
+                table[$text={20110,111020011}, $ware=ware.mod_engine_travelthrust_01_mk2],
+                table[$text={20110,111030011}, $ware=ware.mod_engine_travelthrust_01_mk3],
+                table[$text={20110,111010021}, $ware=ware.mod_engine_travelthrust_02_mk1],
+                table[$text={20110,111020021}, $ware=ware.mod_engine_travelthrust_02_mk2],
+              ],
+              $weapon = [
+                table[$text={9595961,10000}, $ware=ware.mod_eidng8_weapon_mk1],
+                table[$text={9595961,10002}, $ware=ware.mod_eidng8_weapon_mk2],
+                table[$text={9595961,10004}, $ware=ware.mod_eidng8_weapon_mk3],
+                table[$text={9595961,10006}, $ware=ware.mod_eidng8_weapon_mk4],
+                table[$text={9595961,10008}, $ware=ware.mod_eidng8_weapon_mk5],
+                table[$text={20110,100810011}, $ware=ware.mod_weapon_beamlength_01_mk1],
+                table[$text={20110,100710011}, $ware=ware.mod_weapon_chargetime_01_mk1],
+                table[$text={20110,100110011}, $ware=ware.mod_weapon_cooling_01_mk1],
+                table[$text={20110,100120011}, $ware=ware.mod_weapon_cooling_01_mk2],
+                table[$text={20110,100110021}, $ware=ware.mod_weapon_cooling_02_mk1],
+                table[$text={20110,100120021}, $ware=ware.mod_weapon_cooling_02_mk2],
+                table[$text={20110,100110031}, $ware=ware.mod_weapon_cooling_03_mk1],
+                table[$text={20110,100120031}, $ware=ware.mod_weapon_cooling_03_mk2],
+                table[$text={20110,100120041}, $ware=ware.mod_weapon_cooling_04_mk2],
+                table[$text={20110,100120051}, $ware=ware.mod_weapon_cooling_05_mk2],
+                table[$text={20110,100010011}, $ware=ware.mod_weapon_damage_01_mk1],
+                table[$text={20110,100020011}, $ware=ware.mod_weapon_damage_01_mk2],
+                table[$text={20110,100030011}, $ware=ware.mod_weapon_damage_01_mk3],
+                table[$text={20110,100010021}, $ware=ware.mod_weapon_damage_02_mk1],
+                table[$text={20110,100020021}, $ware=ware.mod_weapon_damage_02_mk2],
+                table[$text={20110,100030021}, $ware=ware.mod_weapon_damage_02_mk3],
+                table[$text={20110,100010031}, $ware=ware.mod_weapon_damage_03_mk1],
+                table[$text={20110,100020031}, $ware=ware.mod_weapon_damage_03_mk2],
+                table[$text={20110,100020041}, $ware=ware.mod_weapon_damage_04_mk2],
+                table[$text={20110,100020051}, $ware=ware.mod_weapon_damage_05_mk2],
+                table[$text={20110,100410011}, $ware=ware.mod_weapon_lifetime_01_mk1],
+                table[$text={20110,100510011}, $ware=ware.mod_weapon_mining_01_mk1],
+                table[$text={20110,100530011}, $ware=ware.mod_weapon_mining_01_mk3],
+                table[$text={20110,100210011}, $ware=ware.mod_weapon_reload_01_mk1],
+                table[$text={20110,101010011}, $ware=ware.mod_weapon_rotationspeed_01_mk1],
+                table[$text={20110,100310011}, $ware=ware.mod_weapon_speed_01_mk1],
+                table[$text={20110,100330011}, $ware=ware.mod_weapon_speed_01_mk3],
+                table[$text={20110,100610011}, $ware=ware.mod_weapon_sticktime_01_mk1],
+                table[$text={20110,100620011}, $ware=ware.mod_weapon_sticktime_01_mk2],
+                table[$text={20110,100620021}, $ware=ware.mod_weapon_sticktime_02_mk2],
+                table[$text={20110,100630021}, $ware=ware.mod_weapon_sticktime_03_mk2],
+                table[$text={20110,101110011}, $ware=ware.mod_weapon_surfaceelement_01_mk1],
+                table[$text={20110,101120011}, $ware=ware.mod_weapon_surfaceelement_01_mk2],
+                table[$text={20110,101130011}, $ware=ware.mod_weapon_surfaceelement_01_mk3],
+              ]
+            ]" />
+        <set_value name="global.$eidng8_SM.$options"
+            exact="table[
+              $combat = table[
+                $xl = table[
+                  $fit = 0,
+                  $mods = table[
+                    $hull   = global.$eidng8_SM.$mods.$hull,
+                    $engine = global.$eidng8_SM.$mods.$engine,
+                    $shield = global.$eidng8_SM.$mods.$shield,
+                    $weapon = global.$eidng8_SM.$mods.$weapon
+                  ]
+                ],
+                $l = table[
+                  $fit = 0,
+                  $mods = table[
+                    $hull   = global.$eidng8_SM.$mods.$hull,
+                    $engine = global.$eidng8_SM.$mods.$engine,
+                    $shield = global.$eidng8_SM.$mods.$shield,
+                    $weapon = global.$eidng8_SM.$mods.$weapon
+                  ]
+                ],
+                $m = table[
+                  $fit = 0,
+                  $mods = table[
+                    $hull   = global.$eidng8_SM.$mods.$hull,
+                    $engine = global.$eidng8_SM.$mods.$engine,
+                    $shield = global.$eidng8_SM.$mods.$shield,
+                    $weapon = global.$eidng8_SM.$mods.$weapon
+                  ]
+                ],
+                $s = table[
+                  $fit = 0,
+                  $mods = table[
+                    $hull   = global.$eidng8_SM.$mods.$hull,
+                    $engine = global.$eidng8_SM.$mods.$engine,
+                    $shield = global.$eidng8_SM.$mods.$shield,
+                    $weapon = global.$eidng8_SM.$mods.$weapon
+                  ]
+                ],
+              ],
+              $trading = table[
+                $l = table[
+                  $fit = 0,
+                  $mods = table[
+                    $hull   = global.$eidng8_SM.$mods.$hull,
+                    $engine = global.$eidng8_SM.$mods.$engine,
+                    $shield = global.$eidng8_SM.$mods.$shield,
+                    $weapon = global.$eidng8_SM.$mods.$weapon
+                  ]
+                ],
+                $m = table[
+                  $fit = 0,
+                  $mods = table[
+                    $hull   = global.$eidng8_SM.$mods.$hull,
+                    $engine = global.$eidng8_SM.$mods.$engine,
+                    $shield = global.$eidng8_SM.$mods.$shield,
+                    $weapon = global.$eidng8_SM.$mods.$weapon
+                  ]
+                ],
+                $s = table[
+                  $fit = 0,
+                  $mods = table[
+                    $hull   = global.$eidng8_SM.$mods.$hull,
+                    $engine = global.$eidng8_SM.$mods.$engine,
+                    $shield = global.$eidng8_SM.$mods.$shield,
+                    $weapon = global.$eidng8_SM.$mods.$weapon
+                  ]
+                ],
+              ],
+              $mining = table[
+                $l = table[
+                  $fit = 0,
+                  $mods = table[
+                    $hull   = global.$eidng8_SM.$mods.$hull,
+                    $engine = global.$eidng8_SM.$mods.$engine,
+                    $shield = global.$eidng8_SM.$mods.$shield,
+                    $weapon = global.$eidng8_SM.$mods.$weapon
+                  ]
+                ],
+                $m = table[
+                  $fit = 0,
+                  $mods = table[
+                    $hull   = global.$eidng8_SM.$mods.$hull,
+                    $engine = global.$eidng8_SM.$mods.$engine,
+                    $shield = global.$eidng8_SM.$mods.$shield,
+                    $weapon = global.$eidng8_SM.$mods.$weapon
+                  ]
+                ],
+                $s = table[
+                  $fit = 0,
+                  $mods = table[
+                    $hull   = global.$eidng8_SM.$mods.$hull,
+                    $engine = global.$eidng8_SM.$mods.$engine,
+                    $shield = global.$eidng8_SM.$mods.$shield,
+                    $weapon = global.$eidng8_SM.$mods.$weapon
+                  ]
+                ],
+              ],
+              $builder = table[
+                $xl = table[
+                  $fit = 0,
+                  $mods = table[
+                    $hull   = global.$eidng8_SM.$mods.$hull,
+                    $engine = global.$eidng8_SM.$mods.$engine,
+                    $shield = global.$eidng8_SM.$mods.$shield,
+                    $weapon = global.$eidng8_SM.$mods.$weapon
+                  ]
+                ]
+              ]
+            ]" />
+        <do_if value="not @player.entity.$eidng8_SM">
+          <set_value name="player.entity.$eidng8_SM"
+              exact="table[
+                $combat = table[
+                  $xl = table[
+                    $fit = 0,
+                    $mods = table[
+                      $hull   = 1,
+                      $engine = 1,
+                      $shield = 1,
+                      $weapon = 1
+                    ]
+                  ],
+                  $l = table[
+                    $fit = 0,
+                    $mods = table[
+                      $hull   = 1,
+                      $engine = 1,
+                      $shield = 1,
+                      $weapon = 1
+                    ]
+                  ],
+                  $m = table[
+                    $fit = 0,
+                    $mods = table[
+                      $hull   = 1,
+                      $engine = 1,
+                      $shield = 1,
+                      $weapon = 1
+                    ]
+                  ],
+                  $s = table[
+                    $fit = 0,
+                    $mods = table[
+                      $hull   = 1,
+                      $engine = 1,
+                      $shield = 1,
+                      $weapon = 1
+                    ]
+                  ],
+                ],
+                $trading = table[
+                  $l = table[
+                    $fit = 0,
+                    $mods = table[
+                      $hull   = 1,
+                      $engine = 1,
+                      $shield = 1,
+                      $weapon = 1
+                    ]
+                  ],
+                  $m = table[
+                    $fit = 0,
+                    $mods = table[
+                      $hull   = 1,
+                      $engine = 1,
+                      $shield = 1,
+                      $weapon = 1
+                    ]
+                  ],
+                  $s = table[
+                    $fit = 0,
+                    $mods = table[
+                      $hull   = 1,
+                      $engine = 1,
+                      $shield = 1,
+                      $weapon = 1
+                    ]
+                  ],
+                ],
+                $mining = table[
+                  $l = table[
+                    $fit = 0,
+                    $mods = table[
+                      $hull   = 1,
+                      $engine = 1,
+                      $shield = 1,
+                      $weapon = 1
+                    ]
+                  ],
+                  $m = table[
+                    $fit = 0,
+                    $mods = table[
+                      $hull   = 1,
+                      $engine = 1,
+                      $shield = 1,
+                      $weapon = 1
+                    ]
+                  ],
+                  $s = table[
+                    $fit = 0,
+                    $mods = table[
+                      $hull   = 1,
+                      $engine = 1,
+                      $shield = 1,
+                      $weapon = 1
+                    ]
+                  ],
+                ],
+                $builder = table[
+                  $xl = table[
+                    $fit = 0,
+                    $mods = table[
+                      $hull   = 1,
+                      $engine = 1,
+                      $shield = 1,
+                      $weapon = 1
+                    ]
+                  ]
+                ]
+              ]" />
+        </do_if>
+      </actions>
+    </cue>
+
+    <cue name="Ship_Mods_Setup" version="1">
+      <conditions>
+        <event_cue_signalled cue="md.Setup.Start" />
+      </conditions>
+      <actions>
+        <signal_cue_instantly cue="Ship_Mods_Setup_Globals" />
+        <do_if value="ware.research_mod_weapon_mk1.research.unlocked">
+          <signal_cue cue="Ship_Mods_Add_Blueprint" />
         </do_if>
         <add_inventory entity="player.entity"
             ware="ware.modpart_tuningsoftware"

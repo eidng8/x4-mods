@@ -48,10 +48,16 @@
       <t id="10043">Ominous Shield Mod</t>
       <t id="11000">Auto-apply modifications.</t>
       <t id="11001">Automatically applies modifications when player ships were built.</t>
-      <t id="11002">Apply combat XL ships</t>
-      <t id="11003">Automatically applies modifications to XL combat ships.</t>
-      <t id="11004">Modifications to apply</t>
-      <t id="11005">Applies the selected hull modifications.</t>
+      <t id="11002">%s %s ships</t>
+      <t id="11003">Apply modifications</t>
+      <t id="11004">Check to enable auto-apply modifications to ships.</t>
+      <t id="11005">Modifications to apply</t>
+      <t id="11006">Applies the selected modifications.</t>
+      <t id="11007">--- Do not install modification ---</t>
+      <t id="11008">Builder ships</t>
+      <t id="11009">Combat %s ships</t>
+      <t id="11010">Miner %s ships</t>
+      <t id="11011">Trader %s ships</t>
     </page>
   </add>
 </diff>

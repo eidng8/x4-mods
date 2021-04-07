@@ -76,10 +76,10 @@
     <forwardthrust ware="mod_eidng8_engine_mk1" quality="3" min="1.1" max="1.3">
       <bonus chance="1.0" max="9">
         <!-- NOTE that thrust is acceleration, not simple multiplication. -->
-        <boostthrust min="0.1" max="0.2" />
-        <travelthrust min="0.1" max="0.2" />
-        <rotationthrust min="0.1" max="0.2" />
-        <strafethrust min="0.1" max="0.2" />
+        <boostthrust min="1.1" max="1.2" />
+        <travelthrust min="1.1" max="1.2" />
+        <rotationthrust min="1.1" max="1.2" />
+        <strafethrust min="1.1" max="1.2" />
         <travelstartthrust min="1.05" max="1.2" />
         <boostduration min="1.05" max="1.2" />
         <travelattacktime min="0.8" max="0.9" />
@@ -90,10 +90,10 @@
     <forwardthrust ware="mod_eidng8_engine_mk2" quality="3" min="2.1" max="2.3">
       <bonus chance="1.0" max="9">
         <!-- NOTE that thrust is acceleration, not simple multiplication. -->
-        <boostthrust min="0.2" max="0.3" />
-        <travelthrust min="0.2" max="0.3" />
-        <rotationthrust min="0.2" max="0.3" />
-        <strafethrust min="0.2" max="0.3" />
+        <boostthrust min="2.2" max="2.3" />
+        <travelthrust min="2.2" max="2.3" />
+        <rotationthrust min="2.2" max="2.3" />
+        <strafethrust min="2.2" max="2.3" />
         <travelstartthrust min="2.05" max="2.2" />
         <boostduration min="2.05" max="2.2" />
         <travelattacktime min="0.7" max="0.8" />
@@ -104,10 +104,10 @@
     <forwardthrust ware="mod_eidng8_engine_mk3" quality="3" min="3.1" max="3.3">
       <bonus chance="1.0" max="9">
         <!-- NOTE that thrust is acceleration, not simple multiplication. -->
-        <boostthrust min="0.3" max="0.4" />
-        <travelthrust min="0.3" max="0.4" />
-        <rotationthrust min="0.3" max="0.4" />
-        <strafethrust min="0.3" max="0.4" />
+        <boostthrust min="3.3" max="3.4" />
+        <travelthrust min="3.3" max="3.4" />
+        <rotationthrust min="3.3" max="3.4" />
+        <strafethrust min="3.3" max="3.4" />
         <travelstartthrust min="3.05" max="3.2" />
         <boostduration min="3.05" max="3.2" />
         <travelattacktime min="0.6" max="0.7" />
@@ -115,13 +115,13 @@
         <travelreleasetime min="3.8" max="3.95" />
       </bonus>
     </forwardthrust>
-    <forwardthrust ware="mod_eidng8_engine_mk4" quality="3" min="5.1" max="5.3">
+    <forwardthrust ware="mod_eidng8_engine_mk4" quality="3" min="4.1" max="5.3">
       <bonus chance="1.0" max="9">
         <!-- NOTE that thrust is acceleration, not simple multiplication. -->
-        <boostthrust min="1" max="1.1" />
-        <travelthrust min="1" max="1.1" />
-        <rotationthrust min="1" max="1.1" />
-        <strafethrust min="5" max="5.1" />
+        <boostthrust min="4" max="5.1" />
+        <travelthrust min="4" max="5.1" />
+        <rotationthrust min="4" max="5.1" />
+        <strafethrust min="4" max="5.1" />
         <travelstartthrust min="5.05" max="5.2" />
         <boostduration min="5.05" max="5.2" />
         <travelattacktime min="0.5" max="0.6" />
@@ -135,15 +135,15 @@
         max="10.3">
       <bonus chance="1.0" max="9">
         <!-- NOTE that thrust is acceleration, not simple multiplication. -->
-        <boostthrust min="1.5" max="1.5" />
-        <travelthrust min="1.5" max="1.5" />
-        <rotationthrust min="1.5" max="1.5" />
+        <boostthrust min="10.5" max="10.5" />
+        <travelthrust min="10.5" max="10.5" />
+        <rotationthrust min="10.5" max="10.5" />
         <strafethrust min="10" max="10" />
         <boostduration min="10.05" max="10.2" />
         <travelstartthrust min="10.05" max="10.2" />
         <travelattacktime min="0.0008" max="0.00095" />
         <travelchargetime min="0.0008" max="0.00095" />
-        <travelreleasetime min="10.8" max="10.95"/>
+        <travelreleasetime min="10.8" max="10.95" />
       </bonus>
     </forwardthrust>
     <strafethrust ware="mod_eidng8_strafe_engine_mk3" quality="3" min="10.1" max="10.3">

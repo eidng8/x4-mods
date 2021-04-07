@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<mdscript name="ShipModsMenu"
+<mdscript name="ship_mods_menu"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="../../src/md/md.xsd">
   <cues>
@@ -8,44 +8,12 @@
         <event_cue_signalled cue="md.Simple_Menu_Options.Reloaded" />
       </conditions>
       <actions>
-        <do_if value="not @player.entity.$eidng8_SM">
-          <set_value name="player.entity.$eidng8_SM"
-              exact="table[
-                      $fit_combat_xl = 0,
-                      $fit_combat_xl_mods = table[
-                          $hull   = ware.mod_eidng8_hull_mk1,
-                          $engine = ware.mod_eidng8_engine_mk1,
-                          $shield = ware.mod_eidng8_shield_mk1,
-                          $weapon = ware.mod_eidng8_weapon_mk1
-                        ],
-                      $fit_combat_l = 0,
-                      $fit_combat_l_mods = table[$hull='', $engine='', $shield='', $weapon=''],
-                      $fit_combat_m = 0,
-                      $fit_combat_m_mods = table[$hull='', $engine='', $shield='', $weapon=''],
-                      $fit_combat_s = 0,
-                      $fit_combat_s_mods = table[$hull='', $engine='', $shield='', $weapon=''],
-                      $fit_trading_l = 0,
-                      $fit_trading_l_mods = table[$hull='', $engine='', $shield='', $weapon=''],
-                      $fit_trading_m = 0,
-                      $fit_trading_m_mods = table[$hull='', $engine='', $shield='', $weapon=''],
-                      $fit_trading_s = 0,
-                      $fit_trading_s_mods = table[$hull='', $engine='', $shield='', $weapon=''],
-                      $fit_mining_l = 0,
-                      $fit_mining_l_mods = table[$hull='', $engine='', $shield='', $weapon=''],
-                      $fit_mining_m = 0,
-                      $fit_mining_m_mods = table[$hull='', $engine='', $shield='', $weapon=''],
-                      $fit_mining_s = 0,
-                      $fit_mining_s_mods = table[$hull='', $engine='', $shield='', $weapon=''],
-                      $fit_constructor = 0,
-                      $fit_constructor_mods = table[$hull='', $engine='', $shield='', $weapon=''],
-                    ]" />
-        </do_if>
         <signal_cue_instantly cue="md.Simple_Menu_API.Register_Options_Menu"
             param="table[
-              $id      = 'eidng8_SM_menu',
+              $id      = 'eidng8_SM_Menu',
               $title   = {9595961,11000},
               $onOpen  = Create_Menu,
-              $columns = 2,
+              $columns = 3,
             ]" />
         <reset_cue cue="this" />
       </actions>
@@ -63,73 +31,121 @@
         <signal_cue_instantly cue="md.Simple_Menu_API.Add_Row" />
         <signal_cue_instantly cue="md.Simple_Menu_API.Make_Text"
             param="table[
-                    $col     = 1,
-                    $colSpan = 2,
-                    $text    = {9595961,11001}
-                  ]" />
-        <!-- Apply combat XL -->
-        <signal_cue_instantly cue="md.Simple_Menu_API.Add_Row" />
-        <signal_cue_instantly cue="md.Simple_Menu_API.Make_Text"
-            param="table[
-                    $col = 1,
-                    $text = {9595961,11002}
-                  ]" />
-        <signal_cue_instantly cue="md.Simple_Menu_API.Make_CheckBox"
-            param="table[
-                    $id = 'eidng8_SM_Checkbox_Fit_Combat_XL',
-                    $checked = player.entity.$eidng8_SM.$fit_combat_xl,
-                    $col = 2,
-                    $width = 'Helper.standardButtonHeight',
-                    $height = 'Helper.standardButtonHeight',
-                    $mouseOverText = {9595961,11003},
-                    $onClick = OnChange_Fit_Combat_XL
-                  ]" />
-        <signal_cue_instantly cue="md.Simple_Menu_API.Add_Row" />
-        <signal_cue_instantly cue="md.Simple_Menu_API.Make_Text"
-            param="table[
-                    $col = 1,
-                    $text = {9595961,11004}
-                  ]" />
-        <signal_cue_instantly cue="md.Simple_Menu_API.Make_Dropdown"
-            param="table[
+              $col     = 1,
+              $colSpan = 3,
+              $text    = {9595961,11001}
+            ]" />
+        <!-- Fitting options -->
+        <do_for_each name="$role"
+            valuename="$sizes"
+            in="global.$eidng8_SM.$options">
+          <do_for_each name="$size" valuename="$rows" in="$sizes">
+            <signal_cue_instantly cue="md.Simple_Menu_API.Add_Row" />
+            <signal_cue_instantly cue="md.Simple_Menu_API.Add_Row" />
+            <signal_cue_instantly cue="Create_Menu_Group_Heading"
+                param="table[$role = $role, $size = $size]" />
+            <signal_cue_instantly cue="md.Simple_Menu_API.Add_Row" />
+            <signal_cue_instantly cue="md.Simple_Menu_API.Make_Text"
+                param="table[$col = 1, $text = {9595961,11003}]" />
+            <signal_cue_instantly cue="md.Simple_Menu_API.Make_CheckBox"
+                param="table[
+                  $id = 'eidng8_SM_Checkbox_Fit_Combat_XL',
+                  $checked = player.entity.$eidng8_SM.{$role}.{$size}.$fit,
+                  $col = 2,
+                  $colSpan = 2,
+                  $width = 'Helper.standardButtonHeight',
+                  $height = 'Helper.standardButtonHeight',
+                  $mouseOverText = {9595961,11004},
+                  $echo = table[$role = $role, $size = $size],
+                  $onClick = OnChange_Fitting
+                ]" />
+            <do_for_each name="$component" valuename="$mods" in="$rows.$mods">
+              <signal_cue_instantly cue="md.Simple_Menu_API.Add_Row" />
+              <do_if value="$component" exact="'$engine'">
+                <signal_cue_instantly cue="md.Simple_Menu_API.Make_Text"
+                    param="table[$col = 1, $text = {9595961,11005}]" />
+              </do_if>
+              <create_list name="$options" />
+              <append_to_list name="$options"
+                  exact="table[$text={9595961,11007}]" />
+              <append_list_elements name="$options" other="$mods" />
+              <signal_cue_instantly cue="md.Simple_Menu_API.Make_Dropdown"
+                  param="table[
                     $id = 'eidng8_SM_Checkbox_Fit_Combat_XL_Mods',
                     $col = 2,
-                    $options = [
-                        table[$text={9595961,10022}, $value=ware.mod_eidng8_hull_mk1]
-                        table[$text={9595961,10024}, $value=ware.mod_eidng8_hull_mk2]
-                        table[$text={9595961,10026}, $value=ware.mod_eidng8_hull_mk3]
-                        table[$text={9595961,10028}, $value=ware.mod_eidng8_hull_feather_mk1]
-                        table[$text={9595961,10030}, $value=ware.mod_eidng8_hull_feather_mk2]
-                        table[$text={9595961,10032}, $value=ware.mod_eidng8_hull_feather_mk3]
-                      ],
-                    $startOption = player.entity.$eidng8_SM.$fit_combat_xl_mods.$hull,
+                    $colSpan = 2,
+                    $options = $options,
+                    $startOption = player.entity.$eidng8_SM.{$role}.{$size}.$mods.{$component},
                     $mouseOverText = {9595961,11005},
-                    $onDropDownConfirmed = OnChange_Fit_Combat_XL_Hull
+                    $echo = table[
+                      $role      = $role,
+                      $size      = $size,
+                      $component = $component
+                    ],
+                    $onDropDownConfirmed = OnChange_Mod
                   ]" />
+            </do_for_each>
+          </do_for_each>
+        </do_for_each>
       </actions>
     </cue>
 
-    <cue name="OnChange_Fit_Combat_XL"
+    <cue name="Create_Menu_Group_Heading" instantiate="true">
+      <conditions>
+        <event_cue_signalled />
+      </conditions>
+      <actions>
+        <set_value name="$role" exact="{9595961,11009}" />
+        <do_if value="event.param.$role" exact="'$builder'">
+          <set_value name="$role" exact="{9595961,11008}" />
+        </do_if>
+        <do_elseif value="event.param.$role" exact="'$mining'">
+          <set_value name="$role" exact="{9595961,11010}" />
+        </do_elseif>
+        <do_elseif value="event.param.$role" exact="'$trading'">
+          <set_value name="$role" exact="{9595961,11011}" />
+        </do_elseif>
+        <set_value name="$size" exact="'XL'" />
+        <do_if value="event.param.$size" exact="'$l'">
+          <set_value name="$size" exact="'L'" />
+        </do_if>
+        <do_elseif value="event.param.$size" exact="'$m'">
+          <set_value name="$size" exact="'M'" />
+        </do_elseif>
+        <do_elseif value="event.param.$size" exact="'$s'">
+          <set_value name="$size" exact="'S'" />
+        </do_elseif>
+        <signal_cue_instantly cue="md.Simple_Menu_API.Make_Text"
+            param="table[
+              $col = 1,
+              $colSpan = 3,
+              $text = $role.[$size],
+              $titleColor = 'Helper.defaultSimpleBackgroundColor'
+            ]" />
+      </actions>
+    </cue>
+
+    <cue name="OnChange_Fitting"
         instantiate="true"
         namespace="this">
       <conditions>
         <event_cue_signalled />
       </conditions>
       <actions>
-        <set_value name="player.entity.$eidng8_SM.$fit_combat_xl"
+        <set_value name="player.entity.$eidng8_SM.{event.param.$echo.$role}.{event.param.$echo.$size}.$fit"
             exact="event.param.$checked" />
       </actions>
     </cue>
 
-    <cue name="OnChange_Fit_Combat_XL_Hull"
+    <cue name="OnChange_Mod"
         instantiate="true"
         namespace="this">
       <conditions>
         <event_cue_signalled />
       </conditions>
       <actions>
-        <set_value name="player.entity.$eidng8_SM.$fit_combat_xl_mods.$hull"
-            exact="event.param.$option.$value" />
+        <set_value name="player.entity.$eidng8_SM.{event.param.$echo.$role}.{event.param.$echo.$size}.$mods.{event.param.$echo.$component}"
+            exact="event.param.$option_index" />
       </actions>
     </cue>
   </cues>

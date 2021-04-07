@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<mdscript name="ShipModsApply"
+<mdscript name="ship_mods_apply"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="../../src/md/md.xsd">
   <cues>
@@ -9,17 +9,68 @@
       </conditions>
       <actions>
         <do_if value="event.param and event.param.trueowner == faction.player">
-          <set_value name="$mods" exact="[]" />
-          <do_all exact="event.param.weapons.all.list.count">
-            <append_to_list name="$mods" exact="ware.mod_eidng8_weapon_mk3" />
-          </do_all>
-          <do_all exact="event.param.shields.all.list.count">
-            <append_to_list name="$mods" exact="ware.mod_eidng8_shield_mk3" />
-          </do_all>
-          <add_equipment_mods object="event.param">
-            <mods list="$mods" />
-          </add_equipment_mods>
-          <remove_value name="$mods" />
+
+          <set_value name="$role" exact="null" />
+          <do_if value="event.param.primarypurpose == purpose.build">
+            <set_value name="$role" exact="'$builder'" />
+          </do_if>
+          <do_elseif value="event.param.primarypurpose == purpose.trade">
+            <set_value name="$role" exact="'$trading'" />
+          </do_elseif>
+          <do_elseif value="event.param.primarypurpose == purpose.mine">
+            <set_value name="$role" exact="'$mining'" />
+          </do_elseif>
+          <do_elseif value="event.param.primarypurpose == purpose.fight
+                            or event.param.primarypurpose == purpose.auxiliary">
+            <set_value name="$role" exact="'$combat'" />
+          </do_elseif>
+
+          <set_value name="$size" exact="null" />
+          <do_if value="event.param.isclass.ship_xl">
+            <set_value name="$size" exact="'$xl'" />
+          </do_if>
+          <do_elseif value="event.param.isclass.ship_l">
+            <set_value name="$size" exact="'$l'" />
+          </do_elseif>
+          <do_elseif value="event.param.isclass.ship_m">
+            <set_value name="$size" exact="'$m'" />
+          </do_elseif>
+          <do_elseif value="event.param.isclass.ship_s">
+            <set_value name="$size" exact="'$s'" />
+          </do_elseif>
+
+          <do_if value="player.entity.$eidng8_SM.{$role}.{$size}.$fit">
+            <create_list name="$mods" />
+            <do_for_each name="$component"
+                valuename="$idx"
+                in="player.entity.$eidng8_SM.{$role}.{$size}.$mods">
+              <do_if value="global.$eidng8_SM.$mods.{$component}.{$idx - 1}?">
+                <set_value name="$ware"
+                    exact="global.$eidng8_SM.$mods.{$component}.{$idx - 1}.$ware" />
+                <do_if value="$component" exact="'$hull'">
+                  <append_to_list name="$mods" exact="$ware" />
+                  <continue />
+                </do_if>
+                <do_elseif value="$component" exact="'$engine'">
+                  <set_value name="$component" exact="'engines'" />
+                </do_elseif>
+                <do_elseif value="$component" exact="'$shield'">
+                  <set_value name="$component" exact="'shields'" />
+                </do_elseif>
+                <do_elseif value="$component" exact="'$weapon'">
+                  <set_value name="$component" exact="'weapons'" />
+                </do_elseif>
+                <do_all exact="event.param.{$component}.all.count">
+                  <append_to_list name="$mods" exact="$ware" />
+                </do_all>
+              </do_if>
+            </do_for_each>
+            <!--debug_text text="'%s mods: %s'.[event.param.knownname, $mods]" /-->
+            <add_equipment_mods object="event.param">
+              <mods list="$mods" />
+            </add_equipment_mods>
+            <remove_value name="$mods" />
+          </do_if>
         </do_if>
       </actions>
     </cue>
