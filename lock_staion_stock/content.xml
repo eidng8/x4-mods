@@ -1,58 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<content name="Lock Station Stock"
-    description="Locks all player stations to have a minimum level of stock."
-    author="eidng8"
-    version="103"
-    date="2021-04-08"
-    save="0"
-    lastupdate="1617848319"
-    sync="false"
-    id="ws_2447527960">
-  <text language="7"
-      name="Lock Station Stock"
-      description="Locks all player stations to have a minimum level of stock."
-      author="eidng8" />
-  <text language="33"
-      name="Lock Station Stock"
-      description="Locks all player stations to have a minimum level of stock."
-      author="eidng8" />
-  <text language="34"
-      name="Lock Station Stock"
-      description="Locks all player stations to have a minimum level of stock."
-      author="eidng8" />
-  <text language="39"
-      name="Lock Station Stock"
-      description="Locks all player stations to have a minimum level of stock."
-      author="eidng8" />
-  <text language="44"
-      name="Lock Station Stock"
-      description="Locks all player stations to have a minimum level of stock."
-      author="eidng8" />
-  <text language="49"
-      name="Lock Station Stock"
-      description="Locks all player stations to have a minimum level of stock."
-      author="eidng8" />
-  <text language="55"
-      name="Lock Station Stock"
-      description="Locks all player stations to have a minimum level of stock."
-      author="eidng8" />
-  <text language="81"
-      name="Lock Station Stock"
-      description="Locks all player stations to have a minimum level of stock."
-      author="eidng8" />
-  <text language="82"
-      name="Lock Station Stock"
-      description="Locks all player stations to have a minimum level of stock."
-      author="eidng8" />
-  <text language="86"
-      name="Lock Station Stock"
-      description="Locks all player stations to have a minimum level of stock."
-      author="eidng8" />
-  <text language="88"
-      name="Lock Station Stock"
-      description="Locks all player stations to have a minimum level of stock."
-      author="eidng8" />
-  <dependency id="ws_2042901274"
-      name="SirNukes Mod Support APIs"
-      optional="false" />
+<content name="Lock Station Stock" description="Locks all player stations to have a minimum level of stock." author="eidng8" version="104" date="2021-04-10" save="0" lastupdate="1618070324" sync="false" id="ws_2447527960">
+  <text language="7" name="Lock Station Stock" description="Locks all player stations to have a minimum level of stock." author="eidng8"/>
+  <text language="33" name="Lock Station Stock" description="Locks all player stations to have a minimum level of stock." author="eidng8"/>
+  <text language="34" name="Lock Station Stock" description="Locks all player stations to have a minimum level of stock." author="eidng8"/>
+  <text language="39" name="Lock Station Stock" description="Locks all player stations to have a minimum level of stock." author="eidng8"/>
+  <text language="44" name="Lock Station Stock" description="Locks all player stations to have a minimum level of stock." author="eidng8"/>
+  <text language="49" name="Lock Station Stock" description="Locks all player stations to have a minimum level of stock." author="eidng8"/>
+  <text language="55" name="Lock Station Stock" description="Locks all player stations to have a minimum level of stock." author="eidng8"/>
+  <text language="81" name="Lock Station Stock" description="Locks all player stations to have a minimum level of stock." author="eidng8"/>
+  <text language="82" name="Lock Station Stock" description="Locks all player stations to have a minimum level of stock." author="eidng8"/>
+  <text language="86" name="Lock Station Stock" description="Locks all player stations to have a minimum level of stock." author="eidng8"/>
+  <text language="88" name="Lock Station Stock" description="Locks all player stations to have a minimum level of stock." author="eidng8"/>
+  <dependency id="ws_2042901274" name="SirNukes Mod Support APIs" optional="false"/>
 </content>

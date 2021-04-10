@@ -1,23 +1,23 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <diff>
   <add sel="/language">
-    <page id="9595963" title="Lock Station Stock" descr="Station" voice="no">
+    <page id="9595963" title="Defence fleet" descr="Ship" voice="yes">
       <t id="10000">Lock Station Stock</t>
-      <t id="10001">Makes sure all player stations have a minimum amount of stock in storage.</t>
-      <t id="10002">Lock products storage</t>
-      <t id="10003">Makes sure all player stations have a minimum amount of every product in storage.</t>
-      <t id="10004">Lock trade wares storage</t>
-      <t id="10005">Makes sure all player stations have a minimum amount of every trade ware in storage.</t>
-      <t id="10006">Lock workforce</t>
-      <t id="10007">Makes sure all player stations have full workforce.</t>
-      <t id="10008">Lock resources storage</t>
-      <t id="10009">Makes sure all player stations have a minimum amount of every resource in storage.</t>
-      <t id="10010">Lock build storage</t>
-      <t id="10011">Makes sure all player stations' build storage are full.</t>
-      <t id="10012">Minimum filled percentage</t>
-      <t id="10013">The minimum level of storage to keep. Stocks above this level will not be affected.</t>
-      <t id="10014">Interval</t>
-      <t id="10015">How often should storages be checked.</t>
+      <t id="10001">Stellt sicher, dass alle Spieler-Stationen eine Mindestmenge an Vorräten haben.</t>
+      <t id="10002">Produktionslager</t>
+      <t id="10003">Stellt sicher, dass alle Spieler-Stationen eine Mindestmenge von jedem Produkt im Lager haben.</t>
+      <t id="10004">Handelswarenlager</t>
+      <t id="10005">Stellt sicher, dass alle Spieler-Stationen eine Mindestmenge von jeder Handelsware im Lager haben.</t>
+      <t id="10006">Arbeitskraft</t>
+      <t id="10007">Stellt sicher, dass alle Spieler-Stationen voll ausgelastet sind.</t>
+      <t id="10008">Ressourcenlager</t>
+      <t id="10009">Stellt sicher, dass alle Spieler-Stationen eine Mindestmenge jeder Ressource im Lager haben.</t>
+      <t id="10010">Baulager</t>
+      <t id="10011">Stellt sicher, dass die Baulager aller Spieler-Stationen voll sind.</t>
+      <t id="10012">Mindestfüllgrad</t>
+      <t id="10013">Der Mindestbestand, der aufbewahrt werden soll. Bestände über diesem Niveau werden nicht beeinflusst.</t>
+      <t id="10014">Intervall</t>
+      <t id="10015">Wie oft sollten die Lager überprüft werden.</t>
     </page>
   </add>
 </diff>
