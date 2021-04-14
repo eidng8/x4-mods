@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: Michael (192.168.3.66) at 06.04.2020_08-08-21-->
+<macros>
+  <macro name="cube_split_def_claim_macro" class="defencemodule">
+    <component ref="cube_split_def_claim" />
+    <properties>
+      <identification name="{20104,40401} {9595965,10003}"
+          shortname="{20104,40403} {9595965,10003}"
+          makerrace="split"
+          description="{9595965,10001}" />
+      <hull max="520000" />
+      <ownership claim="1" />
+    </properties>
+  </macro>
+</macros>

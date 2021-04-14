@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<components>
+  <component name="cube_argon_prod_superfluidcoolant" class="production">
+    <source geometry="extensions\cube_station\assets\cube_argon_data" />
+    <layers />
+    <connections>
+      <connection name="container" tags="contents" value="0" />
+      <connection name="position" tags="position" value="1" />
+      <connection name="space" tags="production">
+        <offset />
+      </connection>
+      <connection name="Connection01" tags="part  ">
+        <offset>
+          <position x="-0.000000" y="0.000000" z="0.000000" />
+        </offset>
+        <parts>
+          <part name="part_main" wreck="part_main_wreck">
+            <lods>
+              <lod index="0">
+                <materials>
+                  <material id="1" ref="generic.generic_p1_fx" />
+                </materials>
+              </lod>
+              <lod index="1">
+                <materials>
+                  <material id="1" ref="generic.generic_p1_fx" />
+                </materials>
+              </lod>
+              <lod index="2">
+                <materials>
+                  <material id="1" ref="generic.generic_p1_fx" />
+                </materials>
+              </lod>
+              <lod index="3">
+                <materials>
+                  <material id="1" ref="generic.generic_p1_fx" />
+                </materials>
+              </lod>
+            </lods>
+            <size>
+              <max x="200" y="200" z="200" />
+              <center x="0" y="0" z="0" />
+            </size>
+          </part>
+        </parts>
+      </connection>
+      <connection name="ConnectionSnap001" tags="snap ">
+        <offset>
+          <position x="0" y="0" z="200" />
+        </offset>
+      </connection>
+      <connection name="ConnectionSnap002" tags="snap ">
+        <offset>
+          <position x="0" y="0" z="-200" />
+          <quaternion qx="-0" qy="-1" qz="-0" qw="7.54979E-08" />
+        </offset>
+      </connection>
+      <connection name="ConnectionSnap003" tags="snap ">
+        <offset>
+          <position x="-200" y="0" z="0" />
+          <quaternion qx="-0" qy="0.7071068" qz="-0" qw="-0.7071067" />
+        </offset>
+      </connection>
+      <connection name="ConnectionSnap004" tags="snap ">
+        <offset>
+          <position x="200" y="0" z="0" />
+          <quaternion qx="-0" qy="-0.7071068" qz="-0" qw="-0.7071068" />
+        </offset>
+      </connection>
+      <connection name="ConnectionSnap005" tags="snap ">
+        <offset>
+          <position x="0" y="-200" z="0" />
+          <quaternion qx="-0.5" qy="-0.5" qz="0.5" qw="-0.5" />
+        </offset>
+      </connection>
+      <connection name="ConnectionSnap006" tags="snap ">
+        <offset>
+          <position x="0" y="200" z="0" />
+          <quaternion qx="-0.5" qy="-0.5" qz="-0.5" qw="0.5" />
+        </offset>
+      </connection>
+    </connections>
+  </component>
+</components>

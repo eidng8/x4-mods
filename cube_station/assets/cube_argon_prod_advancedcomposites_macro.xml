@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<macros>
+  <macro name="cube_argon_prod_advancedcomposites_macro"
+      class="production">
+    <component ref="cube_argon_prod_advancedcomposites" />
+    <properties>
+      <identification name="{20104,10001} {9595965,10000}"
+          shortname="{20104,10003} {9595965,10000}"
+          description=" {9595965,10001}" />
+      <explosiondamage value="10000" />
+      <hull max="197000" />
+      <secrecy level="2" />
+      <production wares="advancedcomposites">
+        <queue ware="advancedcomposites" />
+      </production>
+      <workforce max="315" />
+    </properties>
+  </macro>
+</macros>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<macros>
+  <macro name="cube_argon_macro" class="connectionmodule">
+    <component ref="cube_argon" />
+    <properties>
+      <identification name="{9595965,10002}"
+          shortname="{9595965,10002}"
+          makerrace="argon"
+          description="{9595965,10001}" />
+      <hull max="120000" />
+    </properties>
+  </macro>
+</macros>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<macros>
+  <macro name="cube_teladi_hab_l_macro" class="habitation">
+    <component ref="cube_teladi_hab_l" />
+    <properties>
+      <identification name="{20104,30901} {9595965,10000}"
+          shortname="{20104,30903} {9595965,10000}"
+          makerrace="teladi"
+          size="large"
+          description="{9595965,10001}" />
+      <explosiondamage value="100000" />
+      <hull max="178582" />
+      <secrecy level="3" />
+      <workforce race="teladi" capacity="1000" />
+    </properties>
+  </macro>
+</macros>

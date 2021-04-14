@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: nick (192.168.3.58) at 21.09.2020_17-36-53-->
+<macros>
+  <macro name="cube_terran_macro" class="connectionmodule">
+    <component ref="cube_terran" />
+    <properties>
+      <identification name="{9595965,10006}"
+          shortname="{9595965,10006}"
+          makerrace="terran"
+          description="{9595965,10001}" />
+      <build>
+        <sets>
+          <set ref="factory" />
+          <set ref="headquarters_player" />
+          <set ref="piratebase" />
+        </sets>
+      </build>
+      <hull max="300000" />
+    </properties>
+  </macro>
+</macros>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<macros>
+  <macro name="cube_argon_def_claim_macro" class="defencemodule">
+    <component ref="cube_argon_def_claim" />
+    <properties>
+      <identification name="{20104,40101} {9595965,10000}"
+          shortname="{20104,40103} {9595965,10000}"
+          makerrace="argon"
+          description="{9595965,10001}" />
+      <hull max="512000" />
+      <ownership claim="1" />
+    </properties>
+  </macro>
+</macros>

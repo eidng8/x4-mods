@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<diff>
+
+  <!-- Universal Production Module Groups -->
+  <add sel="/groups/group[@name='prod_gen_advancedelectronics']">
+    <select macro="cube_argon_prod_advancedelectronics_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_gen_antimattercells']">
+    <select macro="cube_argon_prod_antimattercells_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_gen_antimatterconverters']">
+    <select macro="cube_argon_prod_antimatterconverters_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_gen_advancedcomposites']">
+    <select macro="cube_argon_prod_advancedcomposites_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_gen_claytronics']">
+    <select macro="cube_argon_prod_claytronics_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_gen_countermeasures']">
+    <select macro="cube_argon_prod_countermeasures_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_gen_dronecomponents']">
+    <select macro="cube_argon_prod_dronecomponents_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_gen_energycells']">
+    <select macro="cube_argon_prod_energycells_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_gen_engineparts']">
+    <select macro="cube_argon_prod_engineparts_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_gen_fieldcoils']">
+    <select macro="cube_argon_prod_fieldcoils_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_gen_hullparts']">
+    <select macro="cube_argon_prod_hullparts_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_gen_graphene']">
+    <select macro="cube_argon_prod_graphene_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_gen_microchips']">
+    <select macro="cube_argon_prod_microchips_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_gen_missilecomponents']">
+    <select macro="cube_argon_prod_missilecomponents_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_gen_superfluidcoolant']">
+    <select macro="cube_argon_prod_superfluidcoolant_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_gen_plasmaconductors']">
+    <select macro="cube_argon_prod_plasmaconductors_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_gen_quantumtubes']">
+    <select macro="cube_argon_prod_quantumtubes_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_gen_refinedmetals']">
+    <select macro="cube_argon_prod_refinedmetals_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_gen_scanningarrays']">
+    <select macro="cube_argon_prod_scanningarrays_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_gen_shieldcomponents']">
+    <select macro="cube_argon_prod_shieldcomponents_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_gen_siliconwafers']">
+    <select macro="cube_argon_prod_siliconwafers_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_gen_smartchips']">
+    <select macro="cube_argon_prod_smartchips_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_gen_spices']">
+    <select macro="cube_argon_prod_spices_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_gen_turretcomponents']">
+    <select macro="cube_argon_prod_turretcomponents_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_gen_water']">
+    <select macro="cube_argon_prod_water_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_gen_weaponcomponents']">
+    <select macro="cube_argon_prod_weaponcomponents_macro" />
+  </add>
+
+  <!-- Argon Production Module Groups -->
+  <add sel="/groups/group[@name='prod_arg_foodrations']">
+    <select macro="cube_argon_prod_foodrations_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_arg_meat']">
+    <select macro="cube_argon_prod_meat_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_arg_medicalsupplies']">
+    <select macro="cube_argon_prod_medicalsupplies_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_arg_spacefuel']">
+    <select macro="cube_argon_prod_spacefuel_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_arg_wheat']">
+    <select macro="cube_argon_prod_wheat_macro" />
+  </add>
+
+  <!-- Paranid Production Module Groups -->
+  <add sel="/groups/group[@name='prod_par_majadust']">
+    <select macro="cube_paranid_prod_majadust_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_par_majasnails']">
+    <select macro="cube_paranid_prod_majasnails_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_par_medicalsupplies']">
+    <select macro="cube_paranid_prod_medicalsupplies_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_par_sojabeans']">
+    <select macro="cube_paranid_prod_sojabeans_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_par_sojahusk']">
+    <select macro="cube_paranid_prod_sojahusk_macro" />
+  </add>
+
+  <!-- Teladi Production Module Groups -->
+  <add sel="/groups/group[@name='prod_tel_advancedcomposites']">
+    <select macro="cube_teladi_prod_advancedcomposites_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_tel_engineparts']">
+    <select macro="cube_teladi_prod_engineparts_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_tel_hullparts']">
+    <select macro="cube_teladi_prod_hullparts_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_tel_medicalsupplies']">
+    <select macro="cube_teladi_prod_medicalsupplies_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_tel_nostropoil']">
+    <select macro="cube_teladi_prod_nostropoil_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_tel_scanningarrays']">
+    <select macro="cube_teladi_prod_scanningarrays_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_tel_spaceweed']">
+    <select macro="cube_teladi_prod_spaceweed_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_tel_sunriseflowers']">
+    <select macro="cube_teladi_prod_sunriseflowers_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_tel_swampplant']">
+    <select macro="cube_teladi_prod_swampplant_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_tel_teladianium']">
+    <select macro="cube_teladi_prod_teladianium_macro" />
+  </add>
+
+  <!-- Argon Storage Module Groups -->
+  <add sel="/groups/group[@name='stor_arg']">
+    <select macro="cube_argon_stor_container_l_macro" />
+    <select macro="cube_argon_stor_liquid_l_macro" />
+    <select macro="cube_argon_stor_solid_l_macro" />
+  </add>
+
+  <!-- Paranid Storage Module Groups -->
+  <add sel="/groups/group[@name='stor_par']">
+    <select macro="cube_paranid_stor_container_l_macro" />
+    <select macro="cube_paranid_stor_liquid_l_macro" />
+    <select macro="cube_paranid_stor_solid_l_macro" />
+  </add>
+
+  <!--Teladi Storage Module Groups -->
+  <add sel="/groups/group[@name='stor_tel']">
+    <select macro="cube_teladi_stor_container_l_macro" />
+    <select macro="cube_teladi_stor_liquid_l_macro" />
+    <select macro="cube_teladi_stor_solid_l_macro" />
+  </add>
+
+  <!-- Argon Habitation Module Groups -->
+  <add sel="/groups/group[@name='hab_arg']">
+    <select macro="cube_argon_hab_l_macro" />
+  </add>
+
+  <!-- Paranid Habitation Module Groups -->
+  <add sel="/groups/group[@name='hab_par']">
+    <select macro="cube_paranid_hab_l_macro" />
+  </add>
+
+  <!-- Teladi Habitation Module Groups -->
+  <add sel="/groups/group[@name='hab_tel']">
+    <select macro="cube_teladi_hab_l_macro" />
+  </add>
+
+  <!-- Argon Ownership Claiming Module Groups -->
+  <add sel="/groups/group[@name='claim_arg']">
+    <select macro="cube_argon_def_claim_macro" />
+  </add>
+
+  <!-- Paranid Ownership Claiming Module Groups -->
+  <add sel="/groups/group[@name='claim_par']">
+    <select macro="cube_paranid_def_claim_macro" />
+  </add>
+
+  <!-- Teladi Ownership Claiming Module Groups -->
+  <add sel="/groups/group[@name='claim_tel']">
+    <select macro="cube_teladi_def_claim_macro" />
+  </add>
+
+  <!-- Argon Connection Module Groups-->
+  <add sel="/groups/group[@name='conn_arg']">
+    <select macro="cube_argon_macro" />
+  </add>
+
+  <!-- Paranid Connection Module Groups -->
+  <add sel="/groups/group[@name='conn_par']">
+    <select macro="cube_paranid_macro" />
+  </add>
+
+  <!-- Teladi Connection Module Groups-->
+  <add sel="/groups/group[@name='conn_tel']">
+    <select macro="cube_teladi_macro" />
+  </add>
+</diff>
