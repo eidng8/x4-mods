@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--Exported by: Florian (192.168.3.134) at 06.11.2018_13-32-51-->
 <macros>
   <macro name="cube_teladi_macro" class="connectionmodule">
     <component ref="cube_teladi" />

@@ -9,7 +9,6 @@ corresponding cube variants.
 * Cubes are all around the same size as Argon Cross Connection module;
 * Race specific modules use textures of corresponding race;
 * Cubes have exactly the same specification & price as vanilla ones, except:
-  - No drone
   - No turret
   - No shield
   - No ads

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--Exported by: nick (192.168.3.58) at 21.09.2020_17-36-53-->
 <macros>
   <macro name="cube_terran_macro" class="connectionmodule">
     <component ref="cube_terran" />

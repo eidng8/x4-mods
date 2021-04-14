@@ -1,0 +1,1213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<macros>
+  <macro name="cube_argon_def_claim_macro" class="defencemodule">
+    <component ref="cube_argon_def_claim" />
+    <properties>
+      <identification name="{20104,40101} {9595965,10000}"
+          shortname="{20104,40103} {9595965,10000}"
+          makerrace="argon"
+          description="{9595965,10001}" />
+      <hull max="512000" />
+      <ownership claim="1" />
+    </properties>
+  </macro>
+  <macro name="cube_argon_hab_l_macro" class="habitation">
+    <component ref="cube_argon_hab_l" />
+    <properties>
+      <identification name="{20104,30301} {9595965,10000}"
+          shortname="{20104,30303} {9595965,10000}"
+          makerrace="argon"
+          size="large"
+          description="{9595965,10001}" />
+      <explosiondamage value="100000" />
+      <hull max="178582" />
+      <secrecy level="3" />
+      <workforce race="argon" capacity="1000" />
+    </properties>
+  </macro>
+  <macro name="cube_argon_prod_advancedcomposites_macro"
+      class="production">
+    <component ref="cube_argon_prod_advancedcomposites" />
+    <properties>
+      <identification name="{20104,10001} {9595965,10000}"
+          shortname="{20104,10003} {9595965,10000}"
+          description=" {9595965,10001}" />
+      <explosiondamage value="10000" />
+      <hull max="197000" />
+      <secrecy level="2" />
+      <production wares="advancedcomposites">
+        <queue ware="advancedcomposites" />
+      </production>
+      <workforce max="315" />
+    </properties>
+  </macro>
+  <macro name="cube_argon_prod_advancedelectronics_macro"
+      class="production">
+    <component ref="cube_argon_prod_advancedelectronics" />
+    <properties>
+      <identification name="{20104,10201} {9595965,10000}"
+          shortname="{20104,10203} {9595965,10000}"
+          description="{9595965,10001}" />
+      <explosiondamage value="10000" />
+      <hull max="160000" />
+      <secrecy level="2" />
+      <production wares="advancedelectronics">
+        <queue ware="advancedelectronics" />
+      </production>
+      <workforce max="540" />
+    </properties>
+  </macro>
+  <macro name="cube_argon_prod_antimattercells_macro" class="production">
+    <component ref="cube_argon_prod_antimattercells" />
+    <properties>
+      <identification name="{20104,10301} {9595965,10000}"
+          shortname="{20104,10303} {9595965,10000}"
+          description="{9595965,10001}" />
+      <explosiondamage value="10000" />
+      <hull max="251000" />
+      <secrecy level="2" />
+      <production wares="antimattercells">
+        <queue ware="antimattercells" />
+      </production>
+      <workforce max="180" />
+    </properties>
+  </macro>
+  <macro name="cube_argon_prod_antimatterconverters_macro" class="production">
+    <component ref="cube_argon_prod_antimatterconverters" />
+    <properties>
+      <identification name="{20104,10401} {9595965,10000}"
+          shortname="{20104,10403} {9595965,10000}"
+          description="{9595965,10001}" />
+      <explosiondamage value="10000" />
+      <hull max="216000" />
+      <secrecy level="2" />
+      <production wares="antimatterconverters">
+        <queue ware="antimatterconverters" />
+      </production>
+      <workforce max="1080" />
+    </properties>
+  </macro>
+  <macro name="cube_argon_prod_claytronics_macro" class="production">
+    <component ref="cube_argon_prod_claytronics" />
+    <properties>
+      <identification name="{20104,10501} {9595965,10000}"
+          shortname="{20104,10503} {9595965,10000}"
+          description="{9595965,10001}" />
+      <explosiondamage value="10000" />
+      <hull max="195000" />
+      <secrecy level="2" />
+      <production wares="claytronics">
+        <queue ware="claytronics" />
+      </production>
+      <workforce max="1215" />
+    </properties>
+  </macro>
+  <macro name="cube_argon_prod_dronecomponents_macro" class="production">
+    <component ref="cube_argon_prod_dronecomponents" />
+    <properties>
+      <identification name="{20104,10701} {9595965,10000}"
+          shortname="{20104,10703} {9595965,10000}"
+          description="{9595965,10001}" />
+      <explosiondamage value="10000" />
+      <hull max="174000" />
+      <secrecy level="2" />
+      <production wares="dronecomponents">
+        <queue ware="dronecomponents" />
+      </production>
+      <workforce max="675" />
+    </properties>
+  </macro>
+  <macro name="cube_argon_prod_energycells_macro" class="production">
+    <component ref="cube_argon_prod_energycells" />
+    <properties>
+      <identification name="{20104,10801} {9595965,10000}"
+          shortname="{20104,10803} {9595965,10000}"
+          description="{9595965,10001}" />
+      <explosiondamage value="10000" />
+      <hull max="217000" />
+      <secrecy level="2" />
+      <production wares="energycells">
+        <queue ware="energycells" />
+      </production>
+      <workforce max="90" />
+    </properties>
+  </macro>
+  <macro name="cube_argon_prod_engineparts_macro" class="production">
+    <component ref="cube_argon_prod_engineparts" />
+    <properties>
+      <identification name="{20104,10901} {9595965,10000}"
+          shortname="{20104,10903} {9595965,10000}"
+          description="{9595965,10001}" />
+      <explosiondamage value="10000" />
+      <hull max="120000" />
+      <secrecy level="2" />
+      <production wares="engineparts">
+        <queue ware="engineparts" />
+      </production>
+      <workforce max="225" />
+    </properties>
+  </macro>
+  <macro name="cube_argon_prod_fieldcoils_macro" class="production">
+    <component ref="cube_argon_prod_fieldcoils" />
+    <properties>
+      <identification name="{20104,11101} {9595965,10000}"
+          shortname="{20104,11103} {9595965,10000}"
+          description="{9595965,10001}" />
+      <explosiondamage value="10000" />
+      <hull max="149000" />
+      <secrecy level="2" />
+      <production wares="fieldcoils">
+        <queue ware="fieldcoils" />
+      </production>
+      <workforce max="810" />
+    </properties>
+  </macro>
+  <macro name="cube_argon_prod_foodrations_macro" class="production">
+    <component ref="cube_argon_prod_foodrations" />
+    <properties>
+      <identification name="{20104,13401} {9595965,10000}"
+          shortname="{20104,13403} {9595965,10000}"
+          makerrace="argon"
+          description="{9595965,10001}" />
+      <explosiondamage value="10000" />
+      <hull max="133000" />
+      <secrecy level="2" />
+      <production wares="foodrations">
+        <queue ware="foodrations" method="argon" />
+      </production>
+      <workforce max="90" />
+    </properties>
+  </macro>
+  <macro name="cube_argon_prod_graphene_macro" class="production">
+    <component ref="cube_argon_prod_graphene" />
+    <properties>
+      <identification name="{20104,11201} {9595965,10000}"
+          shortname="{20104,11203} {9595965,10000}"
+          description="{9595965,10001}" />
+      <explosiondamage value="10000" />
+      <hull max="190000" />
+      <secrecy level="2" />
+      <production wares="graphene">
+        <queue ware="graphene" />
+      </production>
+      <workforce max="180" />
+    </properties>
+  </macro>
+  <macro name="cube_argon_prod_hullparts_macro" class="production">
+    <component ref="cube_argon_prod_hullparts" />
+    <properties>
+      <identification name="{20104,11301} {9595965,10000}"
+          shortname="{20104,11303} {9595965,10000}"
+          description="{9595965,10001}" />
+      <explosiondamage value="10000" />
+      <hull max="146000" />
+      <secrecy level="2" />
+      <production wares="hullparts">
+        <queue ware="hullparts" />
+      </production>
+      <workforce max="270" />
+    </properties>
+  </macro>
+  <macro name="cube_argon_prod_meat_macro" class="production">
+    <component ref="cube_argon_prod_meat" />
+    <properties>
+      <identification name="{20104,13501} {9595965,10000}"
+          shortname="{20104,13503} {9595965,10000}"
+          makerrace="argon"
+          description="{9595965,10001}" />
+      <explosiondamage value="10000" />
+      <hull max="198000" />
+      <secrecy level="2" />
+      <production wares="meat">
+        <queue ware="meat" method="argon" />
+      </production>
+      <workforce max="75" />
+    </properties>
+  </macro>
+  <macro name="cube_argon_prod_medicalsupplies_macro" class="production">
+    <component ref="cube_argon_prod_medicalsupplies" />
+    <properties>
+      <identification name="{20104,11601} {9595965,10000}"
+          shortname="{20104,11603} {9595965,10000}"
+          makerrace="argon"
+          description="{9595965,10001}" />
+      <explosiondamage value="10000" />
+      <hull max="197000" />
+      <secrecy level="2" />
+      <production wares="medicalsupplies">
+        <queue ware="medicalsupplies" />
+      </production>
+      <workforce max="90" />
+    </properties>
+  </macro>
+  <macro name="cube_argon_prod_microchips_macro" class="production">
+    <component ref="cube_argon_prod_microchips" />
+    <properties>
+      <identification name="{20104,11901} {9595965,10000}"
+          shortname="{20104,11903} {9595965,10000}"
+          description="{9595965,10001}" />
+      <explosiondamage value="10000" />
+      <hull max="199000" />
+      <secrecy level="2" />
+      <production wares="microchips">
+        <queue ware="microchips" />
+      </production>
+      <workforce max="450" />
+    </properties>
+  </macro>
+  <macro name="cube_argon_prod_missilecomponents_macro"
+      class="production">
+    <component ref="cube_argon_prod_missilecomponents" />
+    <properties>
+      <identification name="{20104,12001} {9595965,10000}"
+          shortname="{20104,12003} {9595965,10000}"
+          description="{9595965,10001}" />
+      <explosiondamage value="10000" />
+      <hull max="159000" />
+      <secrecy level="2" />
+      <production wares="missilecomponents">
+        <queue ware="missilecomponents" />
+      </production>
+      <workforce max="22" />
+    </properties>
+  </macro>
+  <macro name="cube_argon_prod_plasmaconductors_macro"
+      class="production">
+    <component ref="cube_argon_prod_plasmaconductors" />
+    <properties>
+      <identification name="{20104,12101} {9595965,10000}"
+          shortname="{20104,12103} {9595965,10000}"
+          description="{9595965,10001}" />
+      <explosiondamage value="10000" />
+      <hull max="181000" />
+      <secrecy level="2" />
+      <production wares="plasmaconductors">
+        <queue ware="plasmaconductors" />
+      </production>
+      <workforce max="225" />
+    </properties>
+  </macro>
+  <macro name="cube_argon_prod_quantumtubes_macro" class="production">
+    <component ref="cube_argon_prod_quantumtubes" />
+    <properties>
+      <identification name="{20104,12201} {9595965,10000}"
+          shortname="{20104,12203} {9595965,10000}"
+          description="{9595965,10001}" />
+      <explosiondamage value="10000" />
+      <hull max="148000" />
+      <secrecy level="2" />
+      <production wares="quantumtubes">
+        <queue ware="quantumtubes" />
+      </production>
+      <workforce max="225" />
+    </properties>
+  </macro>
+  <macro name="cube_argon_prod_refinedmetals_macro" class="production">
+    <component ref="cube_argon_prod_refinedmetals" />
+    <properties>
+      <identification name="{20104,12301} {9595965,10000}"
+          shortname="{20104,12303} {9595965,10000}"
+          description="{9595965,10001}" />
+      <explosiondamage value="10000" />
+      <hull max="210000" />
+      <secrecy level="2" />
+      <production wares="refinedmetals">
+        <queue ware="refinedmetals" />
+      </production>
+      <workforce max="225" />
+    </properties>
+  </macro>
+  <macro name="cube_argon_prod_scanningarrays_macro" class="production">
+    <component ref="cube_argon_prod_scanningarrays" />
+    <properties>
+      <identification name="{20104,12401} {9595965,10000}"
+          shortname="{20104,12403} {9595965,10000}"
+          description="{9595965,10001}" />
+      <explosiondamage value="10000" />
+      <hull max="169000" />
+      <secrecy level="2" />
+      <production wares="scanningarrays">
+        <queue ware="scanningarrays" />
+      </production>
+      <workforce max="315" />
+    </properties>
+  </macro>
+  <macro name="cube_argon_prod_shieldcomponents_macro"
+      class="production">
+    <component ref="cube_argon_prod_shieldcomponents" />
+    <properties>
+      <identification name="{20104,12601} {9595965,10000}"
+          shortname="{20104,12603} {9595965,10000}"
+          description="{9595965,10001}" />
+      <explosiondamage value="10000" />
+      <hull max="191000" />
+      <secrecy level="2" />
+      <production wares="shieldcomponents">
+        <queue ware="shieldcomponents" />
+      </production>
+      <workforce max="225" />
+    </properties>
+  </macro>
+  <macro name="cube_argon_prod_siliconwafers_macro" class="production">
+    <component ref="cube_argon_prod_siliconwafers" />
+    <properties>
+      <identification name="{20104,12701} {9595965,10000}"
+          shortname="{20104,12703} {9595965,10000}"
+          description="{9595965,10001}" />
+      <explosiondamage value="10000" />
+      <hull max="186000" />
+      <secrecy level="2" />
+      <production wares="siliconwafers">
+        <queue ware="siliconwafers" />
+      </production>
+      <workforce max="225" />
+    </properties>
+  </macro>
+  <macro name="cube_argon_prod_smartchips_macro" class="production">
+    <component ref="cube_argon_prod_smartchips" />
+    <properties>
+      <identification name="{20104,12801} {9595965,10000}"
+          shortname="{20104,12803} {9595965,10000}"
+          description="{9595965,10001}" />
+      <explosiondamage value="10000" />
+      <hull max="104000" />
+      <secrecy level="2" />
+      <production wares="smartchips">
+        <queue ware="smartchips" />
+      </production>
+      <workforce max="60" />
+    </properties>
+  </macro>
+  <macro name="cube_argon_prod_spacefuel_macro" class="production">
+    <component ref="cube_argon_prod_spacefuel" />
+    <properties>
+      <identification name="{20104,13601} {9595965,10000}"
+          shortname="{20104,13603} {9595965,10000}"
+          makerrace="argon"
+          description="{9595965,10001}" />
+      <explosiondamage value="10000" />
+      <hull max="148000" />
+      <secrecy level="2" />
+      <production wares="spacefuel">
+        <queue ware="spacefuel" method="argon" />
+      </production>
+      <workforce max="225" />
+    </properties>
+  </macro>
+  <macro name="cube_argon_prod_spices_macro" class="production">
+    <component ref="cube_argon_prod_spices" />
+    <properties>
+      <identification name="{20104,12901} {9595965,10000}"
+          shortname="{20104,12903} {9595965,10000}"
+          description="{9595965,10001}" />
+      <explosiondamage value="10000" />
+      <hull max="151000" />
+      <secrecy level="2" />
+      <production wares="spices">
+        <queue ware="spices" />
+      </production>
+      <workforce max="60" />
+    </properties>
+  </macro>
+  <macro name="cube_argon_prod_superfluidcoolant_macro"
+      class="production">
+    <component ref="cube_argon_prod_superfluidcoolant" />
+    <properties>
+      <identification name="{20104,13001} {9595965,10000}"
+          shortname="{20104,13003} {9595965,10000}"
+          description="{9595965,10001}" />
+      <explosiondamage value="10000" />
+      <hull max="177000" />
+      <secrecy level="2" />
+      <production wares="superfluidcoolant">
+        <queue ware="superfluidcoolant" />
+      </production>
+      <workforce max="180" />
+    </properties>
+  </macro>
+  <macro name="cube_argon_prod_turretcomponents_macro"
+      class="production">
+    <component ref="cube_argon_prod_turretcomponents" />
+    <properties>
+      <identification name="{20104,13101} {9595965,10000}"
+          shortname="{20104,13103} {9595965,10000}"
+          description="{9595965,10001}" />
+      <explosiondamage value="10000" />
+      <hull max="155000" />
+      <secrecy level="2" />
+      <production wares="turretcomponents">
+        <queue ware="turretcomponents" />
+      </production>
+      <workforce max="225" />
+    </properties>
+  </macro>
+  <macro name="cube_argon_prod_water_macro" class="production">
+    <component ref="cube_argon_prod_water" />
+    <properties>
+      <identification name="{20104,13201} {9595965,10000}"
+          shortname="{20104,13203} {9595965,10000}"
+          description="{9595965,10001}" />
+      <explosiondamage value="10000" />
+      <hull max="203000" />
+      <secrecy level="2" />
+      <production wares="water">
+        <queue ware="water" />
+      </production>
+      <workforce max="180" />
+    </properties>
+  </macro>
+  <macro name="cube_argon_prod_weaponcomponents_macro"
+      class="production">
+    <component ref="cube_argon_prod_weaponcomponents" />
+    <properties>
+      <identification name="{20104,13301} {9595965,10000}"
+          shortname="{20104,13303} {9595965,10000}"
+          description="{9595965,10001}" />
+      <explosiondamage value="10000" />
+      <hull max="208000" />
+      <secrecy level="2" />
+      <production wares="weaponcomponents">
+        <queue ware="weaponcomponents" />
+      </production>
+      <workforce max="225" />
+    </properties>
+  </macro>
+  <macro name="cube_argon_prod_wheat_macro" class="production">
+    <component ref="cube_argon_prod_wheat" />
+    <properties>
+      <identification name="{20104,13701} {9595965,10000}"
+          shortname="{20104,13703} {9595965,10000}"
+          makerrace="argon"
+          description="{9595965,10001}" />
+      <explosiondamage value="10000" />
+      <hull max="262000" />
+      <secrecy level="2" />
+      <production wares="wheat">
+        <queue ware="wheat" method="argon" />
+      </production>
+      <workforce max="75" />
+    </properties>
+  </macro>
+  <macro name="cube_argon_stor_container_l_macro" class="storage">
+    <component ref="cube_argon_stor_container_l" />
+    <properties>
+      <identification name="{20104,20301} {9595965,10000}"
+          shortname="{20104,20303} {9595965,10000}"
+          makerrace="argon"
+          size="large"
+          description="{9595965,10001}" />
+      <cargo max="1000000" tags="container" />
+      <explosiondamage value="10000" />
+      <hull max="565000" />
+      <secrecy level="1" />
+    </properties>
+  </macro>
+  <macro name="cube_argon_stor_liquid_l_macro" class="storage">
+    <component ref="cube_argon_stor_liquid_l" />
+    <properties>
+      <identification name="{20104,21301} {9595965,10000}"
+          shortname="{20104,21303} {9595965,10000}"
+          makerrace="argon"
+          size="large"
+          description="{9595965,10001}" />
+      <cargo max="1000000" tags="liquid" />
+      <explosiondamage value="10000" />
+      <hull max="565000" />
+      <secrecy level="1" />
+    </properties>
+  </macro>
+  <macro name="cube_argon_stor_solid_l_macro" class="storage">
+    <component ref="cube_argon_stor_solid_l" />
+    <properties>
+      <identification name="{20104,22301} {9595965,10000}"
+          shortname="{20104,22303} {9595965,10000}"
+          makerrace="argon"
+          size="large"
+          description="{9595965,10001}" />
+      <cargo max="1000000" tags="solid" />
+      <explosiondamage value="10000" />
+      <hull max="565000" />
+      <secrecy level="1" />
+    </properties>
+  </macro>
+  <macro name="cube_paranid_def_claim_macro" class="defencemodule">
+    <component ref="cube_paranid_def_claim" />
+    <properties>
+      <identification name="{20104,40201} {9595965,10000}"
+          shortname="{20104,40203} {9595965,10000}"
+          makerrace="paranid"
+          description="{9595965,10001}" />
+      <hull max="532000" />
+      <ownership claim="1" />
+    </properties>
+  </macro>
+  <macro name="cube_paranid_hab_l_macro" class="habitation">
+    <component ref="cube_paranid_hab_l" />
+    <properties>
+      <identification name="{20104,30601} {9595965,10000}"
+          shortname="{20104,30603} {9595965,10000}"
+          makerrace="paranid"
+          size="large"
+          description="{9595965,10001}" />
+      <explosiondamage value="100000" />
+      <hull max="212426" />
+      <secrecy level="3" />
+      <workforce race="paranid" capacity="999" />
+    </properties>
+  </macro>
+  <macro name="cube_paranid_prod_majadust_macro" class="production">
+    <component ref="cube_paranid_prod_majadust" />
+    <properties>
+      <identification name="{20104,13801} {9595965,10000}"
+          shortname="{20104,13803} {9595965,10000}"
+          makerrace="paranid"
+          description="{9595965,10001}" />
+      <explosiondamage value="10000" />
+      <hull max="245000" />
+      <secrecy level="2" />
+      <production wares="majadust">
+        <queue ware="majadust" method="paranid" />
+      </production>
+      <workforce max="123" />
+    </properties>
+  </macro>
+  <macro name="cube_paranid_prod_majasnails_macro" class="production">
+    <component ref="cube_paranid_prod_majasnails" />
+    <properties>
+      <identification name="{20104,13901} {9595965,10000}"
+          shortname="{20104,13903} {9595965,10000}"
+          makerrace="paranid"
+          description="{9595965,10001}" />
+      <explosiondamage value="10000" />
+      <hull max="236000" />
+      <secrecy level="2" />
+      <production wares="majasnails">
+        <queue ware="majasnails" method="paranid" />
+      </production>
+      <workforce max="175" />
+    </properties>
+  </macro>
+  <macro name="cube_paranid_prod_medicalsupplies_macro"
+      class="production">
+    <component ref="cube_paranid_prod_medicalsupplies" />
+    <properties>
+      <identification name="{20104,11701} {9595965,10000}"
+          shortname="{20104,11703} {9595965,10000}"
+          makerrace="paranid"
+          description="{9595965,10001}" />
+      <explosiondamage value="10000" />
+      <hull max="197000" />
+      <secrecy level="2" />
+      <production wares="medicalsupplies">
+        <queue ware="medicalsupplies" method="paranid" />
+      </production>
+      <workforce max="90" />
+    </properties>
+  </macro>
+  <macro name="cube_paranid_prod_sojabeans_macro" class="production">
+    <component ref="cube_paranid_prod_sojabeans" />
+    <properties>
+      <identification name="{20104,14001} {9595965,10000}"
+          shortname="{20104,14003} {9595965,10000}"
+          makerrace="paranid"
+          description="{9595965,10001}" />
+      <explosiondamage value="10000" />
+      <hull max="259000" />
+      <secrecy level="2" />
+      <production wares="sojabeans">
+        <queue ware="sojabeans" method="paranid" />
+      </production>
+      <workforce max="175" />
+    </properties>
+  </macro>
+  <macro name="cube_paranid_prod_sojahusk_macro" class="production">
+    <component ref="cube_paranid_prod_sojahusk" />
+    <properties>
+      <identification name="{20104,14101} {9595965,10000}"
+          shortname="{20104,14103} {9595965,10000}"
+          makerrace="paranid"
+          description="{9595965,10001}" />
+      <explosiondamage value="10000" />
+      <hull max="218000" />
+      <secrecy level="2" />
+      <production wares="sojahusk">
+        <queue ware="sojahusk" method="paranid" />
+      </production>
+      <workforce max="99" />
+    </properties>
+  </macro>
+  <macro name="cube_paranid_stor_container_l_macro" class="storage">
+    <component ref="cube_paranid_stor_container_l" />
+    <properties>
+      <identification name="{20104,20601} {9595965,10000}"
+          shortname="{20104,20603} {9595965,10000}"
+          makerrace="paranid"
+          size="large"
+          description="{9595965,10001}" />
+      <cargo max="1000000" tags="container" />
+      <explosiondamage value="10000" />
+      <hull max="653000" />
+      <secrecy level="1" />
+    </properties>
+  </macro>
+  <macro name="cube_paranid_stor_liquid_l_macro" class="storage">
+    <component ref="cube_paranid_stor_liquid_l" />
+    <properties>
+      <identification name="{20104,21601} {9595965,10000}"
+          shortname="{20104,21603} {9595965,10000}"
+          makerrace="paranid"
+          size="large"
+          description="{9595965,10001}" />
+      <cargo max="1000000" tags="liquid" />
+      <hull max="653000" />
+      <secrecy level="1" />
+    </properties>
+  </macro>
+  <macro name="cube_paranid_stor_solid_l_macro" class="storage">
+    <component ref="cube_paranid_stor_solid_l" />
+    <properties>
+      <identification name="{20104,22601} {9595965,10000}"
+          shortname="{20104,22603} {9595965,10000}"
+          makerrace="paranid"
+          size="large"
+          description="{9595965,10001}" />
+      <cargo max="1000000" tags="solid" />
+      <explosiondamage value="10000" />
+      <hull max="653000" />
+      <secrecy level="1" />
+    </properties>
+  </macro>
+  <macro name="cube_split_def_claim_macro" class="defencemodule">
+    <component ref="cube_split_def_claim" />
+    <properties>
+      <identification name="{20104,40401} {9595965,10003}"
+          shortname="{20104,40403} {9595965,10003}"
+          makerrace="split"
+          description="{9595965,10001}" />
+      <hull max="520000" />
+      <ownership claim="1" />
+    </properties>
+  </macro>
+  <macro name="cube_split_hab_l_macro" class="habitation">
+    <component ref="cube_split_hab_l" />
+    <properties>
+      <identification name="{20104,31201} {9595965,10000}"
+          shortname="{20104,31203} {9595965,10000}"
+          makerrace="split"
+          size="large"
+          description="{9595965,10001}" />
+      <hull max="178582" />
+      <secrecy level="3" />
+      <workforce race="split" capacity="1000" />
+    </properties>
+  </macro>
+  <macro name="cube_split_prod_cheltmeat_macro" class="production">
+    <component ref="cube_split_prod_cheltmeat" />
+    <properties>
+      <identification name="{20104,14901} {9595965,10000}"
+          shortname="{20104,14903} {9595965,10000}"
+          makerrace="split"
+          description="{9595965,10001}" />
+      <explosiondamage value="10000" />
+      <hull max="320000" />
+      <secrecy level="2" />
+      <production wares="cheltmeat">
+        <queue ware="cheltmeat" />
+      </production>
+      <workforce max="90" />
+    </properties>
+  </macro>
+  <macro name="cube_split_prod_medicalsupplies_macro" class="production">
+    <component ref="cube_split_prod_medicalsupplies" />
+    <properties>
+      <identification name="{20104,15001} {9595965,10000}"
+          shortname="{20104,15003} {9595965,10000}"
+          makerrace="split"
+          description="{9595965,10001}" />
+      <explosiondamage value="10000" />
+      <hull max="197000" />
+      <secrecy level="2" />
+      <production wares="medicalsupplies">
+        <queue ware="medicalsupplies" method="split" />
+      </production>
+      <workforce max="90" />
+    </properties>
+  </macro>
+  <macro name="cube_split_prod_scruffinfruits_macro" class="production">
+    <component ref="cube_split_prod_scruffinfruits" />
+    <properties>
+      <identification name="{20104,14801} {9595965,10000}"
+          shortname="{20104,14803} {9595965,10000}"
+          makerrace="split"
+          description="{9595965,10001}" />
+      <explosiondamage value="10000" />
+      <hull max="280000" />
+      <secrecy level="2" />
+      <production wares="scruffinfruits">
+        <queue ware="scruffinfruits" />
+      </production>
+      <workforce max="90" />
+    </properties>
+  </macro>
+  <macro name="cube_split_stor_container_l_macro" class="storage">
+    <component ref="cube_split_stor_container_l" />
+    <properties>
+      <identification name="{20104,25301} {9595965,10000}"
+          shortname="{20104,25303} {9595965,10000}"
+          makerrace="split"
+          size="large"
+          description="{9595965,10001}" />
+      <cargo max="1000000" tags="container" />
+      <explosiondamage value="10000" />
+      <hull max="778000" />
+      <secrecy level="1" />
+    </properties>
+  </macro>
+  <macro name="cube_split_stor_liquid_l_macro" class="storage">
+    <component ref="cube_split_stor_liquid_l" />
+    <properties>
+      <identification name="{20104,26301} {9595965,10000}"
+          shortname="{20104,26303} {9595965,10000}"
+          makerrace="split"
+          size="large"
+          description="{9595965,10001}" />
+      <cargo max="1000000" tags="liquid" />
+      <explosiondamage value="10000" />
+      <hull max="778000" />
+      <secrecy level="1" />
+    </properties>
+  </macro>
+  <macro name="cube_split_stor_solid_l_macro" class="storage">
+    <component ref="cube_split_stor_solid_l" />
+    <properties>
+      <identification name="{20104,27301} {9595965,10000}"
+          shortname="{20104,27303} {9595965,10000}"
+          makerrace="split"
+          size="large"
+          description="{9595965,10001}" />
+      <cargo max="1000000" tags="solid" />
+      <explosiondamage value="10000" />
+      <hull max="778000" />
+      <secrecy level="1" />
+    </properties>
+  </macro>
+  <macro name="cube_teladi_def_claim_macro" class="defencemodule">
+    <component ref="cube_teladi_def_claim" />
+    <properties>
+      <identification name="{20104,40301} {9595965,10000}"
+          shortname="{20104,40303} {9595965,10000}"
+          makerrace="teladi"
+          description="{9595965,10001}" />
+      <hull max="516000" />
+      <ownership claim="1" />
+    </properties>
+  </macro>
+  <macro name="cube_teladi_hab_l_macro" class="habitation">
+    <component ref="cube_teladi_hab_l" />
+    <properties>
+      <identification name="{20104,30901} {9595965,10000}"
+          shortname="{20104,30903} {9595965,10000}"
+          makerrace="teladi"
+          size="large"
+          description="{9595965,10001}" />
+      <explosiondamage value="100000" />
+      <hull max="178582" />
+      <secrecy level="3" />
+      <workforce race="teladi" capacity="1000" />
+    </properties>
+  </macro>
+  <macro name="cube_teladi_prod_advancedcomposites_macro"
+      class="production">
+    <component ref="cube_teladi_prod_advancedcomposites" />
+    <properties>
+      <identification name="{20104,10101} {9595965,10000}"
+          shortname="{20104,10103} {9595965,10000}"
+          makerrace="teladi"
+          description="{9595965,10001}" />
+      <explosiondamage value="10000" />
+      <hull max="197000" />
+      <secrecy level="2" />
+      <production wares="advancedcomposites">
+        <queue ware="advancedcomposites" method="teladi" />
+      </production>
+      <workforce max="315" />
+    </properties>
+  </macro>
+  <macro name="cube_teladi_prod_engineparts_macro" class="production">
+    <component ref="cube_teladi_prod_engineparts" />
+    <properties>
+      <identification name="{20104,11001} {9595965,10000}"
+          shortname="{20104,11003} {9595965,10000}"
+          makerrace="teladi"
+          description="{9595965,10001}" />
+      <explosiondamage value="10000" />
+      <hull max="120000" />
+      <secrecy level="2" />
+      <production wares="engineparts">
+        <queue ware="engineparts" method="teladi" />
+      </production>
+      <workforce max="225" />
+    </properties>
+  </macro>
+  <macro name="cube_teladi_prod_hullparts_macro" class="production">
+    <component ref="cube_teladi_prod_hullparts" />
+    <properties>
+      <identification name="{20104,11401} {9595965,10000}"
+          shortname="{20104,11403} {9595965,10000}"
+          makerrace="teladi"
+          description="{9595965,10001}" />
+      <explosiondamage value="10000" />
+      <hull max="146000" />
+      <secrecy level="2" />
+      <production wares="hullparts">
+        <queue ware="hullparts" method="teladi" />
+      </production>
+      <workforce max="270" />
+    </properties>
+  </macro>
+  <macro name="cube_teladi_prod_medicalsupplies_macro"
+      class="production">
+    <component ref="cube_teladi_prod_medicalsupplies" />
+    <properties>
+      <identification name="{20104,11801} {9595965,10000}"
+          shortname="{20104,11803} {9595965,10000}"
+          makerrace="teladi"
+          description="{9595965,10001}" />
+      <explosiondamage value="10000" />
+      <hull max="197000" />
+      <secrecy level="2" />
+      <production wares="medicalsupplies">
+        <queue ware="medicalsupplies" method="teladi" />
+      </production>
+      <workforce max="90" />
+    </properties>
+  </macro>
+  <macro name="cube_teladi_prod_nostropoil_macro" class="production">
+    <component ref="cube_teladi_prod_nostropoil" />
+    <properties>
+      <identification name="{20104,14201} {9595965,10000}"
+          shortname="{20104,14203} {9595965,10000}"
+          makerrace="teladi"
+          description="{9595965,10001}" />
+      <explosiondamage value="10000" />
+      <hull max="276000" />
+      <secrecy level="2" />
+      <production wares="nostropoil">
+        <queue ware="nostropoil" method="teladi" />
+      </production>
+      <workforce max="120" />
+    </properties>
+  </macro>
+  <macro name="cube_teladi_prod_scanningarrays_macro" class="production">
+    <component ref="cube_teladi_prod_scanningarrays" />
+    <properties>
+      <identification name="{20104,12501} {9595965,10000}"
+          shortname="{20104,12503} {9595965,10000}"
+          makerrace="teladi"
+          description="{9595965,10001}" />
+      <explosiondamage value="10000" />
+      <hull max="169000" />
+      <secrecy level="2" />
+      <production wares="scanningarrays">
+        <queue ware="scanningarrays" method="teladi" />
+      </production>
+      <workforce max="315" />
+    </properties>
+  </macro>
+  <macro name="cube_teladi_prod_spaceweed_macro" class="production">
+    <component ref="cube_teladi_prod_spaceweed" />
+    <properties>
+      <identification name="{20104,14301} {9595965,10000}"
+          shortname="{20104,14303} {9595965,10000}"
+          makerrace="teladi"
+          description="{9595965,10001}" />
+      <explosiondamage value="10000" />
+      <hull max="260000" />
+      <secrecy level="2" />
+      <production wares="spaceweed">
+        <queue ware="spaceweed" method="teladi" />
+      </production>
+      <workforce max="90" />
+    </properties>
+  </macro>
+  <macro name="cube_teladi_prod_sunriseflowers_macro" class="production">
+    <component ref="cube_teladi_prod_sunriseflowers" />
+    <properties>
+      <identification name="{20104,14401} {9595965,10000}"
+          shortname="{20104,14403} {9595965,10000}"
+          makerrace="teladi"
+          description="{9595965,10001}" />
+      <explosiondamage value="10000" />
+      <hull max="235000" />
+      <secrecy level="2" />
+      <production wares="sunriseflowers">
+        <queue ware="sunriseflowers" method="teladi" />
+      </production>
+      <workforce max="50" />
+    </properties>
+  </macro>
+  <macro name="cube_teladi_prod_swampplant_macro" class="production">
+    <component ref="cube_teladi_prod_swampplant" />
+    <properties>
+      <identification name="{20104,14501} {9595965,10000}"
+          shortname="{20104,14503} {9595965,10000}"
+          makerrace="teladi"
+          description="{9595965,10001}" />
+      <explosiondamage value="10000" />
+      <hull max="287000" />
+      <secrecy level="2" />
+      <production wares="swampplant">
+        <queue ware="swampplant" method="teladi" />
+      </production>
+      <workforce max="50" />
+    </properties>
+  </macro>
+  <macro name="cube_teladi_prod_teladianium_macro" class="production">
+    <component ref="cube_teladi_prod_teladianium" />
+    <properties>
+      <identification name="{20104,14601} {9595965,10000}"
+          shortname="{20104,14603} {9595965,10000}"
+          makerrace="teladi"
+          description="{9595965,10001}" />
+      <explosiondamage value="10000" />
+      <hull max="226000" />
+      <secrecy level="2" />
+      <production wares="teladianium">
+        <queue ware="teladianium" method="teladi" />
+      </production>
+      <workforce max="225" />
+    </properties>
+  </macro>
+  <macro name="cube_teladi_stor_container_l_macro" class="storage">
+    <component ref="cube_teladi_stor_container_l" />
+    <properties>
+      <identification name="{20104,20901} {9595965,10000}"
+          shortname="{20104,20903} {9595965,10000}"
+          makerrace="teladi"
+          size="large"
+          description="{9595965,10001}" />
+      <cargo max="1000000" tags="container" />
+      <explosiondamage value="10000" />
+      <hull max="531000" />
+      <secrecy level="1" />
+    </properties>
+  </macro>
+  <macro name="cube_teladi_stor_liquid_l_macro" class="storage">
+    <component ref="cube_teladi_stor_liquid_l" />
+    <properties>
+      <identification name="{20104,21901} {9595965,10000}"
+          shortname="{20104,21903} {9595965,10000}"
+          makerrace="teladi"
+          size="large"
+          description="{9595965,10001}" />
+      <cargo max="1000000" tags="liquid" />
+      <explosiondamage value="10000" />
+      <hull max="531000" />
+      <secrecy level="1" />
+    </properties>
+  </macro>
+  <macro name="cube_teladi_stor_solid_l_macro" class="storage">
+    <component ref="cube_teladi_stor_solid_l" />
+    <properties>
+      <identification name="{20104,22901} {9595965,10000}"
+          shortname="{20104,22903} {9595965,10000}"
+          makerrace="teladi"
+          size="large"
+          description="{9595965,10001}" />
+      <cargo max="1000000" tags="solid" />
+      <explosiondamage value="10000" />
+      <hull max="531000" />
+      <secrecy level="1" />
+    </properties>
+  </macro>
+  <macro name="cube_terran_def_claim_macro" class="defencemodule">
+    <component ref="cube_terran_def_claim" />
+    <properties>
+      <identification name="{20104,95001} {9595965,10000}"
+          shortname="{20104,95003} {9595965,10000}"
+          makerrace="terran"
+          description="{9595965,10001}" />
+      <hull max="600000" />
+      <ownership claim="1" />
+    </properties>
+  </macro>
+  <macro name="cube_terran_hab_l_macro" class="habitation">
+    <component ref="cube_terran_hab_l" />
+    <properties>
+      <identification name="{20104,31501} {9595965,10000}"
+          shortname="{20104,31503} {9595965,10000}"
+          makerrace="terran"
+          size="large"
+          description="{9595965,10001}" />
+      <explosiondamage value="100000" />
+      <hull max="1200000" />
+      <secrecy level="3" />
+      <workforce race="terran" capacity="500" />
+    </properties>
+  </macro>
+  <macro name="cube_terran_prod_computronicsubstrate_macro"
+      class="production">
+    <component ref="cube_terran_prod_computronicsubstrate" />
+    <properties>
+      <identification name="{20104,15101} {9595965,10000}"
+          shortname="{20104,15103} {9595965,10000}"
+          makerrace="terran"
+          description="{9595965,10001}" />
+      <explosiondamage value="20000" />
+      <hull max="400000" />
+      <production wares="computronicsubstrate">
+        <queue ware="computronicsubstrate" />
+      </production>
+      <workforce max="1500" />
+    </properties>
+  </macro>
+  <macro name="cube_terran_prod_energycells_macro" class="production">
+    <component ref="cube_terran_prod_energycells" />
+    <properties>
+      <identification name="{20104,15201} {9595965,10000}"
+          shortname="{20104,15203} {9595965,10000}"
+          makerrace="terran"
+          description="{9595965,10001}" />
+      <explosiondamage value="20000" />
+      <hull max="200000" />
+      <secrecy level="2" />
+      <production wares="energycells">
+        <queue ware="energycells" method="terran" />
+      </production>
+      <workforce max="45" />
+    </properties>
+  </macro>
+  <macro name="cube_terran_prod_medicalsupplies_macro"
+      class="production">
+    <component ref="cube_terran_prod_medicalsupplies" />
+    <properties>
+      <identification name="{20104,15301} {9595965,10000}"
+          shortname="{20104,15303} {9595965,10000}"
+          makerrace="terran"
+          description="{9595965,10001}" />
+      <explosiondamage value="20000" />
+      <hull max="240000" />
+      <production wares="medicalsupplies">
+        <queue ware="medicalsupplies" method="terran" />
+      </production>
+      <workforce max="90" />
+    </properties>
+  </macro>
+  <macro name="cube_terran_prod_metallicmicrolattice_macro"
+      class="production">
+    <component ref="cube_terran_prod_metallicmicrolattice" />
+    <properties>
+      <identification name="{20104,15401} {9595965,10000}"
+          shortname="{20104,15403} {9595965,10000}"
+          makerrace="terran"
+          description="{9595965,10001}" />
+      <explosiondamage value="20000" />
+      <hull max="280000" />
+      <production wares="metallicmicrolattice">
+        <queue ware="metallicmicrolattice" />
+      </production>
+      <workforce max="120" />
+    </properties>
+  </macro>
+  <macro name="cube_terran_prod_proteinpaste_macro" class="production">
+    <component ref="cube_terran_prod_proteinpaste" />
+    <properties>
+      <identification name="{20104,15601} {9595965,10000}"
+          shortname="{20104,15603} {9595965,10000}"
+          makerrace="terran"
+          description="{9595965,10001}" />
+      <explosiondamage value="20000" />
+      <hull max="260000" />
+      <secrecy level="2" />
+      <production wares="proteinpaste">
+        <queue ware="proteinpaste" />
+      </production>
+      <workforce max="180" />
+    </properties>
+  </macro>
+  <macro name="cube_terran_prod_siliconcarbide_macro" class="production">
+    <component ref="cube_terran_prod_siliconcarbide" />
+    <properties>
+      <identification name="{20104,15701} {9595965,10000}"
+          shortname="{20104,15703} {9595965,10000}"
+          makerrace="terran"
+          description="{9595965,10001}" />
+      <explosiondamage value="20000" />
+      <hull max="350000" />
+      <production wares="siliconcarbide">
+        <queue ware="siliconcarbide" />
+      </production>
+      <workforce max="750" />
+    </properties>
+  </macro>
+  <macro name="cube_terran_prod_stimulants_macro" class="production">
+    <component ref="cube_terran_prod_stimulants" />
+    <properties>
+      <identification name="{20104,15801} {9595965,10000}"
+          shortname="{20104,15803} {9595965,10000}"
+          makerrace="terran"
+          description="{9595965,10001}" />
+      <explosiondamage value="20000" />
+      <hull max="300000" />
+      <production wares="stimulants">
+        <queue ware="stimulants" />
+      </production>
+      <workforce max="300" />
+    </properties>
+  </macro>
+  <macro name="cube_terran_prod_terranmre_macro" class="production">
+    <component ref="cube_terran_prod_terranmre" />
+    <properties>
+      <identification name="{20104,15501} {9595965,10000}"
+          shortname="{20104,15503} {9595965,10000}"
+          makerrace="terran"
+          description="{9595965,10001}" />
+      <explosiondamage value="20000" />
+      <hull max="270000" />
+      <secrecy level="2" />
+      <production wares="terranmre">
+        <queue ware="terranmre" />
+      </production>
+      <workforce max="135" />
+    </properties>
+  </macro>
+  <macro name="cube_terran_stor_container_l_macro" class="storage">
+    <component ref="cube_terran_stor_container_l" />
+    <properties>
+      <identification name="{20104,90301} {9595965,10000}"
+          shortname="{20104,90303} {9595965,10000}"
+          makerrace="terran"
+          size="large"
+          description="{9595965,10001}" />
+      <cargo max="1000000" tags="container" />
+      <hull max="1000000" />
+      <secrecy level="1" />
+    </properties>
+  </macro>
+  <macro name="cube_terran_stor_liquid_l_macro" class="storage">
+    <component ref="cube_terran_stor_liquid_l" />
+    <properties>
+      <identification name="{20104,90601} {9595965,10000}"
+          shortname="{20104,90603} {9595965,10000}"
+          makerrace="terran"
+          size="large"
+          description="{9595965,10001}" />
+      <cargo max="1000000" tags="liquid" />
+      <hull max="1000000" />
+      <secrecy level="1" />
+    </properties>
+  </macro>
+  <macro name="cube_terran_stor_solid_l_macro" class="storage">
+    <component ref="cube_terran_stor_solid_l" />
+    <properties>
+      <identification name="{20104,90901} {9595965,10000}"
+          shortname="{20104,90903} {9595965,10000}"
+          makerrace="terran"
+          size="large"
+          description="{9595965,10001}" />
+      <cargo max="1000000" tags="solid" />
+      <hull max="1000000" />
+      <secrecy level="1" />
+    </properties>
+  </macro>
+</macros>
