@@ -2,10 +2,10 @@
 <content name="CUBE"
     description="Adds a bunch of cube station modules."
     author="eidng8"
-    version="100"
-    date="2021-04-14"
+    version="101"
+    date="2021-04-15"
     save="true"
-    lastupdate="1618378970"
+    lastupdate="1618478517"
     sync="false"
     id="ws_2456659845">
   <text language="7"
