@@ -71,7 +71,6 @@
               <append_list_elements name="$options" other="$mods" />
               <signal_cue_instantly cue="md.Simple_Menu_API.Make_Dropdown"
                   param="table[
-                    $id = 'eidng8_SM_Checkbox_Fit_Combat_XL_Mods',
                     $col = 2,
                     $colSpan = 2,
                     $options = $options,

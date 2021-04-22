@@ -198,6 +198,15 @@
                 ],
               ],
               $trading = table[
+                $xl = table[
+                  $fit = 0,
+                  $mods = table[
+                    $hull   = global.$eidng8_SM.$mods.$hull,
+                    $engine = global.$eidng8_SM.$mods.$engine,
+                    $shield = global.$eidng8_SM.$mods.$shield,
+                    $weapon = global.$eidng8_SM.$mods.$weapon
+                  ]
+                ],
                 $l = table[
                   $fit = 0,
                   $mods = table[
@@ -227,6 +236,15 @@
                 ],
               ],
               $mining = table[
+                $xl = table[
+                  $fit = 0,
+                  $mods = table[
+                    $hull   = global.$eidng8_SM.$mods.$hull,
+                    $engine = global.$eidng8_SM.$mods.$engine,
+                    $shield = global.$eidng8_SM.$mods.$shield,
+                    $weapon = global.$eidng8_SM.$mods.$weapon
+                  ]
+                ],
                 $l = table[
                   $fit = 0,
                   $mods = table[
@@ -309,6 +327,15 @@
                   ],
                 ],
                 $trading = table[
+                  $xl = table[
+                    $fit = 0,
+                    $mods = table[
+                      $hull   = 1,
+                      $engine = 1,
+                      $shield = 1,
+                      $weapon = 1
+                    ]
+                  ],
                   $l = table[
                     $fit = 0,
                     $mods = table[
@@ -338,6 +365,15 @@
                   ],
                 ],
                 $mining = table[
+                  $xl = table[
+                    $fit = 0,
+                    $mods = table[
+                      $hull   = 1,
+                      $engine = 1,
+                      $shield = 1,
+                      $weapon = 1
+                    ]
+                  ],
                   $l = table[
                     $fit = 0,
                     $mods = table[
