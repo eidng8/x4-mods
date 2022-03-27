@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<macros>
+  <macro name="cube_paranid_macro" class="connectionmodule">
+    <component ref="cube_paranid" />
+    <properties>
+      <identification name="{9595965,10004}"
+          shortname="{9595965,10004}"
+          makerrace="paranid"
+          description="{9595965,10001}" />
+      <build>
+        <sets>
+          <set ref="factory" />
+          <set ref="tradestation_paranid" />
+          <set ref="piratebase" />
+          <set ref="headquarters_player" />
+        </sets>
+      </build>
+      <hull max="90000" />
+    </properties>
+  </macro>
+</macros>

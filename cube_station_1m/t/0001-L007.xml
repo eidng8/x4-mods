@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<diff>
+  <add sel="/language">
+    <page id="9595965" title="CUBE Station Modules" descr="Station" voice="no">
+      <t id="10000">CUBE</t>
+      <t id="10001">Just an ordinary cube.</t>
+      <t id="10002">{9595965,10000} {20202,101}</t>
+      <t id="10003">{9595965,10000} {20202,301}</t>
+      <t id="10004">{9595965,10000} {20202,401}</t>
+      <t id="10005">{9595965,10000} {20202,501}</t>
+      <t id="10006">{9595965,10000} {20202,701}</t>
+    </page>
+  </add>
+</diff>

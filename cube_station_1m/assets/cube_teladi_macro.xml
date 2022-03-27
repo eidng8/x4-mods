@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<macros>
+  <macro name="cube_teladi_macro" class="connectionmodule">
+    <component ref="cube_teladi" />
+    <properties>
+      <identification name="{9595965,10005}"
+          shortname="{9595965,10005}"
+          makerrace="teladi"
+          description="{9595965,10001}" />
+      <build>
+        <sets>
+          <set ref="factory" />
+          <set ref="tradestation_teladi" />
+          <set ref="piratebase" />
+          <set ref="headquarters_player" />
+        </sets>
+      </build>
+      <hull max="120000" />
+    </properties>
+  </macro>
+</macros>

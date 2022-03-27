@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mdscript name="cube_setup"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../src/md/md.xsd">
+  <cues>
+    <cue name="Cube_Setup">
+      <conditions>
+        <event_cue_signalled cue="md.Setup.Start" />
+      </conditions>
+      <actions>
+        <add_blueprints wares="[
+          ware.cube_argon,
+          ware.cube_paranid,
+          ware.cube_split,
+          ware.cube_teladi,
+          ware.cube_terran
+        ]" />
+      </actions>
+    </cue>
+  </cues>
+</mdscript>

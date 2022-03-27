@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<diff>
+
+  <!-- Terran Production Module Groups -->
+  <add sel="/groups/group[@name='prod_ter_computronicsubstrate']">
+    <select macro="cube_terran_prod_computronicsubstrate_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_ter_energycells']">
+    <select macro="cube_terran_prod_energycells_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_ter_medicalsupplies']">
+    <select macro="cube_terran_prod_medicalsupplies_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_ter_metallicmicrolattice']">
+    <select macro="cube_terran_prod_metallicmicrolattice_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_ter_proteinpaste']">
+    <select macro="cube_terran_prod_proteinpaste_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_ter_terranmre']">
+    <select macro="cube_terran_prod_mre_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_ter_siliconcarbide']">
+    <select macro="cube_terran_prod_siliconcarbide_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_ter_stimulants']">
+    <select macro="cube_terran_prod_stimulants_macro" />
+  </add>
+
+  <!-- Terran Storage Module Groups -->
+  <add sel="/groups/group[@name='stor_ter']">
+    <select macro="cube_terran_stor_container_l_macro" />
+    <select macro="cube_terran_stor_liquid_l_macro" />
+    <select macro="cube_terran_stor_solid_l_macro" />
+  </add>
+
+  <!-- Terran Habitation Module Groups -->
+  <add sel="/groups/group[@name='hab_ter']">
+    <select macro="cube_terran_hab_l_macro" />
+  </add>
+
+  <!-- Terran Ownership Claiming Module Groups -->
+  <add sel="/groups/group[@name='claim_ter']">
+    <select macro="cube_terran_def_claim_macro" />
+  </add>
+
+  <!-- Terran Connection Module Groups-->
+  <add sel="/groups/group[@name='conn_ter']">
+    <select macro="cube_terran_macro" />
+  </add>
+
+</diff>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<macros>
+  <macro name="cube_split_macro" class="connectionmodule">
+    <component ref="cube_split" />
+    <properties>
+      <identification name="{9595965,10003}"
+          shortname="{9595965,10003}"
+          makerrace="split"
+          description="{9595965,10001}" />
+      <hull max="120000" />
+    </properties>
+  </macro>
+</macros>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+  <add sel="/icons">
+    <icon name="cube_*"
+        texture="extensions\cube_station_assets\assets\fx\gui\textures\stationmodules\*.tga"
+        height="256"
+        width="256" />
+  </add>
+</diff>

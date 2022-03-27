@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<diff>
+
+  <!-- Split Production Module Groups -->
+  <add sel="/groups/group[@name='prod_spl_medicalsupplies']">
+    <select macro="cube_split_prod_medicalsupplies_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_spl_scruffinfruits']">
+    <select macro="cube_split_prod_scruffinfruit_macro" />
+  </add>
+
+  <add sel="/groups/group[@name='prod_spl_cheltmeat']">
+    <select macro="cube_split_prod_cheltmeat_macro" />
+  </add>
+
+  <!-- Split Storage Module Groups -->
+  <add sel="/groups/group[@name='stor_spl']">
+    <select macro="cube_split_stor_container_l_macro" />
+    <select macro="cube_split_stor_liquid_l_macro" />
+    <select macro="cube_split_stor_solid_l_macro" />
+  </add>
+
+  <!-- Split Habitation Module Groups -->
+  <add sel="/groups/group[@name='hab_spl']">
+    <select macro="cube_split_hab_l_macro" />
+  </add>
+
+  <!-- Split Ownership Claiming Module Groups -->
+  <add sel="/groups/group[@name='claim_spl']">
+    <select macro="cube_split_def_claim_macro" />
+  </add>
+
+  <!-- Split Connection Module Groups-->
+  <add sel="/groups/group[@name='conn_spl']">
+    <select macro="cube_split_macro" />
+  </add>
+</diff>
