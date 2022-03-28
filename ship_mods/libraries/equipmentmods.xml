@@ -4,7 +4,6 @@
     <damage ware="mod_eidng8_weapon_mk1" quality="3" min="2.062" max="2.348">
       <bonus chance="1.0" min="10" max="10">
         <cooling min="1.056" max="1.358" weight="1" />
-        <cooling min="1.056" max="1.358" weight="1" />
         <reload min="1.682" max="1.9" weight="2" />
         <speed min="1.05" max="1.1" weight="3" />
         <beamlength min="1.05" max="1.1" weight="4" />
