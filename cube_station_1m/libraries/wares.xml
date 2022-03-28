@@ -8,7 +8,7 @@
         volume="1"
         tags="module">
       <price min="65300" average="76824" max="88348" />
-      <production time="47" amount="1" method="default" name="{20206,101}">
+      <production time="1" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="claytronics" amount="12" />
           <ware ware="energycells" amount="24" />
@@ -27,7 +27,7 @@
         volume="1"
         tags="module">
       <price min="55015" average="64724" max="74433" />
-      <production time="40" amount="1" method="default" name="{20206,101}">
+      <production time="1" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="claytronics" amount="10" />
           <ware ware="energycells" amount="21" />
@@ -47,7 +47,7 @@
         volume="1"
         tags="module">
       <price min="65300" average="76824" max="88348" />
-      <production time="47" amount="1" method="default" name="{20206,101}">
+      <production time="1" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="claytronics" amount="12" />
           <ware ware="energycells" amount="24" />
@@ -66,7 +66,7 @@
         volume="1"
         tags="module">
       <price min="65300" average="76824" max="88348" />
-      <production time="47" amount="1" method="default" name="{20206,101}">
+      <production time="1" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="claytronics" amount="12" />
           <ware ware="energycells" amount="24" />
@@ -84,7 +84,7 @@
         volume="1"
         tags="module">
       <price min="110087" average="129515" max="148942" />
-      <production time="74" amount="1" method="default" name="{20206,901}">
+      <production time="1" amount="1" method="default" name="{20206,901}">
         <primary>
           <ware ware="computronicsubstrate" amount="5" />
           <ware ware="energycells" amount="38" />
@@ -103,7 +103,7 @@
         volume="1"
         tags="module">
       <price min="744928" average="876386" max="1007844" />
-      <production time="536" amount="1" method="default" name="{20206,101}">
+      <production time="1" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="claytronics" amount="137" />
           <ware ware="energycells" amount="274" />
@@ -127,7 +127,7 @@
         volume="1"
         tags="module">
       <price min="16627714" average="19562016" max="22496318" />
-      <production time="750" amount="1" method="default" name="{20206,101}">
+      <production time="1" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="claytronics" amount="191" />
           <ware ware="energycells" amount="383" />
@@ -151,7 +151,7 @@
         volume="1"
         tags="module">
       <price min="1425885" average="1677512" max="1929139" />
-      <production time="757" amount="1" method="default" name="{20206,201}">
+      <production time="1" amount="1" method="default" name="{20206,201}">
         <primary>
           <ware ware="claytronics" amount="262" />
           <ware ware="energycells" amount="525" />
@@ -175,7 +175,7 @@
         volume="1"
         tags="module">
       <price min="1349848" average="1588056" max="1826264" />
-      <production time="750" amount="1" method="default" name="{20206,201}">
+      <production time="1" amount="1" method="default" name="{20206,201}">
         <primary>
           <ware ware="claytronics" amount="248" />
           <ware ware="energycells" amount="497" />
@@ -199,7 +199,7 @@
         volume="1"
         tags="module">
       <price min="1223505" average="1439418" max="1655331" />
-      <production time="739" amount="1" method="default" name="{20206,201}">
+      <production time="1" amount="1" method="default" name="{20206,201}">
         <primary>
           <ware ware="claytronics" amount="225" />
           <ware ware="energycells" amount="450" />
@@ -222,7 +222,7 @@
         volume="1"
         tags="module">
       <price min="1735171" average="2041378" max="2347585" />
-      <production time="781" amount="1" method="default" name="{20206,201}">
+      <production time="1" amount="1" method="default" name="{20206,201}">
         <primary>
           <ware ware="claytronics" amount="319" />
           <ware ware="energycells" amount="638" />
@@ -245,7 +245,7 @@
         volume="1"
         tags="module">
       <price min="1610158" average="1894304" max="2178450" />
-      <production time="772" amount="1" method="default" name="{20206,201}">
+      <production time="1" amount="1" method="default" name="{20206,201}">
         <primary>
           <ware ware="claytronics" amount="296" />
           <ware ware="energycells" amount="592" />
@@ -269,7 +269,7 @@
         volume="1"
         tags="module">
       <price min="625503" average="735886" max="846269" />
-      <production time="582" amount="1" method="default" name="{20206,101}">
+      <production time="1" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="claytronics" amount="115" />
           <ware ware="energycells" amount="230" />
@@ -293,7 +293,7 @@
         volume="1"
         tags="module">
       <price min="625503" average="735886" max="846269" />
-      <production time="582" amount="1" method="default" name="{20206,101}">
+      <production time="1" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="claytronics" amount="115" />
           <ware ware="energycells" amount="230" />
@@ -317,7 +317,7 @@
         volume="1"
         tags="module">
       <price min="625503" average="735886" max="846269" />
-      <production time="582" amount="1" method="default" name="{20206,101}">
+      <production time="1" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="claytronics" amount="115" />
           <ware ware="energycells" amount="230" />
@@ -341,7 +341,7 @@
         volume="1"
         tags="module">
       <price min="3524906" average="4146948" max="4768990" />
-      <production time="869" amount="1" method="default" name="{20206,101}">
+      <production time="1" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="claytronics" amount="648" />
           <ware ware="energycells" amount="1296" />
@@ -371,7 +371,7 @@
         volume="1"
         tags="module">
       <price min="2622767" average="3085608" max="3548449" />
-      <production time="832" amount="1" method="default" name="{20206,101}">
+      <production time="1" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="claytronics" amount="482" />
           <ware ware="energycells" amount="965" />
@@ -401,7 +401,7 @@
         volume="1"
         tags="module">
       <price min="375477" average="441738" max="507999" />
-      <production time="593" amount="1" method="default" name="{20206,101}">
+      <production time="1" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="claytronics" amount="69" />
           <ware ware="energycells" amount="138" />
@@ -431,7 +431,7 @@
         volume="1"
         tags="module">
       <price min="9681548" average="11390056" max="13098564" />
-      <production time="993" amount="1" method="default" name="{20206,101}">
+      <production time="1" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="claytronics" amount="1780" />
           <ware ware="energycells" amount="3560" />
@@ -461,7 +461,7 @@
         volume="1"
         tags="module">
       <price min="15347532" average="18055920" max="20764308" />
-      <production time="1049" amount="1" method="default" name="{20206,101}">
+      <production time="1" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="claytronics" amount="2822" />
           <ware ware="energycells" amount="5642" />
@@ -490,7 +490,7 @@
         volume="1"
         tags="module">
       <price min="6662268" average="7837962" max="9013656" />
-      <production time="947" amount="1" method="default" name="{20206,101}">
+      <production time="1" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="claytronics" amount="1225" />
           <ware ware="energycells" amount="2449" />
@@ -518,7 +518,7 @@
         volume="1"
         tags="module">
       <price min="1413819" average="1663316" max="1912813" />
-      <production time="756" amount="1" method="default" name="{20206,101}">
+      <production time="1" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="claytronics" amount="260" />
           <ware ware="energycells" amount="520" />
@@ -548,7 +548,7 @@
         volume="1"
         tags="module">
       <price min="2116689" average="2490222" max="2863755" />
-      <production time="806" amount="1" method="default" name="{20206,101}">
+      <production time="1" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="claytronics" amount="389" />
           <ware ware="energycells" amount="779" />
@@ -577,7 +577,7 @@
         volume="1"
         tags="module">
       <price min="9436671" average="11101966" max="12767261" />
-      <production time="989" amount="1" method="default" name="{20206,101}">
+      <production time="1" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="claytronics" amount="1735" />
           <ware ware="energycells" amount="3470" />
@@ -605,7 +605,7 @@
         volume="1"
         tags="module">
       <price min="152966" average="179960" max="206954" />
-      <production time="482" amount="1" method="default" name="{20206,101}">
+      <production time="1" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="claytronics" amount="28" />
           <ware ware="energycells" amount="57" />
@@ -635,7 +635,7 @@
         volume="1"
         tags="module">
       <price min="3340194" average="3929640" max="4519086" />
-      <production time="862" amount="1" method="default" name="{20206,101}">
+      <production time="1" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="claytronics" amount="614" />
           <ware ware="energycells" amount="1229" />
@@ -665,7 +665,7 @@
         volume="1"
         tags="module">
       <price min="4122469" average="4849964" max="5577459" />
-      <production time="888" amount="1" method="default" name="{20206,101}">
+      <production time="1" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="claytronics" amount="758" />
           <ware ware="energycells" amount="1516" />
@@ -695,7 +695,7 @@
         volume="1"
         tags="module">
       <price min="191643" average="225462" max="259281" />
-      <production time="510" amount="1" method="default" name="{20206,101}">
+      <production time="1" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="claytronics" amount="35" />
           <ware ware="energycells" amount="71" />
@@ -724,7 +724,7 @@
         volume="1"
         tags="module">
       <price min="2572901" average="3026942" max="3480983" />
-      <production time="830" amount="1" method="default" name="{20206,101}">
+      <production time="1" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="claytronics" amount="473" />
           <ware ware="energycells" amount="946" />
@@ -754,7 +754,7 @@
         volume="1"
         tags="module">
       <price min="2068152" average="2433120" max="2798088" />
-      <production time="803" amount="1" method="default" name="{20206,101}">
+      <production time="1" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="claytronics" amount="380" />
           <ware ware="energycells" amount="761" />
@@ -784,7 +784,7 @@
         volume="1"
         tags="module">
       <price min="197231" average="232036" max="266841" />
-      <production time="514" amount="1" method="default" name="{20206,101}">
+      <production time="1" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="claytronics" amount="36" />
           <ware ware="energycells" amount="73" />
@@ -814,7 +814,7 @@
         volume="1"
         tags="module">
       <price min="3422258" average="4026186" max="4630114" />
-      <production time="865" amount="1" method="default" name="{20206,101}">
+      <production time="1" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="claytronics" amount="629" />
           <ware ware="energycells" amount="1259" />
@@ -844,7 +844,7 @@
         volume="1"
         tags="module">
       <price min="2350389" average="2765164" max="3179939" />
-      <production time="819" amount="1" method="default" name="{20206,101}">
+      <production time="1" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="claytronics" amount="432" />
           <ware ware="energycells" amount="865" />
@@ -874,7 +874,7 @@
         volume="1"
         tags="module">
       <price min="403430" average="474624" max="545818" />
-      <production time="602" amount="1" method="default" name="{20206,101}">
+      <production time="1" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="claytronics" amount="74" />
           <ware ware="energycells" amount="149" />
@@ -904,7 +904,7 @@
         volume="1"
         tags="module">
       <price min="686545" average="807700" max="928855" />
-      <production time="667" amount="1" method="default" name="{20206,101}">
+      <production time="1" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="claytronics" amount="126" />
           <ware ware="energycells" amount="253" />
@@ -932,7 +932,7 @@
         volume="1"
         tags="module">
       <price min="756543" average="890050" max="1023558" />
-      <production time="679" amount="1" method="default" name="{20206,101}">
+      <production time="1" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="claytronics" amount="139" />
           <ware ware="energycells" amount="278" />
@@ -962,7 +962,7 @@
         volume="1"
         tags="module">
       <price min="137080" average="161270" max="185461" />
-      <production time="469" amount="1" method="default" name="{20206,101}">
+      <production time="1" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="claytronics" amount="25" />
           <ware ware="energycells" amount="51" />
@@ -992,7 +992,7 @@
         volume="1"
         tags="module">
       <price min="2584529" average="3040622" max="3496715" />
-      <production time="830" amount="1" method="default" name="{20206,101}">
+      <production time="1" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="claytronics" amount="475" />
           <ware ware="energycells" amount="951" />
@@ -1020,7 +1020,7 @@
         volume="1"
         tags="module">
       <price min="195901" average="230472" max="265043" />
-      <production time="513" amount="1" method="default" name="{20206,101}">
+      <production time="1" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="claytronics" amount="36" />
           <ware ware="energycells" amount="72" />
@@ -1050,7 +1050,7 @@
         volume="1"
         tags="module">
       <price min="2154927" average="2535208" max="2915489" />
-      <production time="808" amount="1" method="default" name="{20206,101}">
+      <production time="1" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="claytronics" amount="396" />
           <ware ware="energycells" amount="793" />
@@ -1078,7 +1078,7 @@
         volume="1"
         tags="module">
       <price min="760801" average="895060" max="1029319" />
-      <production time="547" amount="1" method="default" name="{20206,101}">
+      <production time="1" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="claytronics" amount="140" />
           <ware ware="energycells" amount="279" />
@@ -1103,7 +1103,7 @@
         volume="1"
         tags="module">
       <price min="18262842" average="21485696" max="24708550" />
-      <production time="822" amount="1" method="default" name="{20206,101}">
+      <production time="1" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="claytronics" amount="210" />
           <ware ware="energycells" amount="419" />
@@ -1128,7 +1128,7 @@
         volume="1"
         tags="module">
       <price min="2029023" average="2387086" max="2745149" />
-      <production time="800"
+      <production time="1"
           amount="1"
           method="default"
           name="{20206,301} {9595965,10000}">
@@ -1155,7 +1155,7 @@
         volume="1"
         tags="module">
       <price min="1349848" average="1588056" max="1826264" />
-      <production time="750"
+      <production time="1"
           amount="1"
           method="default"
           name="{20206,301} {9595965,10000}">
@@ -1183,7 +1183,7 @@
         volume="1"
         tags="module">
       <price min="1229080" average="1445976" max="1662872" />
-      <production time="739"
+      <production time="1"
           amount="1"
           method="default"
           name="{20206,301} {9595965,10000}">
@@ -1211,7 +1211,7 @@
         volume="1"
         tags="module">
       <price min="1610158" average="1894304" max="2178450" />
-      <production time="772"
+      <production time="1"
           amount="1"
           method="default"
           name="{20206,301} {9595965,10000}">
@@ -1239,7 +1239,7 @@
         volume="1"
         tags="module">
       <price min="1719737" average="2023220" max="2326703" />
-      <production time="780"
+      <production time="1"
           amount="1"
           method="default"
           name="{20206,301} {9595965,10000}">
@@ -1267,7 +1267,7 @@
         volume="1"
         tags="module">
       <price min="674026" average="792972" max="911918" />
-      <production time="626" amount="1" method="default" name="{20206,101}">
+      <production time="1" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="claytronics" amount="124" />
           <ware ware="energycells" amount="247" />
@@ -1292,7 +1292,7 @@
         volume="1"
         tags="module">
       <price min="674026" average="792972" max="911918" />
-      <production time="626" amount="1" method="default" name="{20206,101}">
+      <production time="1" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="claytronics" amount="124" />
           <ware ware="energycells" amount="247" />
@@ -1317,7 +1317,7 @@
         volume="1"
         tags="module">
       <price min="674026" average="792972" max="911918" />
-      <production time="683" amount="1" method="default" name="{20206,101}">
+      <production time="1" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="claytronics" amount="124" />
           <ware ware="energycells" amount="247" />
@@ -1342,7 +1342,7 @@
         volume="1"
         tags="module">
       <price min="749625" average="881912" max="1014199" />
-      <production time="538" amount="1" method="default" name="{20206,101}">
+      <production time="1" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="claytronics" amount="138" />
           <ware ware="energycells" amount="275" />
@@ -1366,7 +1366,7 @@
         volume="1"
         tags="module">
       <price min="15822621" average="18614848" max="21407075" />
-      <production time="711" amount="1" method="default" name="{20206,101}">
+      <production time="1" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="claytronics" amount="182" />
           <ware ware="energycells" amount="363" />
@@ -1389,7 +1389,7 @@
         volume="1"
         tags="module">
       <price min="3416014" average="4018840" max="4621666" />
-      <production time="863"
+      <production time="1"
           amount="1"
           method="default"
           name="{20206,401} {9595965,10000}">
@@ -1415,7 +1415,7 @@
         volume="1"
         tags="module">
       <price min="2143163" average="2521368" max="2899573" />
-      <production time="806"
+      <production time="1"
           amount="1"
           method="default"
           name="{20206,401} {9595965,10000}">
@@ -1441,7 +1441,7 @@
         volume="1"
         tags="module">
       <price min="3339976" average="3929384" max="4518792" />
-      <production time="861"
+      <production time="1"
           amount="1"
           method="default"
           name="{20206,401} {9595965,10000}">
@@ -1467,7 +1467,7 @@
         volume="1"
         tags="module">
       <price min="1219233" average="1434392" max="1649551" />
-      <production time="738"
+      <production time="1"
           amount="1"
           method="default"
           name="{20206,401} {9595965,10000}">
@@ -1493,7 +1493,7 @@
         volume="1"
         tags="module">
       <price min="1574127" average="1851914" max="2129701" />
-      <production time="769"
+      <production time="1"
           amount="1"
           method="default"
           name="{20206,401} {9595965,10000}">
@@ -1519,7 +1519,7 @@
         volume="1"
         tags="module">
       <price min="3464989" average="4076458" max="4687927" />
-      <production time="865"
+      <production time="1"
           amount="1"
           method="default"
           name="{20206,401} {9595965,10000}">
@@ -1545,7 +1545,7 @@
         volume="1"
         tags="module">
       <price min="3475040" average="4088282" max="4701524" />
-      <production time="867"
+      <production time="1"
           amount="1"
           method="default"
           name="{20206,401} {9595965,10000}">
@@ -1573,7 +1573,7 @@
         volume="1"
         tags="module">
       <price min="1611474" average="1895852" max="2180230" />
-      <production time="772"
+      <production time="1"
           amount="1"
           method="default"
           name="{20206,401} {9595965,10000}">
@@ -1599,7 +1599,7 @@
         volume="1"
         tags="module">
       <price min="3475040" average="4088282" max="4701524" />
-      <production time="867"
+      <production time="1"
           amount="1"
           method="default"
           name="{20206,401} {9595965,10000}">
@@ -1625,7 +1625,7 @@
         volume="1"
         tags="module">
       <price min="272830" average="320976" max="369122" />
-      <production time="554"
+      <production time="1"
           amount="1"
           method="default"
           name="{20206,401} {9595965,10000}">
@@ -1651,7 +1651,7 @@
         volume="1"
         tags="module">
       <price min="608287" average="715632" max="822977" />
-      <production time="564" amount="1" method="default" name="{20206,101}">
+      <production time="1" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="claytronics" amount="112" />
           <ware ware="energycells" amount="223" />
@@ -1674,7 +1674,7 @@
         volume="1"
         tags="module">
       <price min="608287" average="715632" max="822977" />
-      <production time="564" amount="1" method="default" name="{20206,101}">
+      <production time="1" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="claytronics" amount="112" />
           <ware ware="energycells" amount="223" />
@@ -1697,7 +1697,7 @@
         volume="1"
         tags="module">
       <price min="608287" average="715632" max="822977" />
-      <production time="564" amount="1" method="default" name="{20206,101}">
+      <production time="1" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="claytronics" amount="112" />
           <ware ware="energycells" amount="223" />
@@ -1720,7 +1720,7 @@
         volume="1"
         tags="module">
       <price min="750516" average="882960" max="1015404" />
-      <production time="833" amount="1" method="default" name="{20206,101}">
+      <production time="1" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="claytronics" amount="138" />
           <ware ware="energycells" amount="276" />
@@ -1744,7 +1744,7 @@
         volume="1"
         tags="module">
       <price min="16627714" average="19562016" max="22496318" />
-      <production time="1155" amount="1" method="default" name="{20206,101}">
+      <production time="1" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="claytronics" amount="191" />
           <ware ware="energycells" amount="383" />
@@ -1768,7 +1768,7 @@
         volume="1"
         tags="module">
       <price min="698188" average="821398" max="944608" />
-      <production time="774"
+      <production time="1"
           amount="1"
           method="default"
           name="{20206,701} {9595965,10000}">
@@ -1795,7 +1795,7 @@
         volume="1"
         tags="module">
       <price min="1223505" average="1439418" max="1655331" />
-      <production time="1138"
+      <production time="1"
           amount="1"
           method="default"
           name="{20206,701} {9595965,10000}">
@@ -1821,7 +1821,7 @@
         volume="1"
         tags="module">
       <price min="829662" average="976073" max="1122484" />
-      <production time="920"
+      <production time="1"
           amount="1"
           method="default"
           name="{20206,701} {9595965,10000}">
@@ -1848,7 +1848,7 @@
         volume="1"
         tags="module">
       <price min="734191" average="863754" max="993317" />
-      <production time="1052" amount="1" method="default" name="{20206,101}">
+      <production time="1" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="claytronics" amount="135" />
           <ware ware="energycells" amount="270" />
@@ -1872,7 +1872,7 @@
         volume="1"
         tags="module">
       <price min="734191" average="863754" max="993317" />
-      <production time="1052" amount="1" method="default" name="{20206,101}">
+      <production time="1" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="claytronics" amount="135" />
           <ware ware="energycells" amount="270" />
@@ -1896,7 +1896,7 @@
         volume="1"
         tags="module">
       <price min="734191" average="863754" max="993317" />
-      <production time="1052" amount="1" method="default" name="{20206,101}">
+      <production time="1" amount="1" method="default" name="{20206,101}">
         <primary>
           <ware ware="claytronics" amount="135" />
           <ware ware="energycells" amount="270" />
@@ -1920,7 +1920,7 @@
         volume="1"
         tags="module">
       <price min="1731191" average="2036696" max="2342200" />
-      <production time="1162"
+      <production time="1"
           amount="1"
           method="default"
           name="{20206,901} {9595965,10000}">
@@ -1947,7 +1947,7 @@
         volume="1"
         tags="module">
       <price min="12310693" average="14483168" max="16655643" />
-      <production time="1162"
+      <production time="1"
           amount="1"
           method="default"
           name="{20206,901} {9595965,10000}">
@@ -1974,7 +1974,7 @@
         volume="1"
         tags="module">
       <price min="4220074" average="4964793" max="5709512" />
-      <production time="800"
+      <production time="1"
           amount="1"
           method="default"
           name="{20206,901} {9595965,10000}">
@@ -2001,7 +2001,7 @@
         volume="1"
         tags="module">
       <price min="409886" average="471369" max="542074" />
-      <production time="175"
+      <production time="1"
           amount="1"
           method="default"
           name="{20206,901} {9595965,10000}">
@@ -2028,7 +2028,7 @@
         volume="1"
         tags="module">
       <price min="301266" average="354431" max="407596" />
-      <production time="336"
+      <production time="1"
           amount="1"
           method="default"
           name="{20206,901} {9595965,10000}">
@@ -2055,7 +2055,7 @@
         volume="1"
         tags="module">
       <price min="106659" average="125481" max="144303" />
-      <production time="152"
+      <production time="1"
           amount="1"
           method="default"
           name="{20206,901} {9595965,10000}">
@@ -2082,7 +2082,7 @@
         volume="1"
         tags="module">
       <price min="1292921" average="1521084" max="1749247" />
-      <production time="592"
+      <production time="1"
           amount="1"
           method="default"
           name="{20206,901} {9595965,10000}">
@@ -2109,7 +2109,7 @@
         volume="1"
         tags="module">
       <price min="709162" average="834308" max="959454" />
-      <production time="486"
+      <production time="1"
           amount="1"
           method="default"
           name="{20206,901} {9595965,10000}">
@@ -2136,7 +2136,7 @@
         volume="1"
         tags="module">
       <price min="2484701" average="2923177" max="3361653" />
-      <production time="707"
+      <production time="1"
           amount="1"
           method="default"
           name="{20206,901} {9595965,10000}">
@@ -2163,7 +2163,7 @@
         volume="1"
         tags="module">
       <price min="533265" average="627371" max="721477" />
-      <production time="436"
+      <production time="1"
           amount="1"
           method="default"
           name="{20206,901} {9595965,10000}">
@@ -2190,7 +2190,7 @@
         volume="1"
         tags="module">
       <price min="778303" average="915651" max="1052999" />
-      <production time="671"
+      <production time="1"
           amount="1"
           method="default"
           name="{20206,901} {9595965,10000}">
@@ -2217,7 +2217,7 @@
         volume="1"
         tags="module">
       <price min="778303" average="915651" max="1052999" />
-      <production time="671"
+      <production time="1"
           amount="1"
           method="default"
           name="{20206,901} {9595965,10000}">
@@ -2244,7 +2244,7 @@
         volume="1"
         tags="module">
       <price min="778303" average="915651" max="1052999" />
-      <production time="671"
+      <production time="1"
           amount="1"
           method="default"
           name="{20206,901} {9595965,10000}">
