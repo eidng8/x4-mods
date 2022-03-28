@@ -1,55 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<content name="CUBE 1 minute"
-    description="Adds a bunch of cube station modules, with 1 minute build time."
-    author="eidng8"
-    version="101"
-    date="2021-04-15"
-    save="true"
-    lastupdate="1618478517"
-    sync="false"
-    id="cube_1m">
-  <text language="7"
-      name="CUBE 1 minute"
-      description="Adds a bunch of cube station modules, with 1 minute build time."
-      author="eidng8" />
-  <text language="33"
-      name="CUBE 1 minute"
-      description="Adds a bunch of cube station modules, with 1 minute build time."
-      author="eidng8" />
-  <text language="34"
-      name="CUBE 1 minute"
-      description="Adds a bunch of cube station modules, with 1 minute build time."
-      author="eidng8" />
-  <text language="39"
-      name="CUBE 1 minute"
-      description="Adds a bunch of cube station modules, with 1 minute build time."
-      author="eidng8" />
-  <text language="44"
-      name="CUBE 1 minute"
-      description="Adds a bunch of cube station modules, with 1 minute build time."
-      author="eidng8" />
-  <text language="49"
-      name="CUBE 1 minute"
-      description="Adds a bunch of cube station modules, with 1 minute build time."
-      author="eidng8" />
-  <text language="55"
-      name="CUBE 1 minute"
-      description="Adds a bunch of cube station modules, with 1 minute build time."
-      author="eidng8" />
-  <text language="81"
-      name="CUBE 1 minute"
-      description="Adds a bunch of cube station modules, with 1 minute build time."
-      author="eidng8" />
-  <text language="82"
-      name="CUBE 1 minute"
-      description="Adds a bunch of cube station modules, with 1 minute build time."
-      author="eidng8" />
-  <text language="86"
-      name="CUBE 1 minute"
-      description="Adds a bunch of cube station modules, with 1 minute build time."
-      author="eidng8" />
-  <text language="88"
-      name="CUBE 1 minute"
-      description="Adds a bunch of cube station modules, with 1 minute build time."
-      author="eidng8" />
+<content name="CUBE 1 minute" description="Adds a bunch of cube station modules, with 1 minute build time." author="eidng8" version="101" date="2022-03-28" save="true" lastupdate="1648442777" sync="false" id="ws_2785856187">
+  <text language="7" name="CUBE 1 minute" description="Adds a bunch of cube station modules, with 1 minute build time." author="eidng8"/>
+  <text language="33" name="CUBE 1 minute" description="Adds a bunch of cube station modules, with 1 minute build time." author="eidng8"/>
+  <text language="34" name="CUBE 1 minute" description="Adds a bunch of cube station modules, with 1 minute build time." author="eidng8"/>
+  <text language="39" name="CUBE 1 minute" description="Adds a bunch of cube station modules, with 1 minute build time." author="eidng8"/>
+  <text language="44" name="CUBE 1 minute" description="Adds a bunch of cube station modules, with 1 minute build time." author="eidng8"/>
+  <text language="49" name="CUBE 1 minute" description="Adds a bunch of cube station modules, with 1 minute build time." author="eidng8"/>
+  <text language="55" name="CUBE 1 minute" description="Adds a bunch of cube station modules, with 1 minute build time." author="eidng8"/>
+  <text language="81" name="CUBE 1 minute" description="Adds a bunch of cube station modules, with 1 minute build time." author="eidng8"/>
+  <text language="82" name="CUBE 1 minute" description="Adds a bunch of cube station modules, with 1 minute build time." author="eidng8"/>
+  <text language="86" name="CUBE 1 minute" description="Adds a bunch of cube station modules, with 1 minute build time." author="eidng8"/>
+  <text language="88" name="CUBE 1 minute" description="Adds a bunch of cube station modules, with 1 minute build time." author="eidng8"/>
 </content>
