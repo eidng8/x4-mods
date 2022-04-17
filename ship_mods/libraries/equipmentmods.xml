@@ -155,6 +155,54 @@
         <travelreleasetime min="10.8" max="10.95"/>
       </bonus>
     </strafethrust>
+    <rotationthrust ware="mod_eidng8_rotate_engine_mk1"
+        quality="3"
+        min="5.1"
+        max="5.3">
+      <bonus chance="1.0" max="9">
+        <!-- NOTE that thrust is acceleration, not simple multiplication. -->
+        <boostduration min="10.05" max="10.2" />
+        <travelattacktime min="0.0008" max="0.00095" />
+        <travelchargetime min="0.0008" max="0.00095" />
+        <travelreleasetime min="10.8" max="10.95" />
+      </bonus>
+    </rotationthrust>
+    <rotationthrust ware="mod_eidng8_rotate_engine_mk2"
+        quality="3"
+        min="10.1"
+        max="10.3">
+      <bonus chance="1.0" max="9">
+        <!-- NOTE that thrust is acceleration, not simple multiplication. -->
+        <boostduration min="10.05" max="10.2" />
+        <travelattacktime min="0.0008" max="0.00095" />
+        <travelchargetime min="0.0008" max="0.00095" />
+        <travelreleasetime min="10.8" max="10.95" />
+      </bonus>
+    </rotationthrust>
+    <rotationthrust ware="mod_eidng8_rotate_engine_mk3"
+        quality="3"
+        min="15.1"
+        max="15.3">
+      <bonus chance="1.0" max="9">
+        <!-- NOTE that thrust is acceleration, not simple multiplication. -->
+        <boostduration min="10.05" max="10.2" />
+        <travelattacktime min="0.0008" max="0.00095" />
+        <travelchargetime min="0.0008" max="0.00095" />
+        <travelreleasetime min="10.8" max="10.95" />
+      </bonus>
+    </rotationthrust>
+    <rotationthrust ware="mod_eidng8_rotate_engine_mk4"
+        quality="3"
+        min="20.1"
+        max="20.3">
+      <bonus chance="1.0" max="9">
+        <!-- NOTE that thrust is acceleration, not simple multiplication. -->
+        <boostduration min="10.05" max="10.2" />
+        <travelattacktime min="0.0008" max="0.00095" />
+        <travelchargetime min="0.0008" max="0.00095" />
+        <travelreleasetime min="10.8" max="10.95" />
+      </bonus>
+    </rotationthrust>
   </add>
   <add sel="/equipmentmods/ship">
     <maxhull ware="mod_eidng8_hull_mk1" quality="3" min="10.769" max="10.909">
