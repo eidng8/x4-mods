@@ -17,7 +17,8 @@
           <do_elseif value="event.param.primarypurpose == purpose.trade">
             <set_value name="$role" exact="'$trading'" />
           </do_elseif>
-          <do_elseif value="event.param.primarypurpose == purpose.mine">
+          <do_elseif value="event.param.primarypurpose == purpose.mine
+                            or event.param.primarypurpose == purpose.dismantling">
             <set_value name="$role" exact="'$mining'" />
           </do_elseif>
           <do_elseif value="event.param.primarypurpose == purpose.fight

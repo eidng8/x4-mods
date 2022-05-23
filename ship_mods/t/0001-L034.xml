@@ -63,8 +63,8 @@
       <t id="11006">Applies the selected modifications.</t>
       <t id="11007">--- Do not install modification ---</t>
       <t id="11008">Builder ships</t>
-      <t id="11009">Combat %s ships</t>
-      <t id="11010">Miner %s ships</t>
+      <t id="11009">Combat &amp; Aux. %s ships</t>
+      <t id="11010">Miner &amp; Scrapper %s ships</t>
       <t id="11011">Trader %s ships</t>
     </page>
   </add>
