@@ -211,7 +211,7 @@
     </maxhull>
     <maxhull ware="mod_eidng8_hull_mk3" quality="3" min="100.769" max="100.909">
       <bonus chance="1.0" max="7">
-        <radarrange min="20.0" max="20.2" />
+        <radarrange min="2.0" max="2.2" />
         <countermeasurecapacity min="10" max="10" />
         <deployablecapacity min="100" max="100" />
         <missilecapacity min="1000" max="1000" />
@@ -251,7 +251,7 @@
       <bonus chance="1.0" max="7">
         <drag min="0.30" max="0.30" />
         <mass min="0.30" max="0.30" />
-        <radarrange min="20.0" max="20.2" />
+        <radarrange min="2.0" max="2.2" />
         <countermeasurecapacity min="10" max="10" />
         <deployablecapacity min="100" max="100" />
         <missilecapacity min="1000" max="1000" />
