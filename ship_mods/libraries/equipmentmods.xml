@@ -206,8 +206,28 @@
   </add>
   <add sel="/equipmentmods/ship">
     <maxhull ware="mod_eidng8_hull_mk1" quality="3" min="10.769" max="10.909">
+      <bonus chance="1.0" max="7">
+        <radarrange min="2.0" max="2.2" />
+        <countermeasurecapacity min="10" max="10" />
+        <deployablecapacity min="100" max="100" />
+        <missilecapacity min="1000" max="1000" />
+        <unitcapacity min="100" max="100" />
+        <regiondamage min="1.0" max="1.0" />
+        <radarcloak min="-1.0" max="-1.0" />
+        <hidecargochance min="1.0" max="1.0" />
+      </bonus>
     </maxhull>
     <maxhull ware="mod_eidng8_hull_mk2" quality="3" min="50.769" max="50.909">
+      <bonus chance="1.0" max="7">
+        <radarrange min="2.0" max="2.2" />
+        <countermeasurecapacity min="10" max="10" />
+        <deployablecapacity min="100" max="100" />
+        <missilecapacity min="1000" max="1000" />
+        <unitcapacity min="100" max="100" />
+        <regiondamage min="1.0" max="1.0" />
+        <radarcloak min="-1.0" max="-1.0" />
+        <hidecargochance min="1.0" max="1.0" />
+      </bonus>
     </maxhull>
     <maxhull ware="mod_eidng8_hull_mk3" quality="3" min="100.769" max="100.909">
       <bonus chance="1.0" max="7">
@@ -216,6 +236,9 @@
         <deployablecapacity min="100" max="100" />
         <missilecapacity min="1000" max="1000" />
         <unitcapacity min="100" max="100" />
+        <regiondamage min="1.0" max="1.0" />
+        <radarcloak min="-1.0" max="-1.0" />
+        <hidecargochance min="1.0" max="1.0" />
       </bonus>
     </maxhull>
     <maxhull ware="mod_eidng8_hull_feather_mk1"
@@ -229,6 +252,9 @@
         <deployablecapacity min="100" max="100" />
         <missilecapacity min="1000" max="1000" />
         <unitcapacity min="100" max="100" />
+        <regiondamage min="1.0" max="1.0" />
+        <radarcloak min="-1.0" max="-1.0" />
+        <hidecargochance min="1.0" max="1.0" />
       </bonus>
     </maxhull>
     <maxhull ware="mod_eidng8_hull_feather_mk2"
@@ -242,6 +268,9 @@
         <deployablecapacity min="100" max="100" />
         <missilecapacity min="1000" max="1000" />
         <unitcapacity min="100" max="100" />
+        <regiondamage min="1.0" max="1.0" />
+        <radarcloak min="-1.0" max="-1.0" />
+        <hidecargochance min="1.0" max="1.0" />
       </bonus>
     </maxhull>
     <maxhull ware="mod_eidng8_hull_feather_mk3"
@@ -256,6 +285,9 @@
         <deployablecapacity min="100" max="100" />
         <missilecapacity min="1000" max="1000" />
         <unitcapacity min="100" max="100" />
+        <regiondamage min="1.0" max="1.0" />
+        <radarcloak min="-1.0" max="-1.0" />
+        <hidecargochance min="1.0" max="1.0" />
       </bonus>
     </maxhull>
   </add>
