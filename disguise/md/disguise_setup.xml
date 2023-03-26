@@ -40,7 +40,7 @@
         <debug_to_file text="'Player: ' + player"
                        name="global.$eidng8_Disguise_DebugLogFile"
                        directory="global.$eidng8_Disguise_DebugLogDir"/-->
-        <add_blueprints wares="[ware.disguise,ware.disguise_beam,ware.disguise_turret,ware.disguise_shield]"/>
+        <add_blueprints wares="[ware.disguise,ware.disguise_beam,ware.disguise_mining,ware.disguise_turret,ware.disguise_turret_mining,ware.disguise_shield]"/>
         <!--do_if value="player.entity.inventory.{ware.disguise}">
           <debug_to_file text="'Player has ship blueprint: ' + ware.disguise + ' [checked].'"
                          name="global.$eidng8_Disguise_DebugLogFile"

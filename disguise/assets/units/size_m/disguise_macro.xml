@@ -22,7 +22,8 @@
       <storage missile="4000" unit="500" />
       <hull max="52000000" />
       <secrecy level="1" />
-      <purpose primary="fight" />
+      <gatherrate gas="80" />
+      <purpose primary="mine" />
       <people capacity="150" />
       <physics mass="1">
         <inertia pitch="0.5" yaw="0.5" roll="0.5" />
@@ -35,7 +36,7 @@
               roll="3" />
       </physics>
       <thruster tags="medium" />
-      <ship type="corvette" />
+      <ship type="miner" />
       <sound_occlusion inside="0.4" />
     </properties>
     <connections>

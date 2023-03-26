@@ -39,6 +39,26 @@
       <restriction licence="generaluseship" />
       <owner faction="player" />
     </ware>
+    <ware id="disguise_mining"
+          name="{9595959,10024}"
+          description="{9595959,10027}"
+          group="weapons"
+          transport="equipment"
+          volume="1"
+          tags="equipment weapon">
+      <price min="25530" average="28367" max="31203" />
+      <production time="5" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="advancedelectronics" amount="2" />
+          <ware ware="energycells" amount="5" />
+          <ware ware="weaponcomponents" amount="10" />
+        </primary>
+      </production>
+      <component ref="disguise_mining_macro" amount="1" />
+      <use threshold="1" />
+      <restriction licence="generaluseship" />
+      <owner faction="player" />
+    </ware>
     <ware id="disguise_turret"
           name="{9595959,10011}"
           description="{9595959,10013}"
@@ -55,6 +75,26 @@
         </primary>
       </production>
       <component ref="disguise_turret_macro" amount="1" />
+      <use threshold="1" />
+      <restriction licence="generaluseequipment" />
+      <owner faction="player" />
+    </ware>
+    <ware id="disguise_turret_mining"
+          name="{9595959,10028}"
+          description="{9595959,10031}"
+          group="turrets"
+          transport="equipment"
+          volume="1"
+          tags="equipment turret">
+      <price min="45385" average="50428" max="55471" />
+      <production time="5" amount="1" method="default" name="{20206,101}">
+        <primary>
+          <ware ware="advancedelectronics" amount="6" />
+          <ware ware="energycells" amount="10" />
+          <ware ware="turretcomponents" amount="10" />
+        </primary>
+      </production>
+      <component ref="disguise_turret_mining_macro" amount="1" />
       <use threshold="1" />
       <restriction licence="generaluseequipment" />
       <owner faction="player" />

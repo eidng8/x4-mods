@@ -4,7 +4,7 @@
     <component ref="generic_storage" />
     <properties>
       <identification makerrace="terran" />
-      <cargo max="60000" tags="container" />
+      <cargo max="60000" tags="container liquid solid condensate" />
       <hull integrated="1" />
       <secrecy level="1" />
     </properties>

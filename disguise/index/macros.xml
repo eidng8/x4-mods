@@ -9,9 +9,17 @@
          value="extensions\disguise\assets\props\surfaceelements\disguise_shield_macro" />
   <entry name="disguise_beam_macro"
          value="extensions\disguise\assets\props\weaponsystems\disguise_beam_macro" />
+  <entry name="disguise_mining_macro"
+         value="extensions\disguise\assets\props\weaponsystems\disguise_mining_macro" />
   <entry name="disguise_turret_macro"
          value="extensions\disguise\assets\props\weaponsystems\disguise_turret_macro" />
+  <entry name="disguise_turret_mining_macro"
+         value="extensions\disguise\assets\props\weaponsystems\disguise_turret_mining_macro" />
   <entry name="bullet_disguise_beam_macro"
          value="extensions\disguise\assets\fx\weaponFx\bullet_disguise_beam_macro" />
+  <entry name="bullet_disguise_mining_macro"
+         value="extensions\disguise\assets\fx\weaponFx\bullet_disguise_mining_macro" />
+  <entry name="bullet_disguise_turret_mining_macro"
+         value="extensions\disguise\assets\fx\weaponFx\bullet_disguise_turret_mining_macro" />
 </index>
 

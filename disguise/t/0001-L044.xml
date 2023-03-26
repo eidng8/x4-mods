@@ -23,6 +23,14 @@
       <t id="10021">Sent by your government to investigate a peculiar anomaly, you swiftly completed all mission objectives. However, you soon find out a horrible situation when you are about to set out for your home world. No communication can be made to it, let alone traveling back.\n\nStranded and lost, you suddenly feel clueless. Should you stay here or go back? Should you become a tyrant or savior to this dimension? Wisdom shall guide you through this endeavor. Live long and prosper \\\\// \n\n</t>
       <t id="10022">Sent by your government to investigate a peculiar anomaly, you swiftly completed all mission objectives. However, you soon find out a horrible situation when you are about to set out for your home world. No communication can be made to it, let alone traveling back. Stranded and lost, you suddenly feel clueless. Should you stay here or go back? Should you become a tyrant or savior to this dimension? Wisdom shall guide you through this endeavor. Live long and prosper!</t>
       <t id="10023">During missions, you have realised that every one in this dimension refers to the anomaly as a "jump gate shutdown" event. But no one has the slightest idea of the true nature and scale of it. Further, no one has ever made any guess about the dimension they live in. Except one curious individual, whom you have instinctively established close relationship.</t>
+      <t id="10024">Disguise Mining Laser</t>
+      <t id="10025">(Disguise Mining Laser){9595959,10024}</t>
+      <t id="10026">(Disguise Mining Laser){9595959,10025}</t>
+      <t id="10027">A superb mining laser.</t>
+      <t id="10028">Disguise Mining Turret</t>
+      <t id="10029">(Disguise Mining Turret){9595959,10028}</t>
+      <t id="10030">(Disguise Mining Turret){9595959,10029}</t>
+      <t id="10031">A superb mining turret.</t>
     </page>
   </add>
 </diff>
