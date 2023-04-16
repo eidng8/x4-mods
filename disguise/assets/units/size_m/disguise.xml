@@ -1523,7 +1523,7 @@
           <position x="0.1317902" y="14.78893" z="-1.686176" />
         </offset>
       </connection>
-      <connection name="con_engine_01" tags="engine medium">
+      <connection name="con_engine_01" tags="engine medium standard">
         <offset>
           <position x="8.34465E-07" y="0.3275747" z="-29.86381" />
         </offset>
