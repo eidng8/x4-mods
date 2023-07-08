@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diff>
+  <add sel="/language">
+    <page id="9595959" title="Disguise" descr="Ship" voice="yes">
+      <t id="1">eidng8</t>
+      <t id="10001">Disguise</t>
+      <t id="10002">(Disguise){9595959,10001}</t>
+      <t id="10003">(Disguise){9595959,10002}</t>
+      <t id="10004">Uma nave polivalente de outra dimensão, em disguise.</t>
+      <t id="10007">Disguise Feixe</t>
+      <t id="10008">(Disguise Feixe){9595959,10007}</t>
+      <t id="10009">(Disguise Feixe){9595959,10008}</t>
+      <t id="10010">Um super Feixe.</t>
+      <t id="10011">Disguise Torreta</t>
+      <t id="10012">(Disguise Torreta){9595959,10011}</t>
+      <t id="10013">(Disguise Torreta){9595959,10012}</t>
+      <t id="10014">Uma super torreta.</t>
+      <t id="10015">Disguise Escudo</t>
+      <t id="10016">(Disguise Escudo){9595959,10015}</t>
+      <t id="10017">(Disguise Escudo){9595959,10016}</t>
+      <t id="10018">Um super escudo.</t>
+      <t id="10020">De Outra Dimensão</t>
+      <t id="10021">Enviado por seu governo para investigar uma anomalia peculiar, você completou rapidamente todos os objetivos da missão. No entanto, você logo descobre uma situação horrível quando está prestes a partir para o seu mundo natal. Nenhuma comunicação pode ser feita com ele, muito menos viajar de volta.\n\nEncalhado e perdido, de repente você se sente sem noção. Você deve ficar aqui ou voltar? Você deveria se tornar um tirano ou salvador desta dimensão? A sabedoria deve guiá-lo através deste esforço. Vida longa e próspera \\\\// \n\n</t>
+      <t id="10022">Enviado por seu governo para investigar uma anomalia peculiar, você completou rapidamente todos os objetivos da missão. No entanto, você logo descobre uma situação horrível quando está prestes a partir para o seu mundo natal. Nenhuma comunicação pode ser feita com ele, muito menos viajar de volta. Encalhado e perdido, de repente você se sente sem noção. Você deve ficar aqui ou voltar? Você deveria se tornar um tirano ou salvador desta dimensão? A sabedoria deve guiá-lo através deste esforço. Vida longa e próspera!</t>
+      <t id="10023">Durante as missões, você percebeu que todos nesta dimensão se referem à anomalia como um evento de "desligamento do portão de salto". Mas ninguém tem a menor ideia da verdadeira natureza e escala disso. Além disso, ninguém jamais fez qualquer suposição sobre a dimensão em que vivem. Exceto um indivíduo curioso, com quem você instintivamente estabeleceu um relacionamento próximo.</t>
+      <t id="10024">Disguise laser de mineração</t>
+      <t id="10025">(Disguise Laser de Mineração){9595959,10024}</t>
+      <t id="10026">(Disguise Laser de Mineração){9595959,10025}</t>
+      <t id="10027">Um super laser de mineração.</t>
+      <t id="10028">Disguise Torreta de Mineração</t>
+      <t id="10029">(Disguise Torreta de Mineração){9595959,10028}</t>
+      <t id="10030">(Disguise Torreta de Mineração){9595959,10029}</t>
+      <t id="10031">Uma super torreta de mineração.</t>
+    </page>
+  </add>
+</diff>
